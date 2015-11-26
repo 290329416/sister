@@ -1,0 +1,51 @@
+<include file="Public/top" />
+   <script type="text/javascript">
+    $( document).ready(function(e) {
+      $(".listny dl dd a").click(function(e) {
+          $( this).addClass("cli").siblings().removeClass("cli")
+      });
+  });
+  </script>
+      <div class="main">
+         <div class="nowthat">
+           <b>当前位置：</b>
+           <a href="/">首页</a>
+             &gt;&gt; 
+           <a href="{:U('/t_'.$type_find['namepath'])}">{$type_find.name}</a>
+         </div>
+         <div class="listleft">
+           <div class="listny">
+             <dl>
+               <dt><h2>通知公告</h2></dt>
+               <dd>
+                  <a href="/" class="cli">协会概况</a>  
+                  <a href="/">分会简介</a>  
+                  <a href="/">组织机构</a>  
+                  <a href="/">公众留言</a>  
+               </dd>
+             </dl>
+           </div>
+         </div>
+         <div class="listright">
+             <div class="colum">
+           <dl>
+              <dt><h2>{$type_find.name}</h2></dt>
+              <dd>
+                <foreach name="newdata" item="new" >
+                <span><a href="{:U('/'.$type_find['namepath'].'/'.$new['id'])}">{$new.title}</a> <e>({$new.releasetime})</e></span>
+                </foreach>     
+              </dd>
+           </dl>
+           <div class="next">
+              {$page}
+           </div>
+         </div>
+          
+         </div>
+      </div>
+   <include file="Public/foot" />
+   
+
+ 
+</body>
+</html>

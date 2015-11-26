@@ -1,0 +1,191 @@
+<extend name="Public:header" />
+<block name='head'>
+<head>
+	<meta charset="utf-8" />
+	<title>修改用户密码</title>
+
+	<meta name="description" content="Common form elements and layouts" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- basic styles -->
+
+	<link href="__PUBLIC__/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome.min.css" />
+
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome-ie7.min.css" />
+	<![endif]-->
+
+	<!-- page specific plugin styles -->
+
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/chosen.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap-timepicker.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/daterangepicker.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/colorpicker.css" />
+
+	<!-- fonts -->
+
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-fonts.css" />
+
+	<!-- ace styles -->
+
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-skins.min.css" />
+
+	<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="__PUBLIC__/assets/css/ace-ie.min.css" />
+	<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+
+	<script src="__PUBLIC__/assets/js/ace-extra.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+	<!--[if lt IE 9]>
+	<script src="__PUBLIC__/assets/js/html5shiv.js"></script>
+	<script src="__PUBLIC__/assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+</block>
+
+<block name='main-content'>
+<div class="main-content">
+	<div id="breadcrumbs" class="breadcrumbs">
+		<script type="text/javascript">
+			try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+		</script>
+
+		<ul class="breadcrumb">
+			<li>
+				<i class="icon-home home-icon"></i>
+				<a href="__APP__">首页</a>
+			</li>
+
+			<li>
+				<a href="__CONTROLLER__">查看所有用户</a>
+			</li>
+		</ul><!-- .breadcrumb -->
+	</div>
+
+	<div class="page-content">
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- PAGE CONTENT BEGINS -->
+
+				<form action="" method="post" name='myform' role="form" class="form-horizontal" onsubmit="return doCheck()">
+					<input type='hidden' name='id' value='{$data.id}'/>
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 用户名 </label>
+
+						<div class="col-sm-9">
+							<input type="text" class="col-xs-10 col-sm-5" placeholder="账号"  id="form-field-1" readonly value='{$data.username}'/>
+							<span class="help-inline col-xs-12 col-sm-7">
+								<span class="middle">*</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="space-4"></div>
+
+					<div class="form-group">
+						<label for="form-field-2" class="col-sm-3 control-label no-padding-right" style='color:red'> 密码 </label>
+						<div class="col-sm-9">
+							<input type="password" class="col-xs-10 col-sm-5" name='password' placeholder="密码" id="form-field-2">
+							<span class="help-inline col-xs-12 col-sm-7">
+								<span class="middle">*</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="form-field-2" class="col-sm-3 control-label no-padding-right" style='color:red'> 确认密码 </label>
+
+						<div class="col-sm-9">
+							<input type="password" class="col-xs-10 col-sm-5" name='password2' placeholder="请再次输入密码" id="form-field-2">
+							<span class="help-inline col-xs-12 col-sm-7">
+								<span class="middle">*</span>
+							</span>
+						</div>
+					</div>
+
+
+
+					<div class="clearfix form-actions">
+						<div class="col-md-offset-3 col-md-9">
+							<button type="submit" class="btn btn-info">
+								<i class="icon-ok bigger-110"></i>
+								确认修改
+							</button>
+							&nbsp; &nbsp; &nbsp;
+							<a href="__CONTROLLER__" type="reset" class="btn">
+								<i class="icon-undo bigger-110"></i>
+								返回
+							</a>
+						</div>
+					</div>
+				</form>
+			</div><!-- /.col -->
+		</div><!-- /.row -->
+	</div><!-- /.page-content -->
+</div>
+<script type="text/javascript">
+            //获取所有的input节点并添加事件
+            var list = document.getElementsByTagName("input");
+            //遍历
+            for(var i=0;i<list.length;i++){
+                //添加失去焦点事件
+                list[i].onblur=function(){
+                    switch(this.name){
+                        case "password": checkpassword(); break;
+                        case "password2": checkpassword2(); break;
+                    }
+                }
+            }
+           
+            //表单验证函数
+            function doCheck(){
+                return checkpassword() && checkpassword2() && delfun();
+            }
+       
+            //验证密码
+            function checkpassword(){
+                var pass = $("input[name='password']").val();
+                if(pass.length<6){
+                	$("input[name='password']").next().children().html("密码要大于6位！");
+                    return false;
+                }
+                $("input[name='password']").next().children().html("√") ;
+                return true;
+            }
+            //验证第二次输入的密码
+            function checkpassword2(){
+                var pass = $("input[name='password']").val();
+                var pass2 = $("input[name='password2']").val();
+                if(pass2.length<6){
+                	$("input[name='password2']").next().children().html("确认密码要大于6位！");
+                	return false;
+                }
+                if(pass !== pass2){
+            		$("input[name='password2']").next().children().html("两次密码不一致！");
+            		$("input[name='password']").next().children().html("两次密码不一致！");
+            		return false;
+            	}
+            	$("input[name='password2']").next().children().html("√") ;
+                return true;
+            }
+
+            function delfun(){
+				if(confirm("确认修改?")){
+					return true;
+				}else{
+					return false;
+				}
+			}
+        </script>
+</block>

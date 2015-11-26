@@ -1,0 +1,71 @@
+<include file="Public/top" />
+     <div class="banner" style='display:none;'><img src="__PUBLIC__/home/images/aa_03.jpg"></div>
+   <div class="main">
+	   <style>
+		.news_one{margin:10px 0px;float:left}
+		.news_left{width: 150px;float:left;}
+		.news_left ul li{border: 2px solid #d5d5d5;text-align:center;line-height:30px;margin:5px 0px;border-radius:10px;}
+		.news{float:left;margin:0px 10px;}
+		.news_right{width: 150px;float:right;}
+		.news_right ul li{border: 2px solid #d5d5d5;text-align:center;line-height:30px;margin:5px 0px;border-radius:10px;}
+	   </style>
+		<div class='news_one'>
+		<div class='news_left'>
+			<ul>
+				<li style='margin-top:0px;'><a href='#'>协会概况</a></li>
+				<li><a href='#'>分会简介</a></li>
+				<li><a href='#'>组织机构</a></li>
+				<li><a href='#'>协会会员登陆入口</a></li>
+				<li><a href='#'>用户名</a></li>
+				<li><a href='#'>密  码</a></li>
+				<li><a href='#'>登  录</a></li>
+			</ul>
+		</div>
+		<div class="news">
+			<dl>
+			<dt><h2>{$type.0.name}</h2><span><a href="{:U('/t_'.$type[0]['namepath'])}">更多>></a></span></dt>
+			<dd>
+			  <img src="__PUBLIC__/home/images/img1.png" width="304" height="216">
+			  <span>
+          <foreach name="new[$type[0][namepath]]" item="content" >
+            <a href="{:U('/'.$type[0]['namepath'].'/'.$content['id'])}" title='{$content.title}'>{$content.title}</a>
+          </foreach >
+			  </span> 
+			</dd>
+			</dl>
+		</div>
+		<div class='news_right'>
+			<ul>
+				<li style='margin-top:0px;'><a href='#'>协会概况</a></li>
+				<li><a href='#'>分会简介</a></li>
+				<li><a href='#'>组织机构</a></li>
+				<li><a href='#'>协会会员登陆入口</a></li>
+				<li><a href='#'>用户名</a></li>
+				<li><a href='#'>密  码</a></li>
+				<li><a href='#'>登  录</a></li>
+			</ul>
+		</div>
+        </div>
+		<div class="banner1"><img src="__PUBLIC__/home/images/img2.png"></div>
+   </div>
+   <div class="main">
+     <div class="lfmain">
+
+        <volist name="type" id="t" offset="1">
+        <div class="hot">
+           <dl>
+              <dt><h2>{$t.name}</h2><span><a href="{:U('/t_'.$t['namepath'])}">更多>></a></span></dt>
+              <dd>
+                <volist name="new[$t['namepath']]" id="content" offset="0" length='3'>
+                 <a href="{:U('/'.$t['namepath'].'/'.$content['id'])}" title='{$content.title}'>{$content.title}</a>
+                 </volist>
+              </dd>
+           </dl>
+         </div>
+        </volist>
+     </div>
+   </div>
+    <div class="banner2"><img src="__PUBLIC__/home/images/img3.png"></div>
+   <include file="Public/foot" />
+</body>
+</html>
