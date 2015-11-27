@@ -65,7 +65,9 @@ class NewsController extends IndexController {
                 $this->error('文章内容不能为空');
             }
             if($data){
-                $data['releasetime'] = trim('日',$data['releasetime']).'日';
+                if(!empty($data['releasetime'])){
+                    $data['releasetime'] = trim('日',$data['releasetime']).'日';
+                }
                 $news = M('news');
                 if($news -> add($data)){
                     $this -> success("添加成功",U('news/index'));
@@ -107,7 +109,9 @@ class NewsController extends IndexController {
                 $this->error('文章内容不能为空');
             }
             if($data){
-                $data['releasetime'] .= '日';
+                if(!empty($data['releasetime'])){
+                    $data['releasetime'] = trim('日',$data['releasetime']).'日';
+                }
                 $news = M('news');
                 if($news -> save($data)){
                     $this -> success("修改成功",U('news/index'));
