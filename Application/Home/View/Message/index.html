@@ -41,7 +41,7 @@
                </tr>
                <tr>
                  <th><span class="red">*</span>联系人：</th>
-                 <td><input type="text" name="Name" class="inp2" style="width:180px;" value=""></td>
+                 <td><input type="text" name="name" class="inp2" style="width:180px;" value=""></td>
                 </tr>
                 <tr>
                  <th><span class="red">*</span>电话：</th>
@@ -90,13 +90,12 @@
         "data":$("#myform").serialize(),
         "success":function(data){
           if(!data){
-            alert(data);
             $(".ca_info").show().html("提交失败");
           }else if(data.result==0){
-            $(".ca_info").show().html(result.msg);
+            $(".ca_info").show().html(data.msg);
           }else{
             $(".ca_info").show().html("提交成功");
-            alert("您的留言已经提交成功，我们会尽快给您邮件给您答复，感谢您的支持！");
+            alert("您的留言已经提交成功，我们会尽快给您邮件给您答复，感谢您的支持!");
           }
         },
         "async":false,
