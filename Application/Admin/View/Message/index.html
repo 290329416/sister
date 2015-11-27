@@ -103,38 +103,23 @@
 								
 							<tbody role="alert" aria-live="polite" aria-relevant="all">
 
-								<foreach name="users" item="user" >
+								<foreach name="mess" item="mes" >
 								<tr class="odd">
 										<td class="">
-											<a href="__CONTROLLER__/show/id/{$user.id}">{$user.username}</a>
+											<a href="__CONTROLLER__/show/id/{$mes.id}">{$mes.prisename}</a>
 										</td>
-										<td class=" ">{$user.name}</td>
-										<td class=" ">{$user.email}</td>
-										<td class="hidden-480 ">{$user.phone}</td>
-										<td class=" ">{$user.inputtime|date="Y-m-d H:i",###}</td>
-
-										<td class="hidden-480 ">
-											<if condition="$user.state eq 1">
-												<span class="label label-sm label-warning">普通用户</span>
-											<elseif condition="$user.state eq '2'"/>
-												<span class="label label-sm label-inverse arrowed-in">禁止使用</span>
-											<elseif condition="$user.state eq '0'"/>
-												<span class="label label-sm label-success">后台管理员</span>
-											</if>
-										</td>
+										<td class=" ">{$mes.name}</td>
+										<td class=" ">{$mes.email}</td>
+										<td class="hidden-480 ">{$mes.phone}</td>
+										<td class=" ">{$mes.inputtime|date="Y-m-d H:i",###}</td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="__CONTROLLER__/show/id/{$user.id}" class="blue" title='查看详情'>
+												<a href="__CONTROLLER__/show/id/{$mes.id}" class="blue" title='查看详情'>
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
 
-												<a href="__CONTROLLER__/update/id/{$user.id}" class="green" title='修改信息'>
-													<i class="icon-pencil bigger-130"></i>
-													修改
-												</a>
-
-												<a href="javascript:;" onclick="delfun({$user.id})" class="red" title='删除'>
+												<a href="javascript:;" onclick="delfun({$mes.id})" class="red" title='删除'>
 													<i class="icon-trash bigger-130"></i>
 													删除
 												</a>
@@ -156,7 +141,7 @@
 </div>
 <script>
 function delfun(userid){
-	if(confirm("确认删除本数据?")){
+	if(confirm("确认删除本数据?删除后将不能恢复")){
 		window.location.href='__CONTROLLER__/delete/id/'+userid;
 	}
 }

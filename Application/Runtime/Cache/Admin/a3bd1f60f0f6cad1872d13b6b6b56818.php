@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -8,59 +8,249 @@
 
 		<!-- basic styles -->
 
-		<link href="__PUBLIC__/assets/css/bootstrap.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome.min.css" />
+		<link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
 
 		<!--[if IE 7]>
-		  <link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome-ie7.min.css" />
+		  <link rel="stylesheet" href="/Public/assets/css/font-awesome-ie7.min.css" />
 		<![endif]-->
 
 		<!-- page specific plugin styles -->
 
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/jquery-ui-1.10.3.custom.min.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/chosen.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap-timepicker.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/daterangepicker.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/colorpicker.css" />
+		<link rel="stylesheet" href="/Public/assets/css/jquery-ui-1.10.3.custom.min.css" />
+		<link rel="stylesheet" href="/Public/assets/css/chosen.css" />
+		<link rel="stylesheet" href="/Public/assets/css/datepicker.css" />
+		<link rel="stylesheet" href="/Public/assets/css/bootstrap-timepicker.css" />
+		<link rel="stylesheet" href="/Public/assets/css/daterangepicker.css" />
+		<link rel="stylesheet" href="/Public/assets/css/colorpicker.css" />
 
 		<!-- fonts -->
 
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-fonts.css" />
+		<link rel="stylesheet" href="/Public/assets/css/ace-fonts.css" />
 
 		<!-- ace styles -->
 
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/ace.min.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-rtl.min.css" />
-		<link rel="stylesheet" href="__PUBLIC__/assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="/Public/assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="/Public/assets/css/ace-skins.min.css" />
 
 		<!--[if lte IE 8]>
-		  <link rel="stylesheet" href="__PUBLIC__/assets/css/ace-ie.min.css" />
+		  <link rel="stylesheet" href="/Public/assets/css/ace-ie.min.css" />
 		<![endif]-->
 
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
 
-		<script src="__PUBLIC__/assets/js/ace-extra.min.js"></script>
+		<script src="/Public/assets/js/ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 		<!--[if lt IE 9]>
-		<script src="__PUBLIC__/assets/js/html5shiv.js"></script>
-		<script src="__PUBLIC__/assets/js/respond.min.js"></script>
+		<script src="/Public/assets/js/html5shiv.js"></script>
+		<script src="/Public/assets/js/respond.min.js"></script>
 		<![endif]-->
 	</head>
 
 	<body>
-		<include file="Public/top" /> 
+		<div class="navbar navbar-default" id="navbar">
+	<script type="text/javascript">
+		try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+	</script>
+
+	<div class="navbar-container" id="navbar-container">
+		<div class="navbar-header pull-left">
+			<a href="#" class="navbar-brand">
+				<small>
+					<i class="icon-leaf"></i>
+					Hello
+				</small>
+			</a><!-- /.brand -->
+		</div><!-- /.navbar-header -->
+
+		<div class="navbar-header pull-right" role="navigation">
+			<ul class="nav ace-nav">
+				<li class="light-blue">
+					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+						<img class="nav-user-photo" src="/Public/assets/avatars/user.jpg" alt="Jason's Photo" />
+						<span class="user-info">
+							<small>Welcome,</small>
+							<?php echo ($user_data["username"]); ?>
+						</span>
+
+						<i class="icon-caret-down"></i>
+					</a>
+
+					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+						<li>
+							<a href="/admin_china.php/user/show/id/<?php echo ($user_data["id"]); ?>">
+								<i class="icon-cog"></i>
+								个人资料
+							</a>
+						</li>
+
+						<li class="divider"></li>
+
+						<li>
+							<a href="/admin_china.php/login/quit">
+								<i class="icon-off"></i>
+								退出
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul><!-- /.ace-nav -->
+		</div><!-- /.navbar-header -->
+	</div><!-- /.container -->
+</div>
+ 
 		<div class="main-container" id="main-container">
 			<script type="text/javascript">
 				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
 			</script>
 
 			<div class="main-container-inner">
-				<include file="Public/left" /> 
+				<div class="sidebar" id="sidebar">
+	<script type="text/javascript">
+		try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+	</script>
+	<ul class="nav nav-list">
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-desktop"></i>
+				<span class="menu-text">用户管理</span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href="/admin_china.php/User/index">
+						<i class="icon-double-angle-right"></i>
+						查看所有用户
+					</a>
+				</li>
+
+				<li>
+					<a href="/admin_china.php/User/add">
+						<i class="icon-double-angle-right"></i>
+						添加用户
+					</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-list"></i>
+				<span class="menu-text"> 栏目管理 </span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href="/admin_china.php/Type/index">
+						<i class="icon-double-angle-right"></i>
+						查看所有栏目
+					</a>
+				</li>
+
+				<li>
+					<a href="/admin_china.php/Type/add">
+						<i class="icon-double-angle-right"></i>
+						添加栏目
+					</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-edit"></i>
+				<span class="menu-text"> 文章管理 </span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+
+				<li>
+					<a href="/admin_china.php/News/index">
+						<i class="icon-double-angle-right"></i>
+						查看所有文章
+					</a>
+				</li>
+
+				<li>
+					<a href="/admin_china.php/News/add">
+						<i class="icon-double-angle-right"></i>
+						添加文章
+					</a>
+				</li>
+
+			</ul>
+		</li>
+		
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-file-alt"></i>
+
+				<span class="menu-text">
+					公共留言管理
+				</span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href="/admin_china.php/Message">
+						<i class="icon-double-angle-right"></i>
+						查看所有留言
+					</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-tag"></i>
+				<span class="menu-text">友情链接</span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+
+				<li>
+					<a href="/admin_china.php/Links/index">
+						<i class="icon-double-angle-right"></i>
+						查看友情链接
+					</a>
+				</li>
+
+				<li>
+					<a href="/admin_china.php/Links/add">
+						<i class="icon-double-angle-right"></i>
+						添加友链
+					</a>
+				</li>
+
+			</ul>
+		</li>
+
+		
+	</ul><!-- /.nav-list -->
+
+	<div class="sidebar-collapse" id="sidebar-collapse">
+		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+	</div>
+
+	<script type="text/javascript">
+		try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+	</script>
+</div> 
 				<div class="main-content">
 					<div class="breadcrumbs" id="breadcrumbs">
 						<script type="text/javascript">
@@ -70,7 +260,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
-								<a href="__APP__">首页</a>
+								<a href="/admin_china.php">首页</a>
 							</li>
 						</ul><!-- .breadcrumb -->
 					</div>
@@ -82,45 +272,43 @@
 
 								<form class="form-horizontal" role="form" action="" method='post' enctype="multipart/form-data">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章标题</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">企业名称</label>
 
 										<div class="col-sm-9">
-											<input name='title' type="text" id="form-field-1" placeholder="文章标题" readonly  class="col-xs-10 col-sm-5" value='{$data.title}'/>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(必填)</span>
-											</span>
+											<input type="text" id="form-field-1" placeholder="文章标题" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["prisename"]); ?>'/>
 										</div>
 									</div>
 
 									<div class="space-4"></div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布人</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系人</label>
 										<div class="col-sm-9">
-											<input name='name' type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='{$data.name}'/>
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["name"]); ?>'/>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">邮箱</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["email"]); ?>'/>
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">请选择栏目</label>
-										<div class="col-sm-9" style="width:400px;">
-											<div class="col-sm-4" style='padding-left:0px;'>
-												<select id="form-field-select-1" class="form-control" name='pid' disabled>
-													<option value="">请选择栏目</option>
-													<foreach name="typedata" item="type" >
-														<eq name="type.id" value="$data.pid">
-															<option value="{$type.id}" selected>{$type.name}</option>
-														<else /> 
-															<option value="{$type.id}">{$type.name}</option>
-														</eq>
-													</foreach>
-												</select>
-											</div>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(必填)</span>
-											</span>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系电话</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["phone"]); ?>'/>
 										</div>
 									</div>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">留言时间</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo (date("Y-m-d H:i",$data["inputtime"])); ?>'/>
+										</div>
+									</div>
+
 
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章内容</label>
@@ -134,7 +322,7 @@
 																<div class="widget-body">
 																	<div class="widget-main no-padding">
 																		<div class="md-editor" id="1448289198440">
-																			<textarea rows="10" data-provide="markdown" readonly  name="content" class="span12 md-input" style="resize: none;">{$data.content}</textarea>
+																			<textarea rows="10" data-provide="markdown" readonly  name="content" class="span12 md-input" style="resize: none;"><?php echo ($data["message"]); ?></textarea>
 																		</div>
 																	</div>
 																</div>
@@ -145,59 +333,16 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布时间</label>
-										<div class="col-sm-9">
-											<div class="col-sm-4" style='padding-left:0px;'>
-												<div class="col-xs-8 col-sm-11" style='padding-left:0px;'>
-													<div class="input-group">
-														<input class="form-control date-picker" id="id-date-picker-1" readonly  type="text" data-date-format="yyyy-mm-dd" name='releasetime' value="{$data.releasetime}"/>
-														<span class="input-group-addon">
-															<i class="icon-calendar bigger-110"></i>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布人</label>
-										<div class="col-xs-12 col-sm-6">
-											<div class="control-group">
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" disabled class="ace" <if condition="$data.state eq 1">checked</if> value="1" />
-														<span class="lbl">未审核</span>
-													</label>
-												</div>
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" disabled class="ace" <if condition="$data.state eq 2">checked</if> value="2" />
-														<span class="lbl">已审核</span>
-													</label>
-												</div>
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" disabled class="ace" <if condition="$data.state eq 3">checked</if> value="3" />
-														<span class="lbl">禁用</span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
 
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
-											<a href="__CONTROLLER__/update/id/{$data.id}" class="btn btn-info">
+											<a href="javascript:;" onclick="delfun(<?php echo ($data["id"]); ?>)" class="btn btn-info">
 												<i class="icon-ok bigger-110"></i>
-												修改文章
+												删除
 											</a>
 
 											&nbsp; &nbsp; &nbsp;
-											<a href="__CONTROLLER__" class="btn">
+											<a href="/admin_china.php/Message" class="btn">
 												<i class="icon-undo bigger-110"></i>
 												返回
 											</a>
@@ -220,52 +365,57 @@
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='__PUBLIC__/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='__PUBLIC__/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+ window.jQuery || document.write("<script src='/Public/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
 </script>
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='__PUBLIC__/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+			if("ontouchend" in document) document.write("<script src='/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
-		<script src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
-		<script src="__PUBLIC__/assets/js/typeahead-bs2.min.js"></script>
+		<script src="/Public/assets/js/bootstrap.min.js"></script>
+		<script src="/Public/assets/js/typeahead-bs2.min.js"></script>
 
 		<!-- page specific plugin scripts -->
 
 		<!--[if lte IE 8]>
-		  <script src="__PUBLIC__/assets/js/excanvas.min.js"></script>
+		  <script src="/Public/assets/js/excanvas.min.js"></script>
 		<![endif]-->
 
-		<script src="__PUBLIC__/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="__PUBLIC__/assets/js/jquery.ui.touch-punch.min.js"></script>
-		<script src="__PUBLIC__/assets/js/chosen.jquery.min.js"></script>
-		<script src="__PUBLIC__/assets/js/fuelux/fuelux.spinner.min.js"></script>
-		<script src="__PUBLIC__/assets/js/date-time/bootstrap-datepicker.min.js"></script>
-		<script src="__PUBLIC__/assets/js/date-time/bootstrap-timepicker.min.js"></script>
-		<script src="__PUBLIC__/assets/js/date-time/moment.min.js"></script>
-		<script src="__PUBLIC__/assets/js/date-time/daterangepicker.min.js"></script>
-		<script src="__PUBLIC__/assets/js/bootstrap-colorpicker.min.js"></script>
-		<script src="__PUBLIC__/assets/js/jquery.knob.min.js"></script>
-		<script src="__PUBLIC__/assets/js/jquery.autosize.min.js"></script>
-		<script src="__PUBLIC__/assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
-		<script src="__PUBLIC__/assets/js/jquery.maskedinput.min.js"></script>
-		<script src="__PUBLIC__/assets/js/bootstrap-tag.min.js"></script>
+		<script src="/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/Public/assets/js/chosen.jquery.min.js"></script>
+		<script src="/Public/assets/js/fuelux/fuelux.spinner.min.js"></script>
+		<script src="/Public/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+		<script src="/Public/assets/js/date-time/bootstrap-timepicker.min.js"></script>
+		<script src="/Public/assets/js/date-time/moment.min.js"></script>
+		<script src="/Public/assets/js/date-time/daterangepicker.min.js"></script>
+		<script src="/Public/assets/js/bootstrap-colorpicker.min.js"></script>
+		<script src="/Public/assets/js/jquery.knob.min.js"></script>
+		<script src="/Public/assets/js/jquery.autosize.min.js"></script>
+		<script src="/Public/assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+		<script src="/Public/assets/js/jquery.maskedinput.min.js"></script>
+		<script src="/Public/assets/js/bootstrap-tag.min.js"></script>
 
 		<!-- ace scripts -->
 
-		<script src="__PUBLIC__/assets/js/ace-elements.min.js"></script>
-		<script src="__PUBLIC__/assets/js/ace.min.js"></script>
+		<script src="/Public/assets/js/ace-elements.min.js"></script>
+		<script src="/Public/assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 
 		<script type="text/javascript">
+		function delfun(userid){
+			if(confirm("确认删除本数据?")){
+				window.location.href='/admin_china.php/Message/delete/id/'+userid;
+			}
+		}
 			jQuery(function($) {
 				$('#id-disable-check').on('click', function() {
 					var inp = $('#form-input-readonly').get(0);
