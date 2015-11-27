@@ -9,6 +9,7 @@ return array(
     'DB_PWD'                =>  'root',          // 密码
     'DB_PORT'               =>  '3306',        // 端口
     'DB_PREFIX'             =>  'PT_',    // 数据库表前缀
+    'DB_CHARSET'            =>  'utf8',
     'SECURE_CODE'           =>  'secure_code',  //密码干扰字符,禁止修改
     'URL_HTML_SUFFIX'		=>	'html',
     //'SHOW_PAGE_TRACE' =>true, 

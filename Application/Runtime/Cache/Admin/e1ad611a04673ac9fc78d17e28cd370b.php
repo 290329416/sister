@@ -3,29 +3,44 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>后台管理</title>
-	<meta name="description" content="" />
+	<title>查看所有用户</title>
+
+	<meta name="description" content="Static &amp; Dynamic Tables" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<!-- basic styles -->
+
 	<link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
+
 	<!--[if IE 7]>
 	  <link rel="stylesheet" href="/Public/assets/css/font-awesome-ie7.min.css" />
 	<![endif]-->
+
 	<!-- page specific plugin styles -->
+
 	<!-- fonts -->
+
 	<link rel="stylesheet" href="/Public/assets/css/ace-fonts.css" />
+
 	<!-- ace styles -->
+
 	<link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
 	<link rel="stylesheet" href="/Public/assets/css/ace-rtl.min.css" />
 	<link rel="stylesheet" href="/Public/assets/css/ace-skins.min.css" />
+
 	<!--[if lte IE 8]>
 	  <link rel="stylesheet" href="/Public/assets/css/ace-ie.min.css" />
 	<![endif]-->
+
 	<!-- inline styles related to this page -->
+
 	<!-- ace settings handler -->
+
 	<script src="/Public/assets/js/ace-extra.min.js"></script>
+
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
 	<!--[if lt IE 9]>
 	<script src="/Public/assets/js/html5shiv.js"></script>
 	<script src="/Public/assets/js/respond.min.js"></script>
@@ -237,141 +252,116 @@
 </div> 
 				
 <div class="main-content">
-					<div class="breadcrumbs" id="breadcrumbs">
-						<script type="text/javascript">
-							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-						</script>
+	<div id="breadcrumbs" class="breadcrumbs">
+		<script type="text/javascript">
+			try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+		</script>
 
-						<ul class="breadcrumb">
-							<li>
-								<i class="icon-home home-icon"></i>
-								<a href="/admin_china.php">后台首页</a>
-							</li>
-						</ul><!-- .breadcrumb -->
-					</div>
+		<ul class="breadcrumb">
+			<li>
+				<i class="icon-home home-icon"></i>
+				<a href="/admin_china.php">首页</a>
+			</li>
+			<li>
+				<a href="/admin_china.php/user/index">查看所有用户</a>
+			</li>
+		</ul><!-- .breadcrumb -->
+	</div>
 
-					<div class="page-content">
-						<div class="page-header">
-							<h1>
-								你好!
-								<small>
-									<?php echo ($user_data["username"]); ?>
-								</small>
-							</h1>
-						</div><!-- /.page-header -->
+	<div class="page-content">
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- PAGE CONTENT BEGINS -->
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="table-header">
+							Results for "Latest user"
+						</div>
 
-						<div class="row">
-							<div class="col-xs-12">
-								<!-- PAGE CONTENT BEGINS -->
-
-								<div class="alert alert-block alert-success">
-									<button type="button" class="close" data-dismiss="alert">
-										<i class="icon-remove"></i>
-									</button>
-
-									<i class="icon-ok green"></i>
-
-									Welcome to
-									<strong class="green">
-										Ace
-										<small>(v1.2)</small>
-									</strong>
-									,the lightweight, feature-rich and easy to use admin template.
-								</div>
-
+						<div class="table-responsive">
+							<div role="grid" class="dataTables_wrapper" id="sample-table-2_wrapper">
 								<div class="row">
-									<div class="space-6"></div>
-
-									<div class="col-sm-7 infobox-container">
-										<div class="infobox infobox-green  ">
-											<div class="infobox-icon">
-												<i class="icon-comments"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">32</span>
-												<div class="infobox-content">comments + 2 reviews</div>
-											</div>
-											<div class="stat stat-success">8%</div>
-										</div>
-
-										<div class="infobox infobox-blue  ">
-											<div class="infobox-icon">
-												<i class="icon-twitter"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">11</span>
-												<div class="infobox-content">new followers</div>
-											</div>
-
-											<div class="badge badge-success">
-												+32%
-												<i class="icon-arrow-up"></i>
-											</div>
-										</div>
-
-										<div class="infobox infobox-pink  ">
-											<div class="infobox-icon">
-												<i class="icon-shopping-cart"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">8</span>
-												<div class="infobox-content">new orders</div>
-											</div>
-											<div class="stat stat-important">4%</div>
-										</div>
-
-										<div class="infobox infobox-red  ">
-											<div class="infobox-icon">
-												<i class="icon-beaker"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">7</span>
-												<div class="infobox-content">experiments</div>
-											</div>
-										</div>
-
-										<div class="infobox infobox-orange2  ">
-											<div class="infobox-chart">
-												<span class="sparkline" data-values="196,128,202,177,154,94,100,170,224"></span>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">6,251</span>
-												<div class="infobox-content">pageviews</div>
-											</div>
-
-											<div class="badge badge-success">
-												7.2%
-												<i class="icon-arrow-up"></i>
-											</div>
-										</div>
-
-										<div class="infobox infobox-blue2  ">
-											<div class="infobox-progress">
-												<div class="easy-pie-chart percentage" data-percent="42" data-size="46">
-													<span class="percent">42</span>%
+										<div class="col-sm-6">
+											<div id="sample-table-2_length" class="dataTables_length">
+												<div class="dataTables_filter" id="sample-table-2_filter">
+													<form action="/admin_china.php/Message/index" method='post'>
+													<label>搜索公司名称: <input type="text" name='name' aria-controls="sample-table-2"></label>
+													<button class="btn btn-sm btn-primary">搜索</button>
+													</form>
 												</div>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-text">traffic used</span>
-
-												<div class="infobox-content">
-													<span class="bigger-110">~</span>
-													58GB remaining
-												</div>
+												
 											</div>
 										</div>
-									</div>
-								</div><!-- /row -->
-							</div><!-- /.col -->
-						</div><!-- /.row -->
-					</div><!-- /.page-content -->
-				</div><!-- /.main-content -->
+								</div>
+								<table class="table table-striped table-bordered table-hover dataTable" id="sample-table-2" aria-describedby="sample-table-2_info">
+								<thead>
+									<tr role="row">
+										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Domain: activate to sort column ascending">用户名</th>
+										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 160px;" aria-label="Price: activate to sort column ascending">公司名称</th>
+										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Price: activate to sort column ascending">邮箱</th>
+										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Clicks: activate to sort column ascending">联系电话</th>
+										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Update: activate to sort column ascending"><i class="icon-time bigger-110 hidden-480"></i>注册时间</th>
+										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 40px;" aria-label="Status: activate to sort column ascending">状态</th>
+										<th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 130px;" aria-label="">操作</th></tr>
+								</thead>
+
+								
+							<tbody role="alert" aria-live="polite" aria-relevant="all">
+
+								<?php if(is_array($users)): foreach($users as $key=>$user): ?><tr class="odd">
+										<td class="">
+											<a href="/admin_china.php/Message/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
+										</td>
+										<td class=" "><?php echo ($user["name"]); ?></td>
+										<td class=" "><?php echo ($user["email"]); ?></td>
+										<td class="hidden-480 "><?php echo ($user["phone"]); ?></td>
+										<td class=" "><?php echo (date("Y-m-d H:i",$user["inputtime"])); ?></td>
+
+										<td class="hidden-480 ">
+											<?php if($user["state"] == 1): ?><span class="label label-sm label-warning">普通用户</span>
+											<?php elseif($user["state"] == '2'): ?>
+												<span class="label label-sm label-inverse arrowed-in">禁止使用</span>
+											<?php elseif($user["state"] == '0'): ?>
+												<span class="label label-sm label-success">后台管理员</span><?php endif; ?>
+										</td>
+										<td class=" ">
+											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+												<a href="/admin_china.php/Message/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
+													<i class="icon-zoom-in bigger-130"></i>
+													查看
+												</a>
+
+												<a href="/admin_china.php/Message/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
+													<i class="icon-pencil bigger-130"></i>
+													修改
+												</a>
+
+												<a href="javascript:;" onclick="delfun(<?php echo ($user["id"]); ?>)" class="red" title='删除'>
+													<i class="icon-trash bigger-130"></i>
+													删除
+												</a>
+											</div>
+										</td>
+									</tr><?php endforeach; endif; ?>
+								</tbody></table><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="sample-table-2_info">共<?php echo ($count); ?>条数据&nbsp;&nbsp;&nbsp;总页数&nbsp;<?php echo ($num); ?></div></div><div class="col-sm-6">
+								<div class="dataTables_paginate paging_bootstrap">
+									<ul class="pagination">
+										<?php echo ($pages); ?>
+									</ul></div></div></div></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.col -->
+		</div><!-- /.row -->
+	</div><!-- /.page-content -->
+</div>
+<script>
+function delfun(userid){
+	if(confirm("确认删除本数据?")){
+		window.location.href='/admin_china.php/Message/delete/id/'+userid;
+	}
+}
+</script>
 
 				
 
