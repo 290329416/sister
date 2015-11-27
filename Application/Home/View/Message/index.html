@@ -1,0 +1,119 @@
+<include file="Public/top" />
+   <script type="text/javascript">
+    $( document).ready(function(e) {
+      $(".listny dl dd a").click(function(e) {
+          $( this).addClass("cli").siblings().removeClass("cli")
+      });
+  });
+  </script>
+      <div class="main">
+         <div class="nowthat">
+           <b>当前位置：</b>
+           <a href="/">首页</a>
+             &gt;&gt; 
+           <a href="{:U('Message/index')}">公众留言</a>
+         </div>
+         <div class="listleft">
+           <div class="listny">
+             <dl>
+               <dt><h2>通知公告</h2></dt>
+               <dd>
+                  <a href="/" class="cli">协会概况</a>  
+                  <a href="/">分会简介</a>  
+                  <a href="/">组织机构</a>  
+                  <a href="{:U('Message/index')}">公众留言</a>  
+               </dd>
+             </dl>
+           </div>
+         </div>
+         <div class="r3 fr">
+
+          <div id="help_content" class="r748 fr">
+            <h3><img width="27" height="27" src="http://images.koolearn.com/www09/class/help/013.gif"> 公众留言</h3>
+            <div class="msg">您好，欢迎来到中国电子商务协会，请在此详细填写您所遇到的问题，并留下准确的Email地址和其他联系方式，我们的工作人员会尽快给您回复。(<span class="red">*</span>为必填内容)</div>
+            <div class="ca_info" style="border:1px solid #CC0000;color:#000;text-align:center;width:660px;background:#FFE3D6;padding:10px 0;margin:10px auto;display:none"></div>
+            <form method="post" id="myform" name="myform">
+              <table class="zc">
+               <tbody>
+                <tr>
+                 <th width="71"><span class="red">*</span>企业名称：</th>
+                 <td width="529"><input type="text" name="prisename" class="inp2" style="width:180px;" value=""></td>
+               </tr>
+               <tr>
+                 <th><span class="red">*</span>联系人：</th>
+                 <td><input type="text" name="Name" class="inp2" style="width:180px;" value=""></td>
+                </tr>
+                <tr>
+                 <th><span class="red">*</span>电话：</th>
+                 <td><input type="text" name="phone" class="inp2" style="width:180px;" value=""></td>
+                </tr>
+               <tr>
+                 <th>联系地址：</th>
+                 <td><input type="text" name="address" class="inp2" style="width:180px;" value=""></td>
+               </tr>
+               <tr>
+                 <th><span class="red">*</span>E_mail：</th>
+                 <td><input type="text" name="email" class="inp2" style="width:180px;" value="">
+                  <span class="red">输入正确的Email以便回复</span></td>
+                </tr>
+                <tr>
+                 <th><span class="red">*</span>留言内容：</th>
+                 <td><span class="red">请详细描述您所遇到的问题</span>
+                  <textarea name="message" class="inp2" id="brarea" style="width: 450px; height: 113px;"></textarea>
+                  <input type="hidden" id="brtest" value=""></td>
+                </tr>
+                <tr>
+                 <th>验证码：</th>
+                 <td><input type="text" name="verifyCode" id="login_verifyCode" class="inp2" maxlength="4">
+                  &nbsp;&nbsp;&nbsp; <img width="100" height="30" align="absmiddle" src="__CONTROLLER__/verify" class="m_b" id="img">&nbsp;&nbsp;&nbsp;<a target="_self" href="javascript:reloadVerifyCode('img');">刷新验证码</a></td>
+                </tr>
+                <tr>
+                 <td>&nbsp;</td>
+                 <td><input type="button" value="" onclick="fuzhi()" class="btn2"></td>
+               </tr>
+             </tbody>
+           </table>
+         </form>
+       </div>
+        
+      </div>
+
+
+      </div>
+   <include file="Public/foot" />
+   <script>
+    function fuzhi() {
+      $(".ca_info").hide();
+      $.ajax({
+        "url":"__CONTROLLER__/add",
+        "type":"post",
+        "data":$("#myform").serialize(),
+        "success":function(data){
+          if(!data){
+            alert(data);
+            $(".ca_info").show().html("提交失败");
+          }else if(data.result==0){
+            $(".ca_info").show().html(result.msg);
+          }else{
+            $(".ca_info").show().html("提交成功");
+            alert("您的留言已经提交成功，我们会尽快给您邮件给您答复，感谢您的支持！");
+          }
+        },
+        "async":false,
+        'dataType':"json"
+      });
+    }
+    function reloadVerifyCode(objId) {
+    var obj = document.getElementById(objId);
+    obj.src = "__CONTROLLER__/verify?d=" + new Date();
+    } 
+   </script>
+   <style>
+    </style>
+</body>
+</html>
+
+
+
+
+              

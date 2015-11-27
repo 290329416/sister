@@ -71,3 +71,15 @@ img{ border:none;}
 .article a{ width:65px; display:block; height:20px; text-align:center; line-height:20px; float:right; border:solid 1px #d5d5d5; color:#999; border-radius:3px;}
 .article a:hover{ color:#014e5c;border:solid 1px #014e5c}
  
+.fr {display: inline;float: right;}
+.r3 {border: 1px solid #d7d7d7;height: auto;overflow: hidden; width: 740px;}
+.r748 {padding: 20px 40px;text-align: left;width: 668px;}
+.r748 h3, .r748 p {margin-bottom: 10px;}
+.msg {background: #f9f9f9 none repeat scroll 0 0; border: 1px solid #f1f1f1;margin-bottom: 30px;padding: 9px 18px;}
+.zc {margin-bottom: 80px;margin-left: 60px; width: 600px;}
+.zc th, .zc td {vertical-align: top;}
+.zc th {font-weight: normal;padding-top: 7px;text-align: right;}
+.zc td {padding: 8px 0;}
+.red {color: #fd0000;}
+.btn2 { background: rgba(0, 0, 0, 0) url("../images/btn1.png") no-repeat scroll 0 0;border: medium none;cursor: pointer;height: 26px;width: 87px;}
+   

@@ -33,7 +33,7 @@
             <li><a href="/">服务大厅</a></li>
               <li  ><a href="/">电商资质查询</a></li>
                 <li ><a href="/">在线申请评审</a></li>
-                  <li><a href="/">公众留言</a></li>
+                  <li><a href="<?php echo U('Message/index');?>">公众留言</a></li>
         </ul>
       </div> 
    </div>
@@ -72,13 +72,13 @@
 		</div>
 		<div class='news_right'>
 			<ul>
-				<li style='margin-top:0px;'><a href='#'>协会概况</a></li>
-				<li><a href='#'>分会简介</a></li>
-				<li><a href='#'>组织机构</a></li>
-				<li><a href='#'>协会会员登陆入口</a></li>
-				<li><a href='#'>用户名</a></li>
-				<li><a href='#'>密  码</a></li>
-				<li><a href='#'>登  录</a></li>
+				<li style='margin-top:0px;'><a href='#'>快速入口</a></li>
+				<li><a href='#'>企业资质查询</a></li>
+				<li><a href='#'>评审人员资格查询</a></li>
+				<li><a href='#'>评审人员资格查询</a></li>
+				<li><a href='#'>评估判断</a></li>
+				<li><a href='#'>申请判定</a></li>
+				<li><a href='#'>在线投诉</a></li>
 			</ul>
 		</div>
         </div>
