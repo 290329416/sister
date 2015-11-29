@@ -67,12 +67,7 @@
 
 									<i class="icon-ok green"></i>
 
-									Welcome to
-									<strong class="green">
-										Ace
-										<small>(v1.2)</small>
-									</strong>
-									,the lightweight, feature-rich and easy to use admin template.
+									Welcome to 中国电子商务协会后台管理 . 您上次登录时间为 <strong class="green">{$user_data['logintime']|date="Y年m月d日 H时i分s秒",###}</strong>
 								</div>
 
 								<div class="row">
@@ -85,10 +80,9 @@
 											</div>
 
 											<div class="infobox-data">
-												<span class="infobox-data-number">32</span>
-												<div class="infobox-content">comments + 2 reviews</div>
+												<span class="infobox-data-number">{$user_data.username}</span>
+												<div class="infobox-content">{:date("m月d日 H时i分s秒",time())}</div>
 											</div>
-											<div class="stat stat-success">8%</div>
 										</div>
 
 										<div class="infobox infobox-blue  ">
@@ -97,36 +91,8 @@
 											</div>
 
 											<div class="infobox-data">
-												<span class="infobox-data-number">11</span>
-												<div class="infobox-content">new followers</div>
-											</div>
-
-											<div class="badge badge-success">
-												+32%
-												<i class="icon-arrow-up"></i>
-											</div>
-										</div>
-
-										<div class="infobox infobox-pink  ">
-											<div class="infobox-icon">
-												<i class="icon-shopping-cart"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">8</span>
-												<div class="infobox-content">new orders</div>
-											</div>
-											<div class="stat stat-important">4%</div>
-										</div>
-
-										<div class="infobox infobox-red  ">
-											<div class="infobox-icon">
-												<i class="icon-beaker"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">7</span>
-												<div class="infobox-content">experiments</div>
+												<span class="infobox-data-number">{$new_num}</span>
+												<div class="infobox-content">文章总数</div>
 											</div>
 										</div>
 
@@ -136,32 +102,11 @@
 											</div>
 
 											<div class="infobox-data">
-												<span class="infobox-data-number">6,251</span>
-												<div class="infobox-content">pageviews</div>
-											</div>
-
-											<div class="badge badge-success">
-												7.2%
-												<i class="icon-arrow-up"></i>
+												<span class="infobox-data-number">{$user_num}</span>
+												<div class="infobox-content">用户总数</div>
 											</div>
 										</div>
 
-										<div class="infobox infobox-blue2  ">
-											<div class="infobox-progress">
-												<div class="easy-pie-chart percentage" data-percent="42" data-size="46">
-													<span class="percent">42</span>%
-												</div>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-text">traffic used</span>
-
-												<div class="infobox-content">
-													<span class="bigger-110">~</span>
-													58GB remaining
-												</div>
-											</div>
-										</div>
 									</div>
 								</div><!-- /row -->
 							</div><!-- /.col -->

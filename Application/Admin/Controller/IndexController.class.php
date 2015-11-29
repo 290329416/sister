@@ -26,6 +26,12 @@ class IndexController extends Controller {
     }
 
     public function index(){
+    	$user = M('user');
+    	$user_num = $user -> count('id');
+    	$new = M('news');
+    	$new_num = $new -> count('id');
+    	$this -> assign('user_num', $user_num);
+    	$this -> assign('new_num', $new_num);
 		$this -> display();
 	}
 }

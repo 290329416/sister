@@ -1,4 +1,5 @@
 <?php
+/*测试环境*/
 return array(
 	//'配置项'=>'配置值'
 	 /* 数据库设置 */
@@ -13,5 +14,23 @@ return array(
     'SECURE_CODE'           =>  'secure_code',  //密码干扰字符,禁止修改
 	'URL_DENY_SUFFIX'       =>  'ico|png|gif|jpg', // URL禁止访问的后缀设置
 	'URL_HTML_SUFFIX'       =>  'html',  // URL伪静态后缀设置
+    //'SHOW_PAGE_TRACE' =>true, 
+);
+
+/*服务器数据库配置*/
+return array(
+    //'配置项'=>'配置值'
+     /* 数据库设置 */
+    'DB_TYPE'               =>  'mysql',     // 数据库类型
+    'DB_HOST'               =>  'localhost', // 服务器地址
+    'DB_NAME'               =>  'electronics',  // 数据库名
+    'DB_USER'               =>  'root',      // 用户名
+    'DB_PWD'                =>  '111111',          // 密码
+    'DB_PORT'               =>  '3306',        // 端口
+    'DB_PREFIX'             =>  'PT_',    // 数据库表前缀
+    'DB_CHARSET'            =>  'utf8',
+    'SECURE_CODE'           =>  'secure_code',  //密码干扰字符,禁止修改
+    'URL_DENY_SUFFIX'       =>  'ico|png|gif|jpg', // URL禁止访问的后缀设置
+    'URL_HTML_SUFFIX'       =>  'html',  // URL伪静态后缀设置
     //'SHOW_PAGE_TRACE' =>true, 
 );
