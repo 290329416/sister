@@ -1,0 +1,2584 @@
+[ 2015-11-29T18:31:55+08:00 ] 127.0.0.1 /admin_china.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:36:14+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:36:17+08:00 ] 127.0.0.1 /admin_china.php/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.1320s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-29T18:36:17+08:00 ] 127.0.0.1 /admin_china.php/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-29T18:37:07+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:39:19+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:39:22+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:39:25+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:39:28+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:40:21+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:40:23+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:40:23+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-11-29T18:40:30+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:40:33+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:40:34+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:40:42+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:40:48+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.2782422135870586
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+ERR: 非法操作:verify?rnd=0.2782422135870586
+
+[ 2015-11-29T18:40:49+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.8389465996958938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+ERR: 非法操作:verify?rnd=0.8389465996958938
+
+[ 2015-11-29T18:40:51+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.3581780359366593
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+ERR: 非法操作:verify?rnd=0.3581780359366593
+
+[ 2015-11-29T18:40:51+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.6373588199724806
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+ERR: 非法操作:verify?rnd=0.6373588199724806
+
+[ 2015-11-29T18:40:52+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.9724523096929398
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+ERR: 非法操作:verify?rnd=0.9724523096929398
+
+[ 2015-11-29T18:40:54+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:40:55+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:41:01+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pt_user` WHERE ( username='admin' and state=0 ) LIMIT 1   [ RunTime:0.0360s ]
+NOTIC: [8] Use of undefined constant ENCODE - assumed 'ENCODE' D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant ENCODE - assumed 'ENCODE' D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 32 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:41:02+08:00 ] 127.0.0.1 /admin_china.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:41:07+08:00 ] 127.0.0.1 /admin_china.php?s=/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\sister\Application\Admin\Controller\UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_user` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:41:09+08:00 ] 127.0.0.1 /admin_china.php?s=/Type/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:41:11+08:00 ] 127.0.0.1 /admin_china.php?s=/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\sister\Application\Admin\Controller\UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_user` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:41:13+08:00 ] 127.0.0.1 /admin_china.php?s=/User/show/id/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\sister\Application\Admin\Controller\UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_user` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:41:16+08:00 ] 127.0.0.1 /admin_china.php?s=/Message
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\sister\Application\Admin\Controller\MessageController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_message` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `pt_message` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_message` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:41:18+08:00 ] 127.0.0.1 /admin_china.php?s=/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WWW\sister\Application\Admin\Controller\UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pt_user` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:41:23+08:00 ] 127.0.0.1 /admin_china.php?s=/login/quit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:41:24+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:41:24+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:41:26+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.9212784642590752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+ERR: 非法操作:verify?rnd=0.9212784642590752
+
+[ 2015-11-29T18:41:30+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.9212784642590752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+ERR: 非法操作:verify?rnd=0.9212784642590752
+
+[ 2015-11-29T18:42:00+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.9212784642590752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+ERR: 非法操作:verify?rnd=0.9212784642590752
+
+[ 2015-11-29T18:42:07+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-29T18:42:07+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-29T18:42:08+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:08+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:09+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:42:09+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-29T18:42:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:42:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-29T18:42:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:11+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:11+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:42:11+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:42:12+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:42:12+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:12+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:12+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:42:13+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:42:13+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:05+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.9212784642590752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+ERR: 非法操作:verify?rnd=0.9212784642590752
+
+[ 2015-11-29T18:43:06+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:43:22+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:43:22+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:22+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:23+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-29T18:43:23+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:43:44+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:43:53+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:43:53+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:55+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:55+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:43:56+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:56+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:43:56+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:17+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:17+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:44:18+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:18+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:33+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:34+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:44:34+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:34+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:44:35+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:44:53+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:01+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:08+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:08+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:20+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:20+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:23+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:24+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:30+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify?rnd=0.5841728925466151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+ERR: 非法操作:verify?rnd=0.5841728925466151
+
+[ 2015-11-29T18:45:42+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:42+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:43+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:43+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:44+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.22053811349855623
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:45+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.3691912875843122
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:46+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.3395192526487524
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:46+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.16071132533864252
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:46+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.9187849739976809
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:46+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.24700825233022605
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:46+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.02275377270783696
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:46+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.2956357313031628
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:47+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.9226960667077787
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:47+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.6663900402156695
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:47+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.014488969576212485
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:47+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.5464497339761835
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:54+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:45:57+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:45:57+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:46:00+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.6765543978788334
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:46:01+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.6170229350097542
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:46:03+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pt_user` WHERE ( username='admin' and state=0 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ENCODE - assumed 'ENCODE' D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant ENCODE - assumed 'ENCODE' D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 32 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-29T18:46:04+08:00 ] 127.0.0.1 /admin_china.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:47:30+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:47:33+08:00 ] 127.0.0.1 /admin_china.php/login/quit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:47:34+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:47:38+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:47:42+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:47:47+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:47:51+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:47:54+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:47:57+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:03+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:09+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:16+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:22+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:29+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:35+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: verify D:\WWW\sister\Application\Admin\Controller\LoginController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:40+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:48:43+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:48:43+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T18:53:16+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T18:53:16+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:02:06+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:02:10+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:02:10+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:02:13+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 19 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:02:17+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:02:17+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:07:45+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:15:56+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:15:59+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:15:59+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:16:03+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.06564260322282855
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:16:03+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.4200722215220344
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:16:03+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.7255394085429451
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:16:04+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.5936348790245436
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-29T19:16:04+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.7036246068241084
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:16:04+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.7509105088444862
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:16:04+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify&rnd=0.38902921076110497
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:26:35+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-29T19:26:39+08:00 ] 127.0.0.1 /admin_china.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for I(), called in D:\WWW\sister\Application\Admin\Controller\LoginController.class.php on line 18 and defined D:\WWW\sister\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name D:\WWW\sister\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-29T19:26:39+08:00 ] 127.0.0.1 /admin_china.php?s=/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

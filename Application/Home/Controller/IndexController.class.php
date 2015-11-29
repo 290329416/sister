@@ -21,7 +21,6 @@ class IndexController extends Controller {
     	foreach($this->type as $v){
     		$new[$v['namepath']] = $news -> where("pid =" . $v['id'] .' and state=2') -> order('id desc') -> limit(9) -> select();
     	}
-        print_r($new);exit;
     	$this -> assign('new',$new);
         $this->display();
 	}

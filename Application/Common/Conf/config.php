@@ -11,6 +11,7 @@ return array(
     'DB_PREFIX'             =>  'PT_',    // 数据库表前缀
     'DB_CHARSET'            =>  'utf8',
     'SECURE_CODE'           =>  'secure_code',  //密码干扰字符,禁止修改
-    'URL_HTML_SUFFIX'		=>	'html',
+	'URL_DENY_SUFFIX'       =>  'ico|png|gif|jpg', // URL禁止访问的后缀设置
+	'URL_HTML_SUFFIX'       =>  'html',  // URL伪静态后缀设置
     //'SHOW_PAGE_TRACE' =>true, 
 );

@@ -78,7 +78,7 @@
 
 					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
-							<a href="/admin_china.php/user/show/id/<?php echo ($user_data["id"]); ?>">
+							<a href="/admin_china.php?s=/user/show/id/<?php echo ($user_data["id"]); ?>">
 								<i class="icon-cog"></i>
 								个人资料
 							</a>
@@ -87,7 +87,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="/admin_china.php/login/quit">
+							<a href="/admin_china.php?s=/login/quit">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -124,14 +124,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php/User/index">
+					<a href="/admin_china.php?s=/User/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有用户
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php/User/add">
+					<a href="/admin_china.php?s=/User/add">
 						<i class="icon-double-angle-right"></i>
 						添加用户
 					</a>
@@ -140,7 +140,7 @@
 		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-list"></i>
 				<span class="menu-text"> 栏目管理 </span>
 
@@ -149,14 +149,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php/Type/index">
+					<a href="/admin_china.php?s=/Type/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有栏目
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php/Type/add">
+					<a href="/admin_china.php?s=/Type/add">
 						<i class="icon-double-angle-right"></i>
 						添加栏目
 					</a>
@@ -165,7 +165,7 @@
 		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-edit"></i>
 				<span class="menu-text"> 文章管理 </span>
 
@@ -175,14 +175,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php/News/index">
+					<a href="/admin_china.php?s=/News/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有文章
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php/News/add">
+					<a href="/admin_china.php?s=/News/add">
 						<i class="icon-double-angle-right"></i>
 						添加文章
 					</a>
@@ -190,9 +190,30 @@
 
 			</ul>
 		</li>
+		
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-file-alt"></i>
+
+				<span class="menu-text">
+					公共留言管理
+				</span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href="/admin_china.php?s=/Message">
+						<i class="icon-double-angle-right"></i>
+						查看所有留言
+					</a>
+				</li>
+			</ul>
+		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-tag"></i>
 				<span class="menu-text">友情链接</span>
 
@@ -202,14 +223,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php/Links/index">
+					<a href="/admin_china.php?s=/Links/index">
 						<i class="icon-double-angle-right"></i>
 						查看友情链接
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php/Links/add">
+					<a href="/admin_china.php?s=/Links/add">
 						<i class="icon-double-angle-right"></i>
 						添加友链
 					</a>
@@ -217,129 +238,8 @@
 
 			</ul>
 		</li>
-	
-		<li>
-			<a href="calendar.html">
-				<i class="icon-calendar"></i>
 
-				<span class="menu-text">
-					Calendar
-					<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-						<i class="icon-warning-sign red bigger-130"></i>
-					</span>
-				</span>
-			</a>
-		</li>
-
-		<li>
-			<a href="gallery.html">
-				<i class="icon-picture"></i>
-				<span class="menu-text"> Gallery </span>
-			</a>
-		</li>
-
-		<li>
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-tag"></i>
-				<span class="menu-text"> More Pages </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li>
-					<a href="profile.html">
-						<i class="icon-double-angle-right"></i>
-						User Profile
-					</a>
-				</li>
-
-				<li>
-					<a href="inbox.html">
-						<i class="icon-double-angle-right"></i>
-						Inbox
-					</a>
-				</li>
-
-				<li>
-					<a href="pricing.html">
-						<i class="icon-double-angle-right"></i>
-						Pricing Tables
-					</a>
-				</li>
-
-				<li>
-					<a href="invoice.html">
-						<i class="icon-double-angle-right"></i>
-						Invoice
-					</a>
-				</li>
-
-				<li>
-					<a href="timeline.html">
-						<i class="icon-double-angle-right"></i>
-						Timeline
-					</a>
-				</li>
-
-				<li>
-					<a href="login.html">
-						<i class="icon-double-angle-right"></i>
-						Login &amp; Register
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li>
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-file-alt"></i>
-
-				<span class="menu-text">
-					Other Pages
-					<span class="badge badge-primary ">5</span>
-				</span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li>
-					<a href="faq.html">
-						<i class="icon-double-angle-right"></i>
-						FAQ
-					</a>
-				</li>
-
-				<li>
-					<a href="error-404.html">
-						<i class="icon-double-angle-right"></i>
-						Error 404
-					</a>
-				</li>
-
-				<li>
-					<a href="error-500.html">
-						<i class="icon-double-angle-right"></i>
-						Error 500
-					</a>
-				</li>
-
-				<li>
-					<a href="grid.html">
-						<i class="icon-double-angle-right"></i>
-						Grid
-					</a>
-				</li>
-
-				<li>
-					<a href="blank.html">
-						<i class="icon-double-angle-right"></i>
-						Blank Page
-					</a>
-				</li>
-			</ul>
-		</li>
+		
 	</ul><!-- /.nav-list -->
 
 	<div class="sidebar-collapse" id="sidebar-collapse">
@@ -360,10 +260,10 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
-				<a href="/admin_china.php">首页</a>
+				<a href="/admin_china.php?s=">首页</a>
 			</li>
 			<li>
-				<a href="/admin_china.php/user/index">查看所有用户</a>
+				<a href="/admin_china.php?s=/user/index">查看所有用户</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -384,7 +284,7 @@
 										<div class="col-sm-6">
 											<div id="sample-table-2_length" class="dataTables_length">
 												<div class="dataTables_filter" id="sample-table-2_filter">
-													<form action="/admin_china.php/User/index" method='post'>
+													<form action="/admin_china.php?s=/User/index" method='post'>
 													<label>搜索公司名称: <input type="text" name='name' aria-controls="sample-table-2"></label>
 													<button class="btn btn-sm btn-primary">搜索</button>
 													</form>
@@ -410,7 +310,7 @@
 
 								<?php if(is_array($users)): foreach($users as $key=>$user): ?><tr class="odd">
 										<td class="">
-											<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
+											<a href="/admin_china.php?s=/User/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
 										</td>
 										<td class=" "><?php echo ($user["name"]); ?></td>
 										<td class=" "><?php echo ($user["email"]); ?></td>
@@ -426,12 +326,12 @@
 										</td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
+												<a href="/admin_china.php?s=/User/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
 
-												<a href="/admin_china.php/User/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
+												<a href="/admin_china.php?s=/User/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
@@ -458,7 +358,7 @@
 <script>
 function delfun(userid){
 	if(confirm("确认删除本数据?")){
-		window.location.href='/admin_china.php/User/delete/id/'+userid;
+		window.location.href='/admin_china.php?s=/User/delete/id/'+userid;
 	}
 }
 </script>
