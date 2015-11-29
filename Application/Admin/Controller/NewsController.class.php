@@ -66,7 +66,7 @@ class NewsController extends IndexController {
             }
             if($data){
                 if(!empty($data['releasetime'])){
-                    $data['releasetime'] = trim('日',$data['releasetime']).'日';
+                    $data['releasetime'] = trim($data['releasetime'],'日').'日';
                 }
                 $news = M('news');
                 if($news -> add($data)){
@@ -110,7 +110,7 @@ class NewsController extends IndexController {
             }
             if($data){
                 if(!empty($data['releasetime'])){
-                    $data['releasetime'] = trim('日',$data['releasetime']).'日';
+                    $data['releasetime'] = trim($data['releasetime'],'日').'日';
                 }
                 $news = M('news');
                 if($news -> save($data)){

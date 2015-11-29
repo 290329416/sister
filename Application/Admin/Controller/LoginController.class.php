@@ -15,7 +15,7 @@ class LoginController extends Controller {
 
 	//用户登录
     public function index(){
-    	if(!empty(I())){
+    	if(!empty(I('post.username')) && !empty(I('post.password')) && !empty(I('post.verify'))){
     		$data = I();
     		if($this->Verify->check($data['verify'])){
     			$user = M('user');
