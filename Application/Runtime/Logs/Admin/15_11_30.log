@@ -4017,6 +4017,7 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+<<<<<<< HEAD
 >>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 [ 2015-11-30T13:28:20+08:00 ] 59.108.32.130 /admin_china.php?m=Admin&c=login&a=index
 INFO: [ app_init ] --START--
@@ -4136,3 +4137,308 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
 
+=======
+[ 2015-11-30T13:27:34+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0080s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-30T13:27:38+08:00 ] 127.0.0.1 /admin_china.php/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\sister\Application\Admin\Controller\UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pt_user` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-30T13:30:22+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-30T13:32:00+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-30T13:32:09+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0100s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-30T13:32:27+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-30T13:32:31+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-30T13:32:41+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-30T13:33:06+08:00 ] 127.0.0.1 /admin_china.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pt_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\sister\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-30T13:33:10+08:00 ] 127.0.0.1 /admin_china.php?m=Admin&c=user&a=show&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\sister\Application\Admin\Controller\UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant DECODE - assumed 'DECODE' D:\phpStudy\WWW\sister\Application\Admin\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Use of undefined constant AUTHKEY - assumed 'AUTHKEY' D:\phpStudy\WWW\sister\Application\Admin\Model\IndexModel.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pt_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\sister\Application\Runtime\Cache\Admin\6889816975b2b42ac6ff03eb35db7dd4.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+>>>>>>> 7a7fd902e19dae9e41c7a0fa1145a0638591a6ab
