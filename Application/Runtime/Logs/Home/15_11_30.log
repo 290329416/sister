@@ -2483,3 +2483,97 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
 ERR: 无法加载控制器:Public
 
+[ 2015-11-30T15:57:57+08:00 ] 59.108.32.130 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002683s ]
+
+[ 2015-11-30T16:54:39+08:00 ] 123.114.190.144 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2015-11-30T16:54:41+08:00 ] 123.114.190.144 /xwdt/293.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002878s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE `pid` = 1 AND `id` = 293 AND `state` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
