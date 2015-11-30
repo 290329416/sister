@@ -14,9 +14,22 @@ class IndexController extends Controller {
         $links = M('links');
         $this->link =  $links -> where('state=1') ->select();
         $this -> assign('type',$this->type);
+        $type = array();
+        foreach($this->type as $k=>$v){
+            $type[$v['id']] = $v;
+        }
+        $this -> assign('new_type',$type);
         $this -> assign('links',$this->link);
     }
     public function index(){
+        $news = M('news');
+        if(!empty(I('post.title'))){
+            $data['title'] = array('like','%'.I('post.title').'%');
+            $data['state'] = 2;
+            $newdata = $news -> where($data) ->select();
+            $this -> assign('newdata',$newdata);
+            $this->display('tlist'); exit;
+        }
     	$news = M('news');
     	foreach($this->type as $v){
     		$new[$v['namepath']] = $news -> where("pid =" . $v['id'] .' and state=2') -> order('id desc') -> limit(8) -> select();

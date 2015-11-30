@@ -13,7 +13,7 @@
       </div>
       <div class="righttop">
          <ul>
-           <li style="width:50px;"><a href="/Public/home/#">请登录</a></li><li><a href="/Public/home/#">会员服务</a></li><li><a href="/Public/home/#">服务热线</a></li><li><a href="/Public/home/#">网站导航</a></li>
+           <li style="width:50px;"><a href="/">请登录</a></li><li><a href="/">会员服务</a></li><li><a href="/">服务热线</a></li><li><a href="/">网站导航</a></li>
          </ul>
       </div>
    </div>
@@ -21,8 +21,8 @@
    <div class="header">
       <div class="logo"><img src="/Public/home/images/logo.png" width="285" height="68"></div>
       <div class="search">
-      <form action="" method="post">
-      <input type="text" class="ytext" placeholder="请输入你要搜索的内容">
+      <form action="<?php echo U('index/index');?>" method="post">
+      <input type="text" class="ytext" name='title' placeholder="请输入你要搜索的内容">
       <input type="submit" class="ysubmit" value="综合搜索">
       </form>
       </div>
@@ -48,8 +48,8 @@
          <div class="nowthat">
            <b>当前位置：</b>
            <a href="/">首页</a>
-             &gt;&gt; 
-           <a href="<?php echo U('/t_'.$type_find['namepath']);?>"><?php echo ($type_find["name"]); ?></a>
+           <?php if(!empty($type_find)): ?>&gt;&gt; 
+           <a href="<?php echo U('/t_'.$type_find['namepath']);?>"><?php echo ($type_find["name"]); ?></a><?php endif; ?>
          </div>
          <div class="listleft">
            <div class="listny">
@@ -69,12 +69,12 @@
            <dl>
               <dt><h2><?php echo ($type_find["name"]); ?></h2></dt>
               <dd>
-                <?php if(is_array($newdata)): foreach($newdata as $key=>$new): ?><span><a href="<?php echo U('/'.$type_find['namepath'].'/'.$new['id']);?>"><?php echo ($new["title"]); ?></a> <e>(<?php echo ($new["releasetime"]); ?>)</e></span><?php endforeach; endif; ?>     
+                <?php if(is_array($newdata)): foreach($newdata as $key=>$new): ?><span><a href="<?php echo U('/'.$new_type[$new['pid']]['namepath'].'/'.$new['id']);?>"><?php echo ($new["title"]); ?></a> <e>(<?php echo ($new["releasetime"]); ?>)</e></span><?php endforeach; endif; ?>     
               </dd>
            </dl>
-           <div class="next">
+           <?php if(!empty($page)): ?><div class="next">
               <?php echo ($page); ?>
-           </div>
+           </div><?php endif; ?>
          </div>
           
          </div>
