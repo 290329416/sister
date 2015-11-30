@@ -7211,3 +7211,42 @@ NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\sister\ThinkPHP\Library\Thi
 NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\sister\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
 SQL: INSERT INTO `pt_message` (`prisename`,`name`,`phone`,`address`,`email`,`message`) VALUES ('aa','aaaaaaaaaaaa','2147483647','aaaaaa','asdas@qq.com','dasdadas') [ RunTime:0.0420s ]
 
+[ 2015-11-27T18:00:39+08:00 ] 127.0.0.1 /Message/verify?d=Fri%20Nov%2027%202015%2018:00:39%20GMT+0800
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-11-27T18:00:40+08:00 ] 127.0.0.1 /Message/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0010s ]
+
+[ 2015-11-27T18:00:45+08:00 ] 127.0.0.1 /Message/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0000s ]
+
