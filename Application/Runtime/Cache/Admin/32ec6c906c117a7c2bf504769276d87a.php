@@ -94,7 +94,7 @@
 														
 													<div class="clearfix">
 														<label class="inline">
-															<span class="lbl"><img src="/admin_china.php?s=/Login/verify" onclick="this.src='/admin_china.php?s=/Login/verify&rnd=' + Math.random();"></span>
+															<span class="lbl"><img src="/admin_china.php/Login/verify" onclick="this.src='/admin_china.php/Login/verify&rnd=' + Math.random();"></span>
 														</label>
 
 														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
