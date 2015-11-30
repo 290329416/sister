@@ -77,7 +77,11 @@
 
 					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
+<<<<<<< HEAD
 							<a href="/admin_china.php?s=/user/show/id/<?php echo ($user_data["id"]); ?>">
+=======
+							<a href="/admin_china.php/user/show/id/<?php echo ($user_data["id"]); ?>">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 								<i class="icon-cog"></i>
 								个人资料
 							</a>
@@ -86,7 +90,11 @@
 						<li class="divider"></li>
 
 						<li>
+<<<<<<< HEAD
 							<a href="/admin_china.php?s=/login/quit">
+=======
+							<a href="/admin_china.php/login/quit">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -123,14 +131,22 @@
 
 			<ul class="submenu">
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/User/index">
+=======
+					<a href="/admin_china.php/User/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有用户
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/User/add">
+=======
+					<a href="/admin_china.php/User/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加用户
 					</a>
@@ -148,14 +164,22 @@
 
 			<ul class="submenu">
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Type/index">
+=======
+					<a href="/admin_china.php/Type/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有栏目
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Type/add">
+=======
+					<a href="/admin_china.php/Type/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加栏目
 					</a>
@@ -174,14 +198,22 @@
 			<ul class="submenu">
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/News/index">
+=======
+					<a href="/admin_china.php/News/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有文章
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/News/add">
+=======
+					<a href="/admin_china.php/News/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加文章
 					</a>
@@ -203,7 +235,11 @@
 
 			<ul class="submenu">
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Message">
+=======
+					<a href="/admin_china.php/Message">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有留言
 					</a>
@@ -222,14 +258,22 @@
 			<ul class="submenu">
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Links/index">
+=======
+					<a href="/admin_china.php/Links/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看友情链接
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Links/add">
+=======
+					<a href="/admin_china.php/Links/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加友链
 					</a>
@@ -258,11 +302,19 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
+<<<<<<< HEAD
 								<a href="/admin_china.php?s=">首页</a>
 							</li>
 
 							<li>
 								<a href="/admin_china.php?s=/News">查看所有文章</a>
+=======
+								<a href="/admin_china.php">首页</a>
+							</li>
+
+							<li>
+								<a href="/admin_china.php/News">查看所有文章</a>
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 							</li>
 						</ul><!-- .breadcrumb -->
 					</div>
@@ -282,7 +334,11 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
+<<<<<<< HEAD
 													<form>
+=======
+													<form action="/admin_china.php/News/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 													<label>搜索文章标题: <input type="text" aria-controls="sample-table-2" name="title"></label>
 													<label>请选择栏目: 
 														<select name="pid" size="1" aria-controls="sample-table-2" style='width:120px;'>
@@ -320,7 +376,11 @@
 							<tbody aria-relevant="all" aria-live="polite" role="alert">
 								<?php if(is_array($new)): foreach($new as $key=>$new): ?><tr class="odd">
 										<td class="">
+<<<<<<< HEAD
 											<a href="/admin_china.php?s=/News/show/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a>
+=======
+											<a href="/admin_china.php/News/show/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a>
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 										</td>
 										<td class=""><?php echo $typedata[$new['pid']] ?></td>
 										<td class=""><?php echo ($new["releasetime"]); ?></td>
@@ -334,12 +394,20 @@
 										</td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+<<<<<<< HEAD
 												<a title="查看详情" class="blue" href="/admin_china.php?s=/News/show/id/<?php echo ($new["id"]); ?>">
+=======
+												<a title="查看详情" class="blue" href="/admin_china.php/News/show/id/<?php echo ($new["id"]); ?>">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
 
+<<<<<<< HEAD
 												<a title="修改信息" class="green" href="/admin_china.php?s=/News/update/id/<?php echo ($new["id"]); ?>">
+=======
+												<a title="修改信息" class="green" href="/admin_china.php/News/update/id/<?php echo ($new["id"]); ?>">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
@@ -436,7 +504,11 @@
 			window.jQuery || document.write("<script src='/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 			function delfun(id){
 				if(confirm("确认删除本数据?")){
+<<<<<<< HEAD
 					window.location.href='/admin_china.php?s=/News/delete/id/'+id;
+=======
+					window.location.href='/admin_china.php/News/delete/id/'+id;
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 				}
 			}
 		</script>

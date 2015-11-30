@@ -83,7 +83,7 @@
 
 					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
-							<a href="/admin_china.php?s=/user/show/id/<?php echo ($user_data["id"]); ?>">
+							<a href="/admin_china.php/user/show/id/<?php echo ($user_data["id"]); ?>">
 								<i class="icon-cog"></i>
 								个人资料
 							</a>
@@ -92,7 +92,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="/admin_china.php?s=/login/quit">
+							<a href="/admin_china.php/login/quit">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -125,14 +125,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/User/index">
+					<a href="/admin_china.php/User/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有用户
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/User/add">
+					<a href="/admin_china.php/User/add">
 						<i class="icon-double-angle-right"></i>
 						添加用户
 					</a>
@@ -150,14 +150,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/Type/index">
+					<a href="/admin_china.php/Type/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有栏目
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/Type/add">
+					<a href="/admin_china.php/Type/add">
 						<i class="icon-double-angle-right"></i>
 						添加栏目
 					</a>
@@ -176,14 +176,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php?s=/News/index">
+					<a href="/admin_china.php/News/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有文章
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/News/add">
+					<a href="/admin_china.php/News/add">
 						<i class="icon-double-angle-right"></i>
 						添加文章
 					</a>
@@ -205,7 +205,7 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/Message">
+					<a href="/admin_china.php/Message">
 						<i class="icon-double-angle-right"></i>
 						查看所有留言
 					</a>
@@ -224,14 +224,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php?s=/Links/index">
+					<a href="/admin_china.php/Links/index">
 						<i class="icon-double-angle-right"></i>
 						查看友情链接
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/Links/add">
+					<a href="/admin_china.php/Links/add">
 						<i class="icon-double-angle-right"></i>
 						添加友链
 					</a>
@@ -260,7 +260,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
-								<a href="/admin_china.php?s=">首页</a>
+								<a href="/admin_china.php">首页</a>
 							</li>
 						</ul><!-- .breadcrumb -->
 					</div>
@@ -272,41 +272,43 @@
 
 								<form class="form-horizontal" role="form" action="" method='post' enctype="multipart/form-data">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章标题</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">企业名称</label>
 
 										<div class="col-sm-9">
-											<input name='title' type="text" id="form-field-1" placeholder="文章标题" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["title"]); ?>'/>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(必填)</span>
-											</span>
+											<input type="text" id="form-field-1" placeholder="文章标题" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["prisename"]); ?>'/>
 										</div>
 									</div>
 
 									<div class="space-4"></div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布人</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系人</label>
 										<div class="col-sm-9">
-											<input name='name' type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["name"]); ?>'/>
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["name"]); ?>'/>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">邮箱</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["email"]); ?>'/>
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">请选择栏目</label>
-										<div class="col-sm-9" style="width:400px;">
-											<div class="col-sm-4" style='padding-left:0px;'>
-												<select id="form-field-select-1" class="form-control" name='pid' disabled>
-													<option value="">请选择栏目</option>
-													<?php if(is_array($typedata)): foreach($typedata as $key=>$type): if(($type["id"]) == $data["pid"]): ?><option value="<?php echo ($type["id"]); ?>" selected><?php echo ($type["name"]); ?></option>
-														<?php else: ?> 
-															<option value="<?php echo ($type["id"]); ?>"><?php echo ($type["name"]); ?></option><?php endif; endforeach; endif; ?>
-												</select>
-											</div>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(必填)</span>
-											</span>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系电话</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["phone"]); ?>'/>
 										</div>
 									</div>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">留言时间</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo (date("Y-m-d H:i",$data["inputtime"])); ?>'/>
+										</div>
+									</div>
+
 
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章内容</label>
@@ -320,7 +322,7 @@
 																<div class="widget-body">
 																	<div class="widget-main no-padding">
 																		<div class="md-editor" id="1448289198440">
-																			<textarea rows="10" data-provide="markdown" readonly  name="content" class="span12 md-input" style="resize: none;"><?php echo ($data["content"]); ?></textarea>
+																			<textarea rows="10" data-provide="markdown" readonly  name="content" class="span12 md-input" style="resize: none;"><?php echo ($data["message"]); ?></textarea>
 																		</div>
 																	</div>
 																</div>
@@ -331,59 +333,16 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布时间</label>
-										<div class="col-sm-9">
-											<div class="col-sm-4" style='padding-left:0px;'>
-												<div class="col-xs-8 col-sm-11" style='padding-left:0px;'>
-													<div class="input-group">
-														<input class="form-control date-picker" id="id-date-picker-1" readonly  type="text" data-date-format="yyyy-mm-dd" name='releasetime' value="<?php echo ($data["releasetime"]); ?>"/>
-														<span class="input-group-addon">
-															<i class="icon-calendar bigger-110"></i>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布人</label>
-										<div class="col-xs-12 col-sm-6">
-											<div class="control-group">
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" disabled class="ace" <?php if($data["state"] == 1): ?>checked<?php endif; ?> value="1" />
-														<span class="lbl">未审核</span>
-													</label>
-												</div>
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" disabled class="ace" <?php if($data["state"] == 2): ?>checked<?php endif; ?> value="2" />
-														<span class="lbl">已审核</span>
-													</label>
-												</div>
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" disabled class="ace" <?php if($data["state"] == 3): ?>checked<?php endif; ?> value="3" />
-														<span class="lbl">禁用</span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
 
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
-											<a href="/admin_china.php?s=/News/update/id/<?php echo ($data["id"]); ?>" class="btn btn-info">
+											<a href="javascript:;" onclick="delfun(<?php echo ($data["id"]); ?>)" class="btn btn-info">
 												<i class="icon-ok bigger-110"></i>
-												修改文章
+												删除
 											</a>
 
 											&nbsp; &nbsp; &nbsp;
-											<a href="/admin_china.php?s=/News" class="btn">
+											<a href="/admin_china.php/Message" class="btn">
 												<i class="icon-undo bigger-110"></i>
 												返回
 											</a>
@@ -452,6 +411,11 @@
 		<!-- inline scripts related to this page -->
 
 		<script type="text/javascript">
+		function delfun(userid){
+			if(confirm("确认删除本数据?")){
+				window.location.href='/admin_china.php/Message/delete/id/'+userid;
+			}
+		}
 			jQuery(function($) {
 				$('#id-disable-check').on('click', function() {
 					var inp = $('#form-input-readonly').get(0);

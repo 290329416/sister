@@ -78,7 +78,11 @@
 
 					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
+<<<<<<< HEAD
 							<a href="/admin_china.php?s=/user/show/id/<?php echo ($user_data["id"]); ?>">
+=======
+							<a href="/admin_china.php/user/show/id/<?php echo ($user_data["id"]); ?>">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 								<i class="icon-cog"></i>
 								个人资料
 							</a>
@@ -87,7 +91,11 @@
 						<li class="divider"></li>
 
 						<li>
+<<<<<<< HEAD
 							<a href="/admin_china.php?s=/login/quit">
+=======
+							<a href="/admin_china.php/login/quit">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -124,14 +132,22 @@
 
 			<ul class="submenu">
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/User/index">
+=======
+					<a href="/admin_china.php/User/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有用户
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/User/add">
+=======
+					<a href="/admin_china.php/User/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加用户
 					</a>
@@ -149,14 +165,22 @@
 
 			<ul class="submenu">
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Type/index">
+=======
+					<a href="/admin_china.php/Type/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有栏目
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Type/add">
+=======
+					<a href="/admin_china.php/Type/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加栏目
 					</a>
@@ -175,14 +199,22 @@
 			<ul class="submenu">
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/News/index">
+=======
+					<a href="/admin_china.php/News/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有文章
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/News/add">
+=======
+					<a href="/admin_china.php/News/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加文章
 					</a>
@@ -204,7 +236,11 @@
 
 			<ul class="submenu">
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Message">
+=======
+					<a href="/admin_china.php/Message">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看所有留言
 					</a>
@@ -223,14 +259,22 @@
 			<ul class="submenu">
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Links/index">
+=======
+					<a href="/admin_china.php/Links/index">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						查看友情链接
 					</a>
 				</li>
 
 				<li>
+<<<<<<< HEAD
 					<a href="/admin_china.php?s=/Links/add">
+=======
+					<a href="/admin_china.php/Links/add">
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 						<i class="icon-double-angle-right"></i>
 						添加友链
 					</a>
@@ -260,10 +304,17 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
+<<<<<<< HEAD
 				<a href="/admin_china.php?s=">首页</a>
 			</li>
 			<li>
 				<a href="/admin_china.php?s=/Message/index">查看公众留言</a>
+=======
+				<a href="/admin_china.php">首页</a>
+			</li>
+			<li>
+				<a href="/admin_china.php/Message/index">查看公众留言</a>
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -284,7 +335,11 @@
 										<div class="col-sm-6">
 											<div id="sample-table-2_length" class="dataTables_length">
 												<div class="dataTables_filter" id="sample-table-2_filter">
+<<<<<<< HEAD
 													<form action="/admin_china.php?s=/Message/index" method='post'>
+=======
+													<form action="/admin_china.php/Message/index" method='post'>
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 													<label>搜索公司名称: <input type="text" name='prisename' aria-controls="sample-table-2"></label>
 													<button class="btn btn-sm btn-primary">搜索</button>
 													</form>
@@ -309,7 +364,11 @@
 
 								<?php if(is_array($mess)): foreach($mess as $key=>$mes): ?><tr class="odd">
 										<td class="">
+<<<<<<< HEAD
 											<a href="/admin_china.php?s=/Message/show/id/<?php echo ($mes["id"]); ?>"><?php echo ($mes["prisename"]); ?></a>
+=======
+											<a href="/admin_china.php/Message/show/id/<?php echo ($mes["id"]); ?>"><?php echo ($mes["prisename"]); ?></a>
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 										</td>
 										<td class=" "><?php echo ($mes["name"]); ?></td>
 										<td class=" "><?php echo ($mes["email"]); ?></td>
@@ -317,7 +376,11 @@
 										<td class=" "><?php echo (date("Y-m-d H:i",$mes["inputtime"])); ?></td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+<<<<<<< HEAD
 												<a href="/admin_china.php?s=/Message/show/id/<?php echo ($mes["id"]); ?>" class="blue" title='查看详情'>
+=======
+												<a href="/admin_china.php/Message/show/id/<?php echo ($mes["id"]); ?>" class="blue" title='查看详情'>
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
@@ -344,7 +407,11 @@
 <script>
 function delfun(userid){
 	if(confirm("确认删除本数据?删除后将不能恢复")){
+<<<<<<< HEAD
 		window.location.href='/admin_china.php?s=/Message/delete/id/'+userid;
+=======
+		window.location.href='/admin_china.php/Message/delete/id/'+userid;
+>>>>>>> 1cfe5372ca42b6814dd32d312898fade003db6b2
 	}
 }
 </script>

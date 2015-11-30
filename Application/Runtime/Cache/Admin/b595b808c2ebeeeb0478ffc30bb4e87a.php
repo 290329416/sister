@@ -63,7 +63,7 @@
 
 					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
-							<a href="/admin_china.php?s=/user/show/id/<?php echo ($user_data["id"]); ?>">
+							<a href="/admin_china.php/user/show/id/<?php echo ($user_data["id"]); ?>">
 								<i class="icon-cog"></i>
 								个人资料
 							</a>
@@ -72,7 +72,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="/admin_china.php?s=/login/quit">
+							<a href="/admin_china.php/login/quit">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -109,14 +109,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/User/index">
+					<a href="/admin_china.php/User/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有用户
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/User/add">
+					<a href="/admin_china.php/User/add">
 						<i class="icon-double-angle-right"></i>
 						添加用户
 					</a>
@@ -134,14 +134,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/Type/index">
+					<a href="/admin_china.php/Type/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有栏目
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/Type/add">
+					<a href="/admin_china.php/Type/add">
 						<i class="icon-double-angle-right"></i>
 						添加栏目
 					</a>
@@ -160,14 +160,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php?s=/News/index">
+					<a href="/admin_china.php/News/index">
 						<i class="icon-double-angle-right"></i>
 						查看所有文章
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/News/add">
+					<a href="/admin_china.php/News/add">
 						<i class="icon-double-angle-right"></i>
 						添加文章
 					</a>
@@ -189,7 +189,7 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/Message">
+					<a href="/admin_china.php/Message">
 						<i class="icon-double-angle-right"></i>
 						查看所有留言
 					</a>
@@ -208,14 +208,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php?s=/Links/index">
+					<a href="/admin_china.php/Links/index">
 						<i class="icon-double-angle-right"></i>
 						查看友情链接
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/Links/add">
+					<a href="/admin_china.php/Links/add">
 						<i class="icon-double-angle-right"></i>
 						添加友链
 					</a>
