@@ -260,7 +260,7 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
-				<a href="/admin_china.php?s=">首页</a>
+				<a href="/admin_china.php">首页</a>
 			</li>
 			<li>
 				<a href="<?php echo U('Links/index');?>">查看友情链接</a>
@@ -308,7 +308,7 @@
 
 								<?php if(is_array($link)): foreach($link as $key=>$link): ?><tr class="odd">
 										<td class=" "><?php echo ($link["id"]); ?></td>
-										<td class=" "><a href="/admin_china.php?s=/Links/update/id/<?php echo ($link["id"]); ?>"><?php echo ($link["name"]); ?></a></td>
+										<td class=" "><a href="/admin_china.php/Links/update/id/<?php echo ($link["id"]); ?>"><?php echo ($link["name"]); ?></a></td>
 										<td class=" "><?php echo ($link["url"]); ?></td>
 										<td class="hidden-480 ">
 											<?php if($link["state"] == 1): ?><span class="label label-sm label-warning">开启</span>
@@ -317,7 +317,7 @@
 										</td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php?s=/Links/update/id/<?php echo ($link["id"]); ?>" class="green" title='修改信息'>
+												<a href="/admin_china.php/Links/update/id/<?php echo ($link["id"]); ?>" class="green" title='修改信息'>
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
@@ -344,7 +344,7 @@
 <script>
 function delfun(id){
 	if(confirm("确认删除本数据?删除后此数据将不能恢复!")){
-		window.location.href='/admin_china.php?s=/Links/del/id/'+id;
+		window.location.href='/admin_china.php/Links/del/id/'+id;
 	}
 }
 </script>

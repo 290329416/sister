@@ -267,11 +267,11 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
-				<a href="/admin_china.php?s=">首页</a>
+				<a href="/admin_china.php">首页</a>
 			</li>
 
 			<li>
-				<a href="/admin_china.php?s=/User/index">查看所有用户</a>
+				<a href="/admin_china.php/User/index">查看所有用户</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -356,17 +356,17 @@
 
 					<div class="clearfix form-actions">
 						<div class="col-md-offset-3 col-md-9">
-							<a href="/admin_china.php?s=/User/update/id/<?php echo ($data["id"]); ?>" class="btn btn-info">
+							<a href="/admin_china.php/User/update/id/<?php echo ($data["id"]); ?>" class="btn btn-info">
 								<i class="icon-arrow-right icon-on-right bigger-110"></i>
 								修改用户信息
 							</a>
 							&nbsp; &nbsp; &nbsp;
-							<a  href="/admin_china.php?s=/User/chpass/id/<?php echo ($data["id"]); ?>" class="btn" style='background-color:#47a447 !important;border-color: #47a447;'>
+							<a  href="/admin_china.php/User/chpass/id/<?php echo ($data["id"]); ?>" class="btn" style='background-color:#47a447 !important;border-color: #47a447;'>
 								<i class="icon-key bigger-110"></i>
 								修改密码
 							</a>
 							&nbsp; &nbsp; &nbsp;
-							<a href="/admin_china.php?s=/User/" class="btn">
+							<a href="/admin_china.php/User/" class="btn">
 								<i class="icon-undo bigger-110"></i>
 								返回
 							</a>

@@ -260,10 +260,10 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
-				<a href="/admin_china.php?s=">首页</a>
+				<a href="/admin_china.php">首页</a>
 			</li>
 			<li>
-				<a href="/admin_china.php?s=/user/index">查看所有用户</a>
+				<a href="/admin_china.php/user/index">查看所有用户</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -284,7 +284,7 @@
 										<div class="col-sm-6">
 											<div id="sample-table-2_length" class="dataTables_length">
 												<div class="dataTables_filter" id="sample-table-2_filter">
-													<form action="/admin_china.php?s=/User/index" method='post'>
+													<form action="/admin_china.php/User/index" method='post'>
 													<label>搜索公司名称: <input type="text" name='name' aria-controls="sample-table-2"></label>
 													<button class="btn btn-sm btn-primary">搜索</button>
 													</form>
@@ -310,7 +310,7 @@
 
 								<?php if(is_array($users)): foreach($users as $key=>$user): ?><tr class="odd">
 										<td class="">
-											<a href="/admin_china.php?s=/User/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
+											<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
 										</td>
 										<td class=" "><?php echo ($user["name"]); ?></td>
 										<td class=" "><?php echo ($user["email"]); ?></td>
@@ -326,12 +326,12 @@
 										</td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php?s=/User/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
+												<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
 
-												<a href="/admin_china.php?s=/User/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
+												<a href="/admin_china.php/User/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
@@ -358,7 +358,7 @@
 <script>
 function delfun(userid){
 	if(confirm("确认删除本数据?")){
-		window.location.href='/admin_china.php?s=/User/delete/id/'+userid;
+		window.location.href='/admin_china.php/User/delete/id/'+userid;
 	}
 }
 </script>
