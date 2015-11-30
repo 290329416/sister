@@ -3,7 +3,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>查看所有用户</title>
+	<title>栏目管理</title>
 
 	<meta name="description" content="Static &amp; Dynamic Tables" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -263,105 +263,81 @@
 				<a href="/admin_china.php">首页</a>
 			</li>
 			<li>
-				<a href="/admin_china.php/user/index">查看所有用户</a>
+				<a href="/admin_china.php/Type">查看所有栏目</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
 
 	<div class="page-content">
+		<div class="page-header">
+			<a href="/admin_china.php/Type/add" class="btn btn-info btn-sm tooltip-info" data-rel="tooltip" title="添加新栏目" data-original-title="Bottm Info">添加新栏目</a>
+		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<!-- PAGE CONTENT BEGINS -->
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="table-header">
-							Results for "Latest user"
-						</div>
-
 						<div class="table-responsive">
-							<div role="grid" class="dataTables_wrapper" id="sample-table-2_wrapper">
-								<div class="row">
-										<div class="col-sm-6">
-											<div id="sample-table-2_length" class="dataTables_length">
-												<div class="dataTables_filter" id="sample-table-2_filter">
-													<form action="/admin_china.php/User/index" method='post'>
-													<label>搜索公司名称: <input type="text" name='name' aria-controls="sample-table-2"></label>
-													<button class="btn btn-sm btn-primary">搜索</button>
-													</form>
-												</div>
-												
-											</div>
-										</div>
-								</div>
-								<table class="table table-striped table-bordered table-hover dataTable" id="sample-table-2" aria-describedby="sample-table-2_info">
+							<table class="table table-striped table-bordered table-hover" id="sample-table-1">
 								<thead>
-									<tr role="row">
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Domain: activate to sort column ascending">用户名</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 160px;" aria-label="Price: activate to sort column ascending">公司名称</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Price: activate to sort column ascending">邮箱</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Clicks: activate to sort column ascending">联系电话</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Update: activate to sort column ascending"><i class="icon-time bigger-110 hidden-480"></i>注册时间</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 40px;" aria-label="Status: activate to sort column ascending">状态</th>
-										<th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 130px;" aria-label="">操作</th></tr>
+									<tr>
+										<th>类别ID</th>
+										<th>类别名称</th>
+										<th>类别路径</th>
+										<th class="hidden-480">父类ID</th>
+										<th>PATH</th>
+										<th width='150px'>操作</th>
+									</tr>
 								</thead>
 
-								
-							<tbody role="alert" aria-live="polite" aria-relevant="all">
+								<tbody>
+								<?php if(is_array($result)): foreach($result as $key=>$res): ?><tr>
+										<td><?php echo ($res["id"]); ?></td>
+										<td><?php echo ($res["name"]); ?></td>
+										<td><?php echo ($res["namepath"]); ?></td>
+										<td class="hidden-480"><?php echo ($res["pid"]); ?></td>
+										<td><?php echo ($res["path"]); ?></td>
+										<td>
+											<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
 
-								<?php if(is_array($users)): foreach($users as $key=>$user): ?><tr class="odd">
-										<td class="">
-											<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
-										</td>
-										<td class=" "><?php echo ($user["name"]); ?></td>
-										<td class=" "><?php echo ($user["email"]); ?></td>
-										<td class="hidden-480 "><?php echo ($user["phone"]); ?></td>
-										<td class=" "><?php echo (date("Y-m-d H:i",$user["inputtime"])); ?></td>
-
-										<td class="hidden-480 ">
-											<?php if($user["state"] == 1): ?><span class="label label-sm label-warning">普通用户</span>
-											<?php elseif($user["state"] == '2'): ?>
-												<span class="label label-sm label-inverse arrowed-in">禁止使用</span>
-											<?php elseif($user["state"] == '0'): ?>
-												<span class="label label-sm label-success">后台管理员</span><?php endif; ?>
-										</td>
-										<td class=" ">
-											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
-													<i class="icon-zoom-in bigger-130"></i>
-													查看
+												<a href="/admin_china.php/Type/update/id/<?php echo ($res["id"]); ?>" class="btn btn-xs btn-info" style='margin:0 10px;'>
+													<i class="icon-edit bigger-120">修改</i>
 												</a>
 
-												<a href="/admin_china.php/User/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
-													<i class="icon-pencil bigger-130"></i>
-													修改
-												</a>
-
-												<a href="javascript:;" onclick="delfun(<?php echo ($user["id"]); ?>)" class="red" title='删除'>
-													<i class="icon-trash bigger-130"></i>
-													删除
+												<a href="javascript:;" class="btn btn-xs btn-danger" onclick="delfun(<?php echo ($res["id"]); ?>)">
+													<i class="icon-trash bigger-120">删除</i>
 												</a>
 											</div>
 										</td>
 									</tr><?php endforeach; endif; ?>
-								</tbody></table><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="sample-table-2_info">共<?php echo ($count); ?>条数据&nbsp;&nbsp;&nbsp;总页数&nbsp;<?php echo ($num); ?></div></div><div class="col-sm-6">
-								<div class="dataTables_paginate paging_bootstrap">
-									<ul class="pagination">
-										<?php echo ($pages); ?>
-									</ul></div></div></div></div>
-						</div>
-					</div>
-				</div>
+								</tbody>
+							</table>
+						</div><!-- /.table-responsive -->
+					</div><!-- /span -->
+				</div><!-- /row -->
 			</div><!-- /.col -->
 		</div><!-- /.row -->
 	</div><!-- /.page-content -->
 </div>
 <script>
-function delfun(userid){
-	if(confirm("确认删除本数据?")){
-		window.location.href='/admin_china.php/User/delete/id/'+userid;
+	function delfun(tid){
+		if(confirm("确认删除本数据?")){
+			window.location.href='/admin_china.php/Type/del/id/'+tid;
+		}
 	}
-}
 </script>
+<!-- <script>
+    全选
+        $(".ids:eq(0)").click(function(){
+                      
+           $(".ids:gt(0)").prop("checked", function( i, val ) {
+                        return !val;
+            });
+     
+        });
+ 
+</script> -->
+				
 
 				
 

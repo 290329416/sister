@@ -3,7 +3,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>查看所有用户</title>
+	<title>查看公众留言</title>
 
 	<meta name="description" content="Static &amp; Dynamic Tables" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -263,7 +263,7 @@
 				<a href="/admin_china.php">首页</a>
 			</li>
 			<li>
-				<a href="/admin_china.php/user/index">查看所有用户</a>
+				<a href="/admin_china.php/Message/index">查看公众留言</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -275,7 +275,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="table-header">
-							Results for "Latest user"
+							Results for "Latest Message"
 						</div>
 
 						<div class="table-responsive">
@@ -284,8 +284,8 @@
 										<div class="col-sm-6">
 											<div id="sample-table-2_length" class="dataTables_length">
 												<div class="dataTables_filter" id="sample-table-2_filter">
-													<form action="/admin_china.php/User/index" method='post'>
-													<label>搜索公司名称: <input type="text" name='name' aria-controls="sample-table-2"></label>
+													<form action="/admin_china.php/Message/index" method='post'>
+													<label>搜索公司名称: <input type="text" name='prisename' aria-controls="sample-table-2"></label>
 													<button class="btn btn-sm btn-primary">搜索</button>
 													</form>
 												</div>
@@ -296,47 +296,33 @@
 								<table class="table table-striped table-bordered table-hover dataTable" id="sample-table-2" aria-describedby="sample-table-2_info">
 								<thead>
 									<tr role="row">
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Domain: activate to sort column ascending">用户名</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 160px;" aria-label="Price: activate to sort column ascending">公司名称</th>
+										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Domain: activate to sort column ascending">企业名称</th>
+										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 160px;" aria-label="Price: activate to sort column ascending">联系人</th>
 										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Price: activate to sort column ascending">邮箱</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Clicks: activate to sort column ascending">联系电话</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Update: activate to sort column ascending"><i class="icon-time bigger-110 hidden-480"></i>注册时间</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 40px;" aria-label="Status: activate to sort column ascending">状态</th>
-										<th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 130px;" aria-label="">操作</th></tr>
+										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 80px;" aria-label="Clicks: activate to sort column ascending">联系电话</th>
+										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 80px;" aria-label="Status: activate to sort column ascending">留言时间</th>
+										<th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 80px;" aria-label="">操作</th></tr>
 								</thead>
 
 								
 							<tbody role="alert" aria-live="polite" aria-relevant="all">
 
-								<?php if(is_array($users)): foreach($users as $key=>$user): ?><tr class="odd">
+								<?php if(is_array($mess)): foreach($mess as $key=>$mes): ?><tr class="odd">
 										<td class="">
-											<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>"><?php echo ($user["username"]); ?></a>
+											<a href="/admin_china.php/Message/show/id/<?php echo ($mes["id"]); ?>"><?php echo ($mes["prisename"]); ?></a>
 										</td>
-										<td class=" "><?php echo ($user["name"]); ?></td>
-										<td class=" "><?php echo ($user["email"]); ?></td>
-										<td class="hidden-480 "><?php echo ($user["phone"]); ?></td>
-										<td class=" "><?php echo (date("Y-m-d H:i",$user["inputtime"])); ?></td>
-
-										<td class="hidden-480 ">
-											<?php if($user["state"] == 1): ?><span class="label label-sm label-warning">普通用户</span>
-											<?php elseif($user["state"] == '2'): ?>
-												<span class="label label-sm label-inverse arrowed-in">禁止使用</span>
-											<?php elseif($user["state"] == '0'): ?>
-												<span class="label label-sm label-success">后台管理员</span><?php endif; ?>
-										</td>
+										<td class=" "><?php echo ($mes["name"]); ?></td>
+										<td class=" "><?php echo ($mes["email"]); ?></td>
+										<td class="hidden-480 "><?php echo ($mes["phone"]); ?></td>
+										<td class=" "><?php echo (date("Y-m-d H:i",$mes["inputtime"])); ?></td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php/User/show/id/<?php echo ($user["id"]); ?>" class="blue" title='查看详情'>
+												<a href="/admin_china.php/Message/show/id/<?php echo ($mes["id"]); ?>" class="blue" title='查看详情'>
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
 
-												<a href="/admin_china.php/User/update/id/<?php echo ($user["id"]); ?>" class="green" title='修改信息'>
-													<i class="icon-pencil bigger-130"></i>
-													修改
-												</a>
-
-												<a href="javascript:;" onclick="delfun(<?php echo ($user["id"]); ?>)" class="red" title='删除'>
+												<a href="javascript:;" onclick="delfun(<?php echo ($mes["id"]); ?>)" class="red" title='删除'>
 													<i class="icon-trash bigger-130"></i>
 													删除
 												</a>
@@ -357,8 +343,8 @@
 </div>
 <script>
 function delfun(userid){
-	if(confirm("确认删除本数据?")){
-		window.location.href='/admin_china.php/User/delete/id/'+userid;
+	if(confirm("确认删除本数据?删除后将不能恢复")){
+		window.location.href='/admin_china.php/Message/delete/id/'+userid;
 	}
 }
 </script>
