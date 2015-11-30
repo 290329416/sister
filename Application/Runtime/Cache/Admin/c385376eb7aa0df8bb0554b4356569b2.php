@@ -267,11 +267,11 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
-				<a href="/admin_china.php?s=">首页</a>
+				<a href="/admin_china.php">首页</a>
 			</li>
 
 			<li>
-				<a href="/admin_china.php?s=/User/index">查看所有用户</a>
+				<a href="/admin_china.php/User/index">查看所有用户</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -374,7 +374,7 @@
 								确认修改
 							</button>
 							&nbsp; &nbsp; &nbsp;
-							<a href="/admin_china.php?s=/User" class="btn">
+							<a href="/admin_china.php/User" class="btn">
 								<i class="icon-undo bigger-110"></i>
 								返回
 							</a>

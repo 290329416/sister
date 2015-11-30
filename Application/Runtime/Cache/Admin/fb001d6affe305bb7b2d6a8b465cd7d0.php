@@ -267,7 +267,11 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
+<<<<<<< HEAD
 				<a href="/admin_china.php?s=">首页</a>
+=======
+				<a href="/admin_china.php">首页</a>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -312,7 +316,11 @@
 								修改
 							</button>
 							&nbsp; &nbsp; &nbsp;
+<<<<<<< HEAD
 							<a href='/admin_china.php?s=/Type' class="btn">
+=======
+							<a href='/admin_china.php/Type' class="btn">
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 								<i class="icon-undo bigger-110"></i>
 								返回
 							</a>

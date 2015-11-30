@@ -258,11 +258,19 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
+<<<<<<< HEAD
 								<a href="/admin_china.php?s=">首页</a>
 							</li>
 
 							<li>
 								<a href="/admin_china.php?s=/News">查看所有文章</a>
+=======
+								<a href="/admin_china.php">首页</a>
+							</li>
+
+							<li>
+								<a href="/admin_china.php/News">查看所有文章</a>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 							</li>
 						</ul><!-- .breadcrumb -->
 					</div>
@@ -282,7 +290,11 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
+<<<<<<< HEAD
 													<form action="/admin_china.php?s=/News/index">
+=======
+													<form action="/admin_china.php/News/index">
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 													<label>搜索文章标题: <input type="text" aria-controls="sample-table-2" name="title"></label>
 													<label>请选择栏目: 
 														<select name="pid" size="1" aria-controls="sample-table-2" style='width:120px;'>
@@ -320,7 +332,11 @@
 							<tbody aria-relevant="all" aria-live="polite" role="alert">
 								<?php if(is_array($new)): foreach($new as $key=>$new): ?><tr class="odd">
 										<td class="">
+<<<<<<< HEAD
 											<a href="/admin_china.php?s=/News/show/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a>
+=======
+											<a href="/admin_china.php/News/show/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 										</td>
 										<td class=""><?php echo $typedata[$new['pid']] ?></td>
 										<td class=""><?php echo ($new["releasetime"]); ?></td>
@@ -334,12 +350,20 @@
 										</td>
 										<td class=" ">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+<<<<<<< HEAD
 												<a title="查看详情" class="blue" href="/admin_china.php?s=/News/show/id/<?php echo ($new["id"]); ?>">
+=======
+												<a title="查看详情" class="blue" href="/admin_china.php/News/show/id/<?php echo ($new["id"]); ?>">
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 													<i class="icon-zoom-in bigger-130"></i>
 													查看
 												</a>
 
+<<<<<<< HEAD
 												<a title="修改信息" class="green" href="/admin_china.php?s=/News/update/id/<?php echo ($new["id"]); ?>">
+=======
+												<a title="修改信息" class="green" href="/admin_china.php/News/update/id/<?php echo ($new["id"]); ?>">
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
@@ -436,7 +460,11 @@
 			window.jQuery || document.write("<script src='/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 			function delfun(id){
 				if(confirm("确认删除本数据?")){
+<<<<<<< HEAD
 					window.location.href='/admin_china.php?s=/News/delete/id/'+id;
+=======
+					window.location.href='/admin_china.php/News/delete/id/'+id;
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 				}
 			}
 		</script>

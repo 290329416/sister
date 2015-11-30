@@ -260,17 +260,28 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
+<<<<<<< HEAD
 				<a href="/admin_china.php?s=">首页</a>
 			</li>
 			<li>
 				<a href="/admin_china.php?s=/Type">查看所有栏目</a>
+=======
+				<a href="/admin_china.php">首页</a>
+			</li>
+			<li>
+				<a href="/admin_china.php/Type">查看所有栏目</a>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
 
 	<div class="page-content">
 		<div class="page-header">
+<<<<<<< HEAD
 			<a href="/admin_china.php?s=/Type/add" class="btn btn-info btn-sm tooltip-info" data-rel="tooltip" title="添加新栏目" data-original-title="Bottm Info">添加新栏目</a>
+=======
+			<a href="/admin_china.php/Type/add" class="btn btn-info btn-sm tooltip-info" data-rel="tooltip" title="添加新栏目" data-original-title="Bottm Info">添加新栏目</a>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
@@ -300,7 +311,11 @@
 										<td>
 											<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
 
+<<<<<<< HEAD
 												<a href="/admin_china.php?s=/Type/update/id/<?php echo ($res["id"]); ?>" class="btn btn-xs btn-info" style='margin:0 10px;'>
+=======
+												<a href="/admin_china.php/Type/update/id/<?php echo ($res["id"]); ?>" class="btn btn-xs btn-info" style='margin:0 10px;'>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 													<i class="icon-edit bigger-120">修改</i>
 												</a>
 
@@ -322,7 +337,11 @@
 <script>
 	function delfun(tid){
 		if(confirm("确认删除本数据?")){
+<<<<<<< HEAD
 			window.location.href='/admin_china.php?s=/Type/del/id/'+tid;
+=======
+			window.location.href='/admin_china.php/Type/del/id/'+tid;
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 		}
 	}
 </script>

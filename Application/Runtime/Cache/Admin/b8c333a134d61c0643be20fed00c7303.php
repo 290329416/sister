@@ -267,11 +267,19 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
+<<<<<<< HEAD
 				<a href="/admin_china.php?s=">首页</a>
 			</li>
 
 			<li>
 				<a href="/admin_china.php?s=/User/add">添加用户</a>
+=======
+				<a href="/admin_china.php">首页</a>
+			</li>
+
+			<li>
+				<a href="/admin_china.php/User/add">添加用户</a>
+>>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>

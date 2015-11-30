@@ -3,7 +3,7 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>修改友联</title>
+	<title>修改用户密码</title>
 
 	<meta name="description" content="Common form elements and layouts" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -267,19 +267,11 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home home-icon"></i>
-<<<<<<< HEAD
-				<a href="/admin_china.php?s=">首页</a>
-			</li>
-
-			<li>
-				<a href="/admin_china.php?s=/User/add">添加用户</a>
-=======
 				<a href="/admin_china.php">首页</a>
 			</li>
 
 			<li>
-				<a href="/admin_china.php/User/add">添加用户</a>
->>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
+				<a href="/admin_china.php/User">查看所有用户</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -290,12 +282,24 @@
 				<!-- PAGE CONTENT BEGINS -->
 
 				<form action="" method="post" name='myform' role="form" class="form-horizontal" onsubmit="return doCheck()">
+					<input type='hidden' name='id' value='<?php echo ($data["id"]); ?>'/>
 					<div class="form-group">
-						<input type='hidden' value='<?php echo ($res["id"]); ?>' name='id'>
-						<label for="form-field-1" class="col-sm-3 control-label no-padding-right">友情链接名称</label>
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 用户名 </label>
 
 						<div class="col-sm-9">
-							<input type="text" class="col-xs-10 col-sm-5" name='name' placeholder="账号" id="form-field-1" value="<?php echo ($res["name"]); ?>"/>
+							<input type="text" class="col-xs-10 col-sm-5" placeholder="账号"  id="form-field-1" readonly value='<?php echo ($data["username"]); ?>'/>
+							<span class="help-inline col-xs-12 col-sm-7">
+								<span class="middle">*</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="space-4"></div>
+
+					<div class="form-group">
+						<label for="form-field-2" class="col-sm-3 control-label no-padding-right" style='color:red'> 密码 </label>
+						<div class="col-sm-9">
+							<input type="password" class="col-xs-10 col-sm-5" name='password' placeholder="密码" id="form-field-2">
 							<span class="help-inline col-xs-12 col-sm-7">
 								<span class="middle">*</span>
 							</span>
@@ -303,51 +307,28 @@
 					</div>
 
 					<div class="form-group">
-						<label for="form-field-1" class="col-sm-3 control-label no-padding-right">URL地址</label>
+						<label for="form-field-2" class="col-sm-3 control-label no-padding-right" style='color:red'> 确认密码 </label>
 
 						<div class="col-sm-9">
-							<input type="text" class="col-xs-10 col-sm-5" name='url' placeholder="URL地址" id="form-field-1" value="<?php echo ($res["url"]); ?>"/>
+							<input type="password" class="col-xs-10 col-sm-5" name='password2' placeholder="请再次输入密码" id="form-field-2">
 							<span class="help-inline col-xs-12 col-sm-7">
-								<span class="middle">*  (例如   http://www.xxxxx.com)</span>
+								<span class="middle">*</span>
 							</span>
 						</div>
 					</div>
 
 
-					<div class="space-4"></div>
-					<div class="form-group">
-						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 选择添加状态 </label>
-
-						<div class="col-sm-9">
-							<div class="radio">
-								<label>
-									<input type="radio" name='state' value='1'  <?php if($res["state"] == 1): ?>checked<?php endif; ?> class="ace" name="form-field-radio">
-									<span class="lbl"> 开启</span>
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name='state' value='2' <?php if($res["state"] == 2): ?>checked<?php endif; ?> class="ace" name="form-field-radio">
-									<span class="lbl"> 禁用</span>
-								</label>
-							</div>
-						</div>
-					</div>
 
 					<div class="clearfix form-actions">
 						<div class="col-md-offset-3 col-md-9">
 							<button type="submit" class="btn btn-info">
 								<i class="icon-ok bigger-110"></i>
-								确认
+								确认修改
 							</button>
 							&nbsp; &nbsp; &nbsp;
-<<<<<<< HEAD
-							<a href="/admin_china.php?s=/Links" class="btn">
-=======
-							<a href="/admin_china.php/Links" class="btn">
->>>>>>> 0138658a5197a1cc638bf868609c28db350cab04
+							<a href="/admin_china.php/User" type="reset" class="btn">
 								<i class="icon-undo bigger-110"></i>
-								返回首页
+								返回
 							</a>
 						</div>
 					</div>
@@ -364,37 +345,51 @@
                 //添加失去焦点事件
                 list[i].onblur=function(){
                     switch(this.name){
-                        case "name": checkUname(); break;
-                        case "url": checkurl(); break;
+                        case "password": checkpassword(); break;
+                        case "password2": checkpassword2(); break;
                     }
                 }
             }
            
             //表单验证函数
             function doCheck(){
-                return checkUname() && checkurl();
+                return checkpassword() && checkpassword2() && delfun();
             }
        
-            //验证名称
-            function checkUname(){
-                var uname = $("input[name='name']").val();
-                if(uname.length<1){
-                   $("input[name='name']").next().children().html("不可为空!") ;
-                    return false;
-                }
-                $("input[name='name']").next().children().html("√") ;
-                return true;
-            }
-            //验证地址
-            function checkurl(){
-                var pass = $("input[name='url']").val();
+            //验证密码
+            function checkpassword(){
+                var pass = $("input[name='password']").val();
                 if(pass.length<6){
-                	$("input[name='url']").next().children().html("不可为空!");
+                	$("input[name='password']").next().children().html("密码要大于6位！");
                     return false;
                 }
-                $("input[name='url']").next().children().html("√") ;
+                $("input[name='password']").next().children().html("√") ;
                 return true;
             }
+            //验证第二次输入的密码
+            function checkpassword2(){
+                var pass = $("input[name='password']").val();
+                var pass2 = $("input[name='password2']").val();
+                if(pass2.length<6){
+                	$("input[name='password2']").next().children().html("确认密码要大于6位！");
+                	return false;
+                }
+                if(pass !== pass2){
+            		$("input[name='password2']").next().children().html("两次密码不一致！");
+            		$("input[name='password']").next().children().html("两次密码不一致！");
+            		return false;
+            	}
+            	$("input[name='password2']").next().children().html("√") ;
+                return true;
+            }
+
+            function delfun(){
+				if(confirm("确认修改?")){
+					return true;
+				}else{
+					return false;
+				}
+			}
         </script>
 
 				
