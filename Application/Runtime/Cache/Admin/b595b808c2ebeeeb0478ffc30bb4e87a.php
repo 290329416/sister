@@ -125,7 +125,7 @@
 		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-list"></i>
 				<span class="menu-text"> 栏目管理 </span>
 
@@ -150,7 +150,7 @@
 		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-edit"></i>
 				<span class="menu-text"> 文章管理 </span>
 
@@ -175,9 +175,30 @@
 
 			</ul>
 		</li>
+		
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-file-alt"></i>
+
+				<span class="menu-text">
+					公共留言管理
+				</span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href="/admin_china.php/Message">
+						<i class="icon-double-angle-right"></i>
+						查看所有留言
+					</a>
+				</li>
+			</ul>
+		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-tag"></i>
 				<span class="menu-text">友情链接</span>
 
@@ -202,129 +223,8 @@
 
 			</ul>
 		</li>
-	
-		<li>
-			<a href="calendar.html">
-				<i class="icon-calendar"></i>
 
-				<span class="menu-text">
-					Calendar
-					<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-						<i class="icon-warning-sign red bigger-130"></i>
-					</span>
-				</span>
-			</a>
-		</li>
-
-		<li>
-			<a href="gallery.html">
-				<i class="icon-picture"></i>
-				<span class="menu-text"> Gallery </span>
-			</a>
-		</li>
-
-		<li>
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-tag"></i>
-				<span class="menu-text"> More Pages </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li>
-					<a href="profile.html">
-						<i class="icon-double-angle-right"></i>
-						User Profile
-					</a>
-				</li>
-
-				<li>
-					<a href="inbox.html">
-						<i class="icon-double-angle-right"></i>
-						Inbox
-					</a>
-				</li>
-
-				<li>
-					<a href="pricing.html">
-						<i class="icon-double-angle-right"></i>
-						Pricing Tables
-					</a>
-				</li>
-
-				<li>
-					<a href="invoice.html">
-						<i class="icon-double-angle-right"></i>
-						Invoice
-					</a>
-				</li>
-
-				<li>
-					<a href="timeline.html">
-						<i class="icon-double-angle-right"></i>
-						Timeline
-					</a>
-				</li>
-
-				<li>
-					<a href="login.html">
-						<i class="icon-double-angle-right"></i>
-						Login &amp; Register
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li>
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-file-alt"></i>
-
-				<span class="menu-text">
-					Other Pages
-					<span class="badge badge-primary ">5</span>
-				</span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li>
-					<a href="faq.html">
-						<i class="icon-double-angle-right"></i>
-						FAQ
-					</a>
-				</li>
-
-				<li>
-					<a href="error-404.html">
-						<i class="icon-double-angle-right"></i>
-						Error 404
-					</a>
-				</li>
-
-				<li>
-					<a href="error-500.html">
-						<i class="icon-double-angle-right"></i>
-						Error 500
-					</a>
-				</li>
-
-				<li>
-					<a href="grid.html">
-						<i class="icon-double-angle-right"></i>
-						Grid
-					</a>
-				</li>
-
-				<li>
-					<a href="blank.html">
-						<i class="icon-double-angle-right"></i>
-						Blank Page
-					</a>
-				</li>
-			</ul>
-		</li>
+		
 	</ul><!-- /.nav-list -->
 
 	<div class="sidebar-collapse" id="sidebar-collapse">
@@ -371,12 +271,7 @@
 
 									<i class="icon-ok green"></i>
 
-									Welcome to
-									<strong class="green">
-										Ace
-										<small>(v1.2)</small>
-									</strong>
-									,the lightweight, feature-rich and easy to use admin template.
+									Welcome to 中国电子商务协会后台管理 . 您上次登录时间为 <strong class="green"><?php echo (date("Y年m月d日 H时i分s秒",$user_data['logintime'])); ?></strong>
 								</div>
 
 								<div class="row">
@@ -389,10 +284,9 @@
 											</div>
 
 											<div class="infobox-data">
-												<span class="infobox-data-number">32</span>
-												<div class="infobox-content">comments + 2 reviews</div>
+												<span class="infobox-data-number"><?php echo ($user_data["username"]); ?></span>
+												<div class="infobox-content"><?php echo date("m月d日 H时i分s秒",time());?></div>
 											</div>
-											<div class="stat stat-success">8%</div>
 										</div>
 
 										<div class="infobox infobox-blue  ">
@@ -401,36 +295,8 @@
 											</div>
 
 											<div class="infobox-data">
-												<span class="infobox-data-number">11</span>
-												<div class="infobox-content">new followers</div>
-											</div>
-
-											<div class="badge badge-success">
-												+32%
-												<i class="icon-arrow-up"></i>
-											</div>
-										</div>
-
-										<div class="infobox infobox-pink  ">
-											<div class="infobox-icon">
-												<i class="icon-shopping-cart"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">8</span>
-												<div class="infobox-content">new orders</div>
-											</div>
-											<div class="stat stat-important">4%</div>
-										</div>
-
-										<div class="infobox infobox-red  ">
-											<div class="infobox-icon">
-												<i class="icon-beaker"></i>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-data-number">7</span>
-												<div class="infobox-content">experiments</div>
+												<span class="infobox-data-number"><?php echo ($new_num); ?></span>
+												<div class="infobox-content">文章总数</div>
 											</div>
 										</div>
 
@@ -440,32 +306,11 @@
 											</div>
 
 											<div class="infobox-data">
-												<span class="infobox-data-number">6,251</span>
-												<div class="infobox-content">pageviews</div>
-											</div>
-
-											<div class="badge badge-success">
-												7.2%
-												<i class="icon-arrow-up"></i>
+												<span class="infobox-data-number"><?php echo ($user_num); ?></span>
+												<div class="infobox-content">用户总数</div>
 											</div>
 										</div>
 
-										<div class="infobox infobox-blue2  ">
-											<div class="infobox-progress">
-												<div class="easy-pie-chart percentage" data-percent="42" data-size="46">
-													<span class="percent">42</span>%
-												</div>
-											</div>
-
-											<div class="infobox-data">
-												<span class="infobox-text">traffic used</span>
-
-												<div class="infobox-content">
-													<span class="bigger-110">~</span>
-													58GB remaining
-												</div>
-											</div>
-										</div>
 									</div>
 								</div><!-- /row -->
 							</div><!-- /.col -->

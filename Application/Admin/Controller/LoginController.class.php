@@ -15,14 +15,14 @@ class LoginController extends Controller {
 
 	//用户登录
     public function index(){
-    	if(!empty(I())){
+    	if(!empty(I('post.username')) && !empty(I('post.password')) && !empty(I('post.verify'))){
     		$data = I();
     		if($this->Verify->check($data['verify'])){
     			$user = M('user');
     			$userdata = $user -> where("username='%s' and state=0",$data['username'])-> find();
     			if($userdata && ($userdata['password'] === md5(C('SECURE_CODE').md5($data['password'])))){
     				unset($userdata['password']);
-
+                    $user ->where('id='.$userdata['id'])->save(array('logintime'=>time()));
                     $user_auth_key = array_keys($userdata);
                     $user_auth_cookie_key = implode('\t', $user_auth_key);
                     $user_auth_cookie_key = $this->user_auth->authcode($user_auth_cookie_key,ENCODE);

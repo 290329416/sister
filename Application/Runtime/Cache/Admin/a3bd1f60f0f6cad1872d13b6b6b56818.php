@@ -141,7 +141,7 @@
 		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-list"></i>
 				<span class="menu-text"> 栏目管理 </span>
 
@@ -166,7 +166,7 @@
 		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-edit"></i>
 				<span class="menu-text"> 文章管理 </span>
 
@@ -191,9 +191,30 @@
 
 			</ul>
 		</li>
+		
+		<li>
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="icon-file-alt"></i>
+
+				<span class="menu-text">
+					公共留言管理
+				</span>
+
+				<b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href="/admin_china.php/Message">
+						<i class="icon-double-angle-right"></i>
+						查看所有留言
+					</a>
+				</li>
+			</ul>
+		</li>
 
 		<li>
-			<a href="#" class="dropdown-toggle">
+			<a href="javascript:;" class="dropdown-toggle">
 				<i class="icon-tag"></i>
 				<span class="menu-text">友情链接</span>
 
@@ -218,129 +239,8 @@
 
 			</ul>
 		</li>
-	
-		<li>
-			<a href="calendar.html">
-				<i class="icon-calendar"></i>
 
-				<span class="menu-text">
-					Calendar
-					<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-						<i class="icon-warning-sign red bigger-130"></i>
-					</span>
-				</span>
-			</a>
-		</li>
-
-		<li>
-			<a href="gallery.html">
-				<i class="icon-picture"></i>
-				<span class="menu-text"> Gallery </span>
-			</a>
-		</li>
-
-		<li>
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-tag"></i>
-				<span class="menu-text"> More Pages </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li>
-					<a href="profile.html">
-						<i class="icon-double-angle-right"></i>
-						User Profile
-					</a>
-				</li>
-
-				<li>
-					<a href="inbox.html">
-						<i class="icon-double-angle-right"></i>
-						Inbox
-					</a>
-				</li>
-
-				<li>
-					<a href="pricing.html">
-						<i class="icon-double-angle-right"></i>
-						Pricing Tables
-					</a>
-				</li>
-
-				<li>
-					<a href="invoice.html">
-						<i class="icon-double-angle-right"></i>
-						Invoice
-					</a>
-				</li>
-
-				<li>
-					<a href="timeline.html">
-						<i class="icon-double-angle-right"></i>
-						Timeline
-					</a>
-				</li>
-
-				<li>
-					<a href="login.html">
-						<i class="icon-double-angle-right"></i>
-						Login &amp; Register
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li>
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-file-alt"></i>
-
-				<span class="menu-text">
-					Other Pages
-					<span class="badge badge-primary ">5</span>
-				</span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li>
-					<a href="faq.html">
-						<i class="icon-double-angle-right"></i>
-						FAQ
-					</a>
-				</li>
-
-				<li>
-					<a href="error-404.html">
-						<i class="icon-double-angle-right"></i>
-						Error 404
-					</a>
-				</li>
-
-				<li>
-					<a href="error-500.html">
-						<i class="icon-double-angle-right"></i>
-						Error 500
-					</a>
-				</li>
-
-				<li>
-					<a href="grid.html">
-						<i class="icon-double-angle-right"></i>
-						Grid
-					</a>
-				</li>
-
-				<li>
-					<a href="blank.html">
-						<i class="icon-double-angle-right"></i>
-						Blank Page
-					</a>
-				</li>
-			</ul>
-		</li>
+		
 	</ul><!-- /.nav-list -->
 
 	<div class="sidebar-collapse" id="sidebar-collapse">
@@ -371,43 +271,44 @@
 								<!-- PAGE CONTENT BEGINS -->
 
 								<form class="form-horizontal" role="form" action="" method='post' enctype="multipart/form-data">
-									<input type='hidden' name='id' value="<?php echo ($data["id"]); ?>">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章标题</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">企业名称</label>
 
 										<div class="col-sm-9">
-											<input name='title' type="text" id="form-field-1" placeholder="文章标题"   class="col-xs-10 col-sm-5" value='<?php echo ($data["title"]); ?>'/>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(必填)</span>
-											</span>
+											<input type="text" id="form-field-1" placeholder="文章标题" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["prisename"]); ?>'/>
 										</div>
 									</div>
 
 									<div class="space-4"></div>
 									
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布人</label>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系人</label>
 										<div class="col-sm-9">
-											<input name='name' type="text" id="form-field-1" placeholder="文章发布人"   class="col-xs-10 col-sm-5" value='<?php echo ($data["name"]); ?>'/>
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["name"]); ?>'/>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">邮箱</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["email"]); ?>'/>
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">请选择栏目</label>
-										<div class="col-sm-9" style="width:400px;">
-											<div class="col-sm-4" style='padding-left:0px;'>
-												<select id="form-field-select-1" class="form-control" name='pid'>
-													<option value="">请选择栏目</option>
-													<?php if(is_array($typedata)): foreach($typedata as $key=>$type): if(($type["id"]) == $data["pid"]): ?><option value="<?php echo ($type["id"]); ?>" selected><?php echo ($type["name"]); ?></option>
-														<?php else: ?> 
-															<option value="<?php echo ($type["id"]); ?>"><?php echo ($type["name"]); ?></option><?php endif; endforeach; endif; ?>
-												</select>
-											</div>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(必填)</span>
-											</span>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系电话</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo ($data["phone"]); ?>'/>
 										</div>
 									</div>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">留言时间</label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='<?php echo (date("Y-m-d H:i",$data["inputtime"])); ?>'/>
+										</div>
+									</div>
+
 
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章内容</label>
@@ -421,7 +322,7 @@
 																<div class="widget-body">
 																	<div class="widget-main no-padding">
 																		<div class="md-editor" id="1448289198440">
-																			<textarea rows="10" data-provide="markdown"   name="content" class="span12 md-input" style="resize: none;"><?php echo ($data["content"]); ?></textarea>
+																			<textarea rows="10" data-provide="markdown" readonly  name="content" class="span12 md-input" style="resize: none;"><?php echo ($data["message"]); ?></textarea>
 																		</div>
 																	</div>
 																</div>
@@ -430,67 +331,21 @@
 													</div>
 												</div>
 											</div>
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle" style='color:red'>*(txt文件)</span>
-											</span>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布时间</label>
-										<div class="col-sm-9">
-											<div class="col-sm-4" style='padding-left:0px;'>
-												<div class="col-xs-8 col-sm-11" style='padding-left:0px;'>
-													<div class="input-group">
-														<input class="form-control date-picker" id="id-date-picker-1"   type="text" data-date-format="yyyy年mm月dd日" name='releasetime' value="<?php echo ($data["releasetime"]); ?>"/>
-														<span class="input-group-addon">
-															<i class="icon-calendar bigger-110"></i>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">发布人</label>
-										<div class="col-xs-12 col-sm-6">
-											<div class="control-group">
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" class="ace" <?php if($data["state"] == 1): ?>checked<?php endif; ?> value="1" />
-														<span class="lbl">未审核</span>
-													</label>
-												</div>
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" class="ace" <?php if($data["state"] == 2): ?>checked<?php endif; ?> value="2" />
-														<span class="lbl">已审核</span>
-													</label>
-												</div>
-
-												<div class="radio">
-													<label>
-														<input name="state" type="radio" class="ace" <?php if($data["state"] == 3): ?>checked<?php endif; ?> value="3" />
-														<span class="lbl">禁用</span>
-													</label>
-												</div>
-											</div>
 										</div>
 									</div>
 
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
-											<button type='submit' class="btn btn-info">
+											<a href="javascript:;" onclick="delfun(<?php echo ($data["id"]); ?>)" class="btn btn-info">
 												<i class="icon-ok bigger-110"></i>
-												确认修改
-											</button>
+												删除
+											</a>
 
 											&nbsp; &nbsp; &nbsp;
-											<button type='reset' class="btn">
+											<a href="/admin_china.php/Message" class="btn">
 												<i class="icon-undo bigger-110"></i>
 												返回
-											</button>
+											</a>
 										</div>
 									</div>
 								</form>
@@ -556,6 +411,11 @@
 		<!-- inline scripts related to this page -->
 
 		<script type="text/javascript">
+		function delfun(userid){
+			if(confirm("确认删除本数据?")){
+				window.location.href='/admin_china.php/Message/delete/id/'+userid;
+			}
+		}
 			jQuery(function($) {
 				$('#id-disable-check').on('click', function() {
 					var inp = $('#form-input-readonly').get(0);

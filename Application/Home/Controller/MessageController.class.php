@@ -16,10 +16,11 @@ class MessageController extends IndexController {
 
     //验证码
     public function verify(){
-        $this->Verify->imageH = 30;
-        $this->Verify->imageW = 100;
-        $this->Verify->fontSize = 15;
+        $this->Verify->imageH = 35;
+        $this->Verify->imageW = 120;
+        $this->Verify->fontSize = 16;
         $this->Verify->length   = 4;
+        $this->Verify->fontttf = '4.ttf';
         $this->Verify->useNoise = false;
         $this->Verify->entry();
     }
@@ -44,9 +45,12 @@ class MessageController extends IndexController {
             echo  '{"result":"0","msg":"内容不能为空!"}';exit;
         }
         $message = M('message');
-        if($message -> create(I('post'))){
+        $data = I('post.');
+        $data['inputtime']= time();
+        if($message -> create($data)){
             $result = $message->add();
             if($result){
+                cookie('message','',60);
                 exit('1');
             }
         }

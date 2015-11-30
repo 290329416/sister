@@ -103,11 +103,11 @@
                 <tr>
                  <th>验证码：</th>
                  <td><input type="text" name="verifyCode" id="login_verifyCode" class="inp2" maxlength="4">
-                  &nbsp;&nbsp;&nbsp; <img width="100" height="30" align="absmiddle" src="/Message/verify" class="m_b" id="img">&nbsp;&nbsp;&nbsp;<a target="_self" href="javascript:reloadVerifyCode('img');">刷新验证码</a></td>
+                  &nbsp;&nbsp;&nbsp; <img width="100" height="35" align="absmiddle" src="/Message/verify" class="m_b" id="img">&nbsp;&nbsp;&nbsp;<a target="_self" href="javascript:reloadVerifyCode('img');">刷新验证码</a></td>
                 </tr>
                 <tr>
                  <td>&nbsp;</td>
-                 <td><input type="button" value="" onclick="fuzhi()" class="btn2"></td>
+                 <td><input type="button"  value="" onclick="fuzhi()" class="btn2"></td>
                </tr>
              </tbody>
            </table>
@@ -137,6 +137,9 @@
    <script>
     function fuzhi() {
       $(".ca_info").hide();
+      if(GetCookie('message') == 1){
+        $(".ca_info").show().html("禁止重复提交");return;
+      }
       $.ajax({
         "url":"/Message/add",
         "type":"post",
@@ -148,6 +151,8 @@
             $(".ca_info").show().html(data.msg);
           }else{
             $(".ca_info").show().html("提交成功");
+            setCookie('message','1',60);
+            $(".btn2").prop({disabled: true});
             alert("您的留言已经提交成功，我们会尽快给您邮件给您答复，感谢您的支持!");
           }
         },
@@ -159,8 +164,23 @@
     var obj = document.getElementById(objId);
     obj.src = "/Message/verify?d=" + new Date();
     } 
+    function setCookie(name, value, expires, path, domain, secure){
+      var liveDate = new Date();
+      expires = new Date((new Date()).getTime() + expires * 2000);//按分钟
+      document.cookie = name + "=" + escape (value) +
+      ((expires) ? "; expires=" + expires : "") +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+    }
+    function GetCookie(sName){
+      var aCookie = document.cookie.split("; ");
+      for (var i=0; i < aCookie.length; i++){
+        var aCrumb = aCookie[i].split("=");
+        if (sName == aCrumb[0]) return unescape(aCrumb[1]);
+      }
+        return null;
+    } 
    </script>
-   <style>
-    </style>
 </body>
 </html>
