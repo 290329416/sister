@@ -19,7 +19,7 @@ class IndexController extends Controller {
     public function index(){
     	$news = M('news');
     	foreach($this->type as $v){
-    		$new[$v['namepath']] = $news -> where("pid =" . $v['id'] .' and state=2') -> order('id desc') -> limit(9) -> select();
+    		$new[$v['namepath']] = $news -> where("pid =" . $v['id'] .' and state=2') -> order('id desc') -> limit(8) -> select();
     	}
     	$this -> assign('new',$new);
         $this->display();
