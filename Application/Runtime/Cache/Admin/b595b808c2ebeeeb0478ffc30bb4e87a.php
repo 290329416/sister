@@ -3,44 +3,29 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>查看公众留言</title>
-
-	<meta name="description" content="Static &amp; Dynamic Tables" />
+	<title>后台管理</title>
+	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 	<!-- basic styles -->
-
 	<link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
-
 	<!--[if IE 7]>
 	  <link rel="stylesheet" href="/Public/assets/css/font-awesome-ie7.min.css" />
 	<![endif]-->
-
 	<!-- page specific plugin styles -->
-
 	<!-- fonts -->
-
 	<link rel="stylesheet" href="/Public/assets/css/ace-fonts.css" />
-
 	<!-- ace styles -->
-
 	<link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
 	<link rel="stylesheet" href="/Public/assets/css/ace-rtl.min.css" />
 	<link rel="stylesheet" href="/Public/assets/css/ace-skins.min.css" />
-
 	<!--[if lte IE 8]>
 	  <link rel="stylesheet" href="/Public/assets/css/ace-ie.min.css" />
 	<![endif]-->
-
 	<!-- inline styles related to this page -->
-
 	<!-- ace settings handler -->
-
 	<script src="/Public/assets/js/ace-extra.min.js"></script>
-
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
 	<!--[if lt IE 9]>
 	<script src="/Public/assets/js/html5shiv.js"></script>
 	<script src="/Public/assets/js/respond.min.js"></script>
@@ -252,102 +237,86 @@
 </div> 
 				
 <div class="main-content">
-	<div id="breadcrumbs" class="breadcrumbs">
-		<script type="text/javascript">
-			try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-		</script>
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
 
-		<ul class="breadcrumb">
-			<li>
-				<i class="icon-home home-icon"></i>
-				<a href="/admin_china.php?s=">首页</a>
-			</li>
-			<li>
-				<a href="/admin_china.php?s=/Message/index">查看公众留言</a>
-			</li>
-		</ul><!-- .breadcrumb -->
-	</div>
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="/admin_china.php">后台首页</a>
+							</li>
+						</ul><!-- .breadcrumb -->
+					</div>
 
-	<div class="page-content">
-		<div class="row">
-			<div class="col-xs-12">
-				<!-- PAGE CONTENT BEGINS -->
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="table-header">
-							Results for "Latest Message"
-						</div>
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								你好!
+								<small>
+									<?php echo ($user_data["username"]); ?>
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
 
-						<div class="table-responsive">
-							<div role="grid" class="dataTables_wrapper" id="sample-table-2_wrapper">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+								<div class="alert alert-block alert-success">
+									<button type="button" class="close" data-dismiss="alert">
+										<i class="icon-remove"></i>
+									</button>
+
+									<i class="icon-ok green"></i>
+
+									Welcome to 中国电子商务协会后台管理 . 您上次登录时间为 <strong class="green"><?php echo (date("Y年m月d日 H时i分s秒",$user_data['logintime'])); ?></strong>
+								</div>
+
 								<div class="row">
-										<div class="col-sm-6">
-											<div id="sample-table-2_length" class="dataTables_length">
-												<div class="dataTables_filter" id="sample-table-2_filter">
-													<form action="/admin_china.php?s=/Message/index" method='post'>
-													<label>搜索公司名称: <input type="text" name='prisename' aria-controls="sample-table-2"></label>
-													<button class="btn btn-sm btn-primary">搜索</button>
-													</form>
-												</div>
-												
+									<div class="space-6"></div>
+
+									<div class="col-sm-7 infobox-container">
+										<div class="infobox infobox-green  ">
+											<div class="infobox-icon">
+												<i class="icon-comments"></i>
+											</div>
+
+											<div class="infobox-data">
+												<span class="infobox-data-number"><?php echo ($user_data["username"]); ?></span>
+												<div class="infobox-content"><?php echo date("m月d日 H时i分s秒",time());?></div>
 											</div>
 										</div>
-								</div>
-								<table class="table table-striped table-bordered table-hover dataTable" id="sample-table-2" aria-describedby="sample-table-2_info">
-								<thead>
-									<tr role="row">
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Domain: activate to sort column ascending">企业名称</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 160px;" aria-label="Price: activate to sort column ascending">联系人</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Price: activate to sort column ascending">邮箱</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Clicks: activate to sort column ascending">联系电话</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 40px;" aria-label="Status: activate to sort column ascending">留言时间</th>
-										<th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 130px;" aria-label="">操作</th></tr>
-								</thead>
 
-								
-							<tbody role="alert" aria-live="polite" aria-relevant="all">
-
-								<?php if(is_array($mess)): foreach($mess as $key=>$mes): ?><tr class="odd">
-										<td class="">
-											<a href="/admin_china.php?s=/Message/show/id/<?php echo ($mes["id"]); ?>"><?php echo ($mes["prisename"]); ?></a>
-										</td>
-										<td class=" "><?php echo ($mes["name"]); ?></td>
-										<td class=" "><?php echo ($mes["email"]); ?></td>
-										<td class="hidden-480 "><?php echo ($mes["phone"]); ?></td>
-										<td class=" "><?php echo (date("Y-m-d H:i",$mes["inputtime"])); ?></td>
-										<td class=" ">
-											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php?s=/Message/show/id/<?php echo ($mes["id"]); ?>" class="blue" title='查看详情'>
-													<i class="icon-zoom-in bigger-130"></i>
-													查看
-												</a>
-
-												<a href="javascript:;" onclick="delfun(<?php echo ($mes["id"]); ?>)" class="red" title='删除'>
-													<i class="icon-trash bigger-130"></i>
-													删除
-												</a>
+										<div class="infobox infobox-blue  ">
+											<div class="infobox-icon">
+												<i class="icon-twitter"></i>
 											</div>
-										</td>
-									</tr><?php endforeach; endif; ?>
-								</tbody></table><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="sample-table-2_info">共<?php echo ($count); ?>条数据&nbsp;&nbsp;&nbsp;总页数&nbsp;<?php echo ($num); ?></div></div><div class="col-sm-6">
-								<div class="dataTables_paginate paging_bootstrap">
-									<ul class="pagination">
-										<?php echo ($pages); ?>
-									</ul></div></div></div></div>
-						</div>
-					</div>
-				</div>
-			</div><!-- /.col -->
-		</div><!-- /.row -->
-	</div><!-- /.page-content -->
-</div>
-<script>
-function delfun(userid){
-	if(confirm("确认删除本数据?删除后将不能恢复")){
-		window.location.href='/admin_china.php?s=/Message/delete/id/'+userid;
-	}
-}
-</script>
+
+											<div class="infobox-data">
+												<span class="infobox-data-number"><?php echo ($new_num); ?></span>
+												<div class="infobox-content">文章总数</div>
+											</div>
+										</div>
+
+										<div class="infobox infobox-orange2  ">
+											<div class="infobox-chart">
+												<span class="sparkline" data-values="196,128,202,177,154,94,100,170,224"></span>
+											</div>
+
+											<div class="infobox-data">
+												<span class="infobox-data-number"><?php echo ($user_num); ?></span>
+												<div class="infobox-content">用户总数</div>
+											</div>
+										</div>
+
+									</div>
+								</div><!-- /row -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
 
 				
 

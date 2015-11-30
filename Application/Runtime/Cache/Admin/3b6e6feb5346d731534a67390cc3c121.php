@@ -78,7 +78,7 @@
 
 					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 						<li>
-							<a href="/admin_china.php?s=/user/show/id/<?php echo ($user_data["id"]); ?>">
+							<a href="<?php echo U('user/show','id='.$user_data[id]);?>">
 								<i class="icon-cog"></i>
 								个人资料
 							</a>
@@ -87,7 +87,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="/admin_china.php?s=/login/quit">
+							<a href="<?php echo U('login/quit');?>">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -105,7 +105,7 @@
 			</script>
 
 			<div class="main-container-inner">
-				<a class="menu-toggler" id="menu-toggler" href="#">
+				<a class="menu-toggler" id="menu-toggler" href="">
 					<span class="menu-text"></span>
 				</a>
 
@@ -124,14 +124,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/User/index">
+					<a href="<?php echo U('User/index');?>">
 						<i class="icon-double-angle-right"></i>
 						查看所有用户
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/User/add">
+					<a href="<?php echo U('User/add');?>">
 						<i class="icon-double-angle-right"></i>
 						添加用户
 					</a>
@@ -149,14 +149,14 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/Type/index">
+					<a href="<?php echo U('Type/index');?>">
 						<i class="icon-double-angle-right"></i>
 						查看所有栏目
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/Type/add">
+					<a href="<?php echo U('Type/add');?>">
 						<i class="icon-double-angle-right"></i>
 						添加栏目
 					</a>
@@ -175,14 +175,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php?s=/News/index">
+					<a href="<?php echo U('News/index');?>">
 						<i class="icon-double-angle-right"></i>
 						查看所有文章
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/News/add">
+					<a href="<?php echo U('News/add');?>">
 						<i class="icon-double-angle-right"></i>
 						添加文章
 					</a>
@@ -204,7 +204,7 @@
 
 			<ul class="submenu">
 				<li>
-					<a href="/admin_china.php?s=/Message">
+					<a href="<?php echo U('Message/index');?>">
 						<i class="icon-double-angle-right"></i>
 						查看所有留言
 					</a>
@@ -223,14 +223,14 @@
 			<ul class="submenu">
 
 				<li>
-					<a href="/admin_china.php?s=/Links/index">
+					<a href="<?php echo U('Links/index');?>">
 						<i class="icon-double-angle-right"></i>
 						查看友情链接
 					</a>
 				</li>
 
 				<li>
-					<a href="/admin_china.php?s=/Links/add">
+					<a href="<?php echo U('Links/add');?>">
 						<i class="icon-double-angle-right"></i>
 						添加友链
 					</a>

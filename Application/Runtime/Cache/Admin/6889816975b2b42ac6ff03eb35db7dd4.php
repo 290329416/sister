@@ -3,9 +3,9 @@
 	
 <head>
 	<meta charset="utf-8" />
-	<title>查看公众留言</title>
+	<title>查看用户</title>
 
-	<meta name="description" content="Static &amp; Dynamic Tables" />
+	<meta name="description" content="Common form elements and layouts" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- basic styles -->
@@ -18,6 +18,13 @@
 	<![endif]-->
 
 	<!-- page specific plugin styles -->
+
+	<link rel="stylesheet" href="/Public/assets/css/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" href="/Public/assets/css/chosen.css" />
+	<link rel="stylesheet" href="/Public/assets/css/datepicker.css" />
+	<link rel="stylesheet" href="/Public/assets/css/bootstrap-timepicker.css" />
+	<link rel="stylesheet" href="/Public/assets/css/daterangepicker.css" />
+	<link rel="stylesheet" href="/Public/assets/css/colorpicker.css" />
 
 	<!-- fonts -->
 
@@ -262,8 +269,9 @@
 				<i class="icon-home home-icon"></i>
 				<a href="/admin_china.php?s=">首页</a>
 			</li>
+
 			<li>
-				<a href="/admin_china.php?s=/Message/index">查看公众留言</a>
+				<a href="/admin_china.php?s=/User/index">查看所有用户</a>
 			</li>
 		</ul><!-- .breadcrumb -->
 	</div>
@@ -272,82 +280,103 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<!-- PAGE CONTENT BEGINS -->
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="table-header">
-							Results for "Latest Message"
-						</div>
 
-						<div class="table-responsive">
-							<div role="grid" class="dataTables_wrapper" id="sample-table-2_wrapper">
-								<div class="row">
-										<div class="col-sm-6">
-											<div id="sample-table-2_length" class="dataTables_length">
-												<div class="dataTables_filter" id="sample-table-2_filter">
-													<form action="/admin_china.php?s=/Message/index" method='post'>
-													<label>搜索公司名称: <input type="text" name='prisename' aria-controls="sample-table-2"></label>
-													<button class="btn btn-sm btn-primary">搜索</button>
-													</form>
-												</div>
-												
-											</div>
-										</div>
-								</div>
-								<table class="table table-striped table-bordered table-hover dataTable" id="sample-table-2" aria-describedby="sample-table-2_info">
-								<thead>
-									<tr role="row">
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Domain: activate to sort column ascending">企业名称</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 160px;" aria-label="Price: activate to sort column ascending">联系人</th>
-										<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 120px;" aria-label="Price: activate to sort column ascending">邮箱</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 100px;" aria-label="Clicks: activate to sort column ascending">联系电话</th>
-										<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" style="width: 40px;" aria-label="Status: activate to sort column ascending">留言时间</th>
-										<th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 130px;" aria-label="">操作</th></tr>
-								</thead>
+				<form  name='myform' role="form" class="form-horizontal" onsubmit="return false">
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 用户名 </label>
 
-								
-							<tbody role="alert" aria-live="polite" aria-relevant="all">
-
-								<?php if(is_array($mess)): foreach($mess as $key=>$mes): ?><tr class="odd">
-										<td class="">
-											<a href="/admin_china.php?s=/Message/show/id/<?php echo ($mes["id"]); ?>"><?php echo ($mes["prisename"]); ?></a>
-										</td>
-										<td class=" "><?php echo ($mes["name"]); ?></td>
-										<td class=" "><?php echo ($mes["email"]); ?></td>
-										<td class="hidden-480 "><?php echo ($mes["phone"]); ?></td>
-										<td class=" "><?php echo (date("Y-m-d H:i",$mes["inputtime"])); ?></td>
-										<td class=" ">
-											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a href="/admin_china.php?s=/Message/show/id/<?php echo ($mes["id"]); ?>" class="blue" title='查看详情'>
-													<i class="icon-zoom-in bigger-130"></i>
-													查看
-												</a>
-
-												<a href="javascript:;" onclick="delfun(<?php echo ($mes["id"]); ?>)" class="red" title='删除'>
-													<i class="icon-trash bigger-130"></i>
-													删除
-												</a>
-											</div>
-										</td>
-									</tr><?php endforeach; endif; ?>
-								</tbody></table><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="sample-table-2_info">共<?php echo ($count); ?>条数据&nbsp;&nbsp;&nbsp;总页数&nbsp;<?php echo ($num); ?></div></div><div class="col-sm-6">
-								<div class="dataTables_paginate paging_bootstrap">
-									<ul class="pagination">
-										<?php echo ($pages); ?>
-									</ul></div></div></div></div>
+						<div class="col-sm-9">
+							<input type="text" class="col-xs-10 col-sm-5" placeholder="账号" id="form-field-1" readonly value='<?php echo ($data["username"]); ?>'/>
 						</div>
 					</div>
-				</div>
+
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 公司(或个人)名称 </label>
+
+						<div class="col-sm-9">
+							<input type="text" class="col-xs-10 col-sm-5" placeholder="名称" id="form-field-1" readonly value='<?php echo ($data["name"]); ?>'/>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 地址 </label>
+
+						<div class="col-sm-9">
+							<input type="text" class="col-xs-10 col-sm-5" placeholder="地址" id="form-field-1" readonly value='<?php echo ($data["address"]); ?>'/>
+						</div>
+					</div>
+
+					<div class="space-4"></div>
+
+					<div class="form-group">
+						<label for="form-field-6" class="col-sm-3 control-label no-padding-right">联系电话</label>
+
+						<div class="col-sm-9">
+							<input type="text" data-placement="bottom" placeholder="Phone" id="form-field-6" data-rel="tooltip" data-original-title="Hello Tooltip!" readonly value='<?php echo ($data["phone"]); ?>'/>
+							<span data-content="More details." data-placement="left" data-trigger="hover" data-rel="popover" class="help-button" data-original-title="Popover on hover">?</span>
+						</div>
+					</div>
+
+					<div class="space-4"></div>
+
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 邮箱 </label>
+
+						<div class="col-sm-9">
+							<input type="text" class="col-xs-10 col-sm-5" placeholder="邮箱" id="form-field-1" disabled="disabled" value='<?php echo ($data["email"]); ?>'/>
+						</div>
+					</div>
+					
+					<div class="space-4"></div>
+
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 选择添加用户状态 </label>
+
+						<div class="col-sm-9">
+							<div class="radio">
+								<label>
+									<input type="radio" value='0' class="ace" name="form-field-radio" disabled="disabled" <?php if($data["state"] == 0): ?>checked<?php endif; ?> >
+									<span class="lbl"> 管理员</span>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" value='1' class="ace" name="form-field-radio" disabled="disabled" <?php if($data["state"] == 1): ?>checked<?php endif; ?> >
+									<span class="lbl"> 普通用户</span>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" value='2' class="ace" name="form-field-radio" disabled="disabled" <?php if($data["state"] == 2): ?>checked<?php endif; ?> >
+									<span class="lbl"> 禁用</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix form-actions">
+						<div class="col-md-offset-3 col-md-9">
+							<a href="/admin_china.php?s=/User/update/id/<?php echo ($data["id"]); ?>" class="btn btn-info">
+								<i class="icon-arrow-right icon-on-right bigger-110"></i>
+								修改用户信息
+							</a>
+							&nbsp; &nbsp; &nbsp;
+							<a  href="/admin_china.php?s=/User/chpass/id/<?php echo ($data["id"]); ?>" class="btn" style='background-color:#47a447 !important;border-color: #47a447;'>
+								<i class="icon-key bigger-110"></i>
+								修改密码
+							</a>
+							&nbsp; &nbsp; &nbsp;
+							<a href="/admin_china.php?s=/User/" class="btn">
+								<i class="icon-undo bigger-110"></i>
+								返回
+							</a>
+						</div>
+					</div>
+				</form>
 			</div><!-- /.col -->
 		</div><!-- /.row -->
 	</div><!-- /.page-content -->
 </div>
-<script>
-function delfun(userid){
-	if(confirm("确认删除本数据?删除后将不能恢复")){
-		window.location.href='/admin_china.php?s=/Message/delete/id/'+userid;
-	}
-}
-</script>
 
 				
 
