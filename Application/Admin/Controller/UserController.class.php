@@ -7,20 +7,20 @@ class UserController extends IndexController {
     	//获取当前页的用户
     	$where['name'] = I('post.name');
     	$p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
-    	$first =  $p * 5;
+    	$first =  $p * 15;
 
     	if(empty($where['name'])){
-    		$users = $user -> order("id DESC") -> limit($first,'5') -> select();
+    		$users = $user -> order("id DESC") -> limit($first,'15') -> select();
             //获取分页
             $count = $user -> count();
-            $num = ceil($count/5);
-            $page = new \Think\Page($count,5);
+            $num = ceil($count/15);
+            $page = new \Think\Page($count,15);
             $pages = $page ->show();
             $this -> assign('pages', $pages);
             $this -> assign('count', $count);
             $this -> assign('num', $num);
     	}else{
-    		$users = $user -> order("id DESC") -> limit($first,'5') -> where($where) -> select();
+    		$users = $user -> order("id DESC") -> limit($first,'15') -> where($where) -> select();
     	}
     	
     	//分配数据

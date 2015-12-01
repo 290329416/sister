@@ -13,7 +13,7 @@
       </div>
       <div class="righttop">
          <ul>
-           <li style="width:50px;"><a href="/Public/home/#">请登录</a></li><li><a href="/Public/home/#">会员服务</a></li><li><a href="/Public/home/#">服务热线</a></li><li><a href="/Public/home/#">网站导航</a></li>
+           <li style="width:50px;"><a href="/">请登录</a></li><li><a href="/">会员服务</a></li><li><a href="/">服务热线</a></li><li><a href="/">网站导航</a></li>
          </ul>
       </div>
    </div>
@@ -21,8 +21,8 @@
    <div class="header">
       <div class="logo"><img src="/Public/home/images/logo.png" width="285" height="68"></div>
       <div class="search">
-      <form action="" method="post">
-      <input type="text" class="ytext" placeholder="请输入你要搜索的内容">
+      <form action="<?php echo U('index/index');?>" method="post">
+      <input type="text" class="ytext" name='title' placeholder="请输入你要搜索的内容">
       <input type="submit" class="ysubmit" value="综合搜索">
       </form>
       </div>
@@ -50,13 +50,13 @@
 		<div class='news_one'>
 		<div class='news_left'>
 			<ul>
-				<li style='margin-top:0px;'><a href='#'>协会概况</a></li>
-				<li><a href='#'>分会简介</a></li>
-				<li><a href='#'>组织机构</a></li>
-				<li><a href='#'>协会会员登陆入口</a></li>
-				<li><a href='#'>用户名</a></li>
-				<li><a href='#'>密  码</a></li>
-				<li><a href='#'>登  录</a></li>
+				<li style='margin-top:0px;'><a href=''>协会概况</a></li>
+				<li><a href=''>分会简介</a></li>
+				<li><a href=''>组织机构</a></li>
+				<li><a href=''>协会会员登陆入口</a></li>
+				<li><a href=''>用户名</a></li>
+				<li><a href=''>密  码</a></li>
+				<li><a href=''>登  录</a></li>
 			</ul>
 		</div>
 		<div class="news">
@@ -72,13 +72,13 @@
 		</div>
 		<div class='news_right'>
 			<ul>
-				<li style='margin-top:0px;'><a href='#'>快速入口</a></li>
-				<li><a href='#'>企业资质查询</a></li>
-				<li><a href='#'>评审人员资格查询</a></li>
-				<li><a href='#'>评审人员资格查询</a></li>
-				<li><a href='#'>评估判断</a></li>
-				<li><a href='#'>申请判定</a></li>
-				<li><a href='#'>在线投诉</a></li>
+				<li style='margin-top:0px;'><a href=''>快速入口</a></li>
+				<li><a href=''>企业资质查询</a></li>
+				<li><a href=''>评审人员资格查询</a></li>
+				<li><a href=''>评审人员资格查询</a></li>
+				<li><a href=''>评估判断</a></li>
+				<li><a href=''>申请判定</a></li>
+				<li><a href=''>在线投诉</a></li>
 			</ul>
 		</div>
         </div>

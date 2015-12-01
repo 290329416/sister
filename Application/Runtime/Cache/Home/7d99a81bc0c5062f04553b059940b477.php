@@ -13,7 +13,7 @@
       </div>
       <div class="righttop">
          <ul>
-           <li style="width:50px;"><a href="/Public/home/#">请登录</a></li><li><a href="/Public/home/#">会员服务</a></li><li><a href="/Public/home/#">服务热线</a></li><li><a href="/Public/home/#">网站导航</a></li>
+           <li style="width:50px;"><a href="/">请登录</a></li><li><a href="/">会员服务</a></li><li><a href="/">服务热线</a></li><li><a href="/">网站导航</a></li>
          </ul>
       </div>
    </div>
@@ -21,8 +21,8 @@
    <div class="header">
       <div class="logo"><img src="/Public/home/images/logo.png" width="285" height="68"></div>
       <div class="search">
-      <form action="" method="post">
-      <input type="text" class="ytext" placeholder="请输入你要搜索的内容">
+      <form action="<?php echo U('index/index');?>" method="post">
+      <input type="text" class="ytext" name='title' placeholder="请输入你要搜索的内容">
       <input type="submit" class="ysubmit" value="综合搜索">
       </form>
       </div>
