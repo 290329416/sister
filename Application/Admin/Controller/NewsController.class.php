@@ -133,10 +133,18 @@ class NewsController extends IndexController {
     //删除文章
     public function delete(){
         $news = M('news');
-        $data['id'] = I('id');
-        $data['state'] = 3;
-        if($news ->save($data)){
-            $this -> success("删除成功",U('news/index'));
+        if(is_array(I('post.id'))){
+            $id_data = implode(',', I('post.id'));
+            $num = $news -> delete($id_data);
+            if($num){
+                $this -> success("删除成功",U('news/index'));
+                exit;
+            }else{
+                $this->error('删除失败');
+            }
+        }
+        if($news ->delete(I('get.id'))){
+            $this -> success("删除成功",U('news/index'));exit;
         }else{
             $this->error('删除失败');
         }
