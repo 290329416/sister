@@ -1,0 +1,444 @@
+[ 2015-12-02T12:43:20+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015256s ]
+
+[ 2015-12-02T12:43:22+08:00 ] 114.240.250.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.1395s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0306s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0892s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0528s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.035001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.035102s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-12-02T12:43:26+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2015-12-02T12:52:39+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2015-12-02T13:03:03+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2015-12-02T13:07:00+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2015-12-02T13:07:01+08:00 ] 114.240.250.233 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2015-12-02T13:07:02+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-12-02T13:07:07+08:00 ] 114.240.250.233 /?s=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-12-02T13:07:20+08:00 ] 14.17.29.92 /index.php?s=/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE `pid` = 1 AND `id` = 282 AND `state` = 2 LIMIT 1   [ RunTime:0.0262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000735s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000846s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002386s ]
+
+[ 2015-12-02T13:07:20+08:00 ] 112.90.78.22 /index.php?/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2015-12-02T13:07:29+08:00 ] 114.240.250.233 /index.php?s=/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002913s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0604s ]
+SQL: SELECT * FROM `pt_news` WHERE `pid` = 1 AND `id` = 282 AND `state` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-12-02T13:07:43+08:00 ] 114.240.250.233 /index.php?/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-12-02T13:07:46+08:00 ] 114.240.250.233 /index.php?/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2015-12-02T13:07:50+08:00 ] 114.240.250.233 /index.php?s=/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE `pid` = 1 AND `id` = 282 AND `state` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2015-12-02T13:07:52+08:00 ] 114.240.250.233 /t_xwdt/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `pt_type` WHERE ( namepath='xwdt' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: limit /Data/webapps/sister/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT * FROM `pt_news` WHERE ( pid=1 and state=2 ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_news` WHERE ( pid=1 and state=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2015-12-02T13:08:03+08:00 ] 114.240.250.233 /index.php?s=/xwdt/.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+ERR: 无法加载控制器:Xwdt
+
+[ 2015-12-02T13:08:10+08:00 ] 114.240.250.233 /index.php?s=/t_xwdt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `pt_type` WHERE ( namepath='xwdt' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0106s ]
+NOTIC: [8] Undefined index: limit /Data/webapps/sister/ThinkPHP/Library/Think/Db/Driver.class.php 第 961 行.
+SQL: SELECT * FROM `pt_news` WHERE ( pid=1 and state=2 ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pt_news` WHERE ( pid=1 and state=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-12-02T13:37:14+08:00 ] 123.151.64.202 /index.php?s=/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `pt_news` WHERE `pid` = 1 AND `id` = 282 AND `state` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2015-12-02T13:40:04+08:00 ] 123.151.64.202 /index.php?/xwdt/282.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `pt_type` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `pt_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pt_links` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `pt_links` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pt_news` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =1 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =2 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =3 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =4 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =5 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =6 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pt_news` WHERE ( pid =7 and state=2 ) ORDER BY id desc LIMIT 8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Use of undefined constant namepath - assumed 'namepath' /Data/webapps/sister/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002169s ]
+
+[ 2015-12-02T21:30:08+08:00 ] 114.240.250.233 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
