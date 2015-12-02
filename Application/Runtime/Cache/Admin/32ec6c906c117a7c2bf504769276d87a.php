@@ -93,8 +93,13 @@
 													<div class="space"></div>
 														
 													<div class="clearfix">
+<<<<<<< HEAD
 														<label class="inline">
 															<span class="lbl"><img src="<?php echo U('Login/verify');?>" onclick="this.src='/admin_china.php/Login/verify/rnd/'+ Math.random();"></span>
+=======
+														<label class="inline" style='width:150px'>
+															<img src="<?php echo U('Login/verify');?>" onclick="this.src='/admin_china.php/Login/verify/rnd/'+ Math.random();">
+>>>>>>> 145c662f6da3e6d482bf397f1fd058a62417e174
 														</label>
 
 														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
