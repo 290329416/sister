@@ -45,8 +45,8 @@ class LoginController extends Controller {
 	//验证码
 	public function verify(){
     	$this->Verify->imageH = 40;
-    	$this->Verify->imageW = 100;
-    	$this->Verify->fontSize = 22;
+    	$this->Verify->imageW = 150;
+    	$this->Verify->fontSize = 21;
     	$this->Verify->length   = 4;
     	$this->Verify->entry();
 	}
