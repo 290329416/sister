@@ -47,7 +47,7 @@ class LoginController extends Controller {
     	$this->Verify->imageH = 40;
     	$this->Verify->imageW = 100;
     	$this->Verify->fontSize = 22;
-    	$this->Verify->length   = 1;
+    	$this->Verify->length   = 4;
     	$this->Verify->entry();
 	}
     public function quit(){
