@@ -29,7 +29,7 @@
         
       <div class="nav">
         <ul>
-          <li><a href="/">电商咨询</a></li>
+          <li><a href="/">首页</a></li>
             <li><a href="/">服务大厅</a></li>
               <li  ><a href="/">电商资质查询</a></li>
                 <li ><a href="/">在线申请评审</a></li>

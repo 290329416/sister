@@ -9,7 +9,7 @@ class LoginController extends Controller {
 
 	public function __construct() {
         parent::__construct();
-        $this->Verify = new \Think\Verify();
+        $this->Verify = new \Org\Util\Verify();
 		$this->user_auth = D('user');
     }
 
@@ -45,9 +45,10 @@ class LoginController extends Controller {
 	//验证码
 	public function verify(){
     	$this->Verify->imageH = 40;
-    	$this->Verify->imageW = 150;
-    	$this->Verify->fontSize = 21;
+    	$this->Verify->imageW = 130;
+    	$this->Verify->fontSize = 15;
     	$this->Verify->length   = 4;
+        $this->Verify->fontttf ='5.ttf';
     	$this->Verify->entry();
 	}
     public function quit(){
