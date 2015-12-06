@@ -7,6 +7,12 @@ img{ border:none;}
 .top{ width:100%; background:#eef5ef; height:28px; line-height:28px; border-bottom:solid 1px #d5dfd5;}
 /* .lfmain{ float:left; width:490px;} */
 /* .rfmain{ float:right; width:490px;} */
+.search{ margin-top:20px;}
+.logo{ margin-bottom:10px;} 
+.logo span{ width:80px; display:block; float:left; }
+.logo span img{ width:100%;}
+.logo h2{ line-height:25px; margin-top:20px; display:block; float:left; margin-left:10px;} 
+
 .lefttop{ float:left; width:300px;padding-left:20px;}
 .righttop{ float:right; width:280px;  }
 .righttop ul li{ float:left; width:70px;  }
@@ -14,8 +20,8 @@ img{ border:none;}
 .banner{ margin:0px auto; width:1000px;}
 .banner img{ width:1000px;}
 .logo{ width:300px; float:left;}
-.search{ float:right; height:40px; margin-top:15px; background:#dddcdc; line-height:40px; border-radius:5px; width:500px; border:solid 1px #ccc;}
-.ytext{ height:20px; line-height:20px; color:#666; width:350px; display:inline-block; margin-left:10px;}
+.search{ float:left; height:40px; margin-top:25px; background:#dddcdc; line-height:40px; border-radius:5px; width:59%; border:solid 1px #ccc;margin-left: 100px;}
+.ytext{ height:20px; line-height:20px; color:#666; width:80%; display:inline-block; margin-left:10px;}
 .ysubmit{ display:inline-block; width:90px; height:27px; line-height:25px; border-radius:3px; border:none; background:none; color:#fff; font-size:14px; font-weight:bold; background:#fe8226; cursor:pointer; }
  .header{ padding:10px 0px;}
 .nav{ clear:both; background:#0099cc; height:40px; border:solid 1px #ccfaf4; border-radius:2px; }
