@@ -82,6 +82,8 @@
 										<th>类别路径</th>
 										<th class="hidden-480">父类ID</th>
 										<th>PATH</th>
+										<th width='150px'>权重<span style='color: red;'>(数字越大前端首页显示越靠前)</span></th>
+										<th>状态</th>
 										<th width='150px'>操作</th>
 									</tr>
 								</thead>
@@ -94,6 +96,12 @@
 										<td>{$res.namepath}</td>
 										<td class="hidden-480">{$res.pid}</td>
 										<td>{$res.path}</td>
+										<td>{$res.weight}</td>
+										<td>
+											<if condition="$res.state eq 1"><span style="color: red">关闭<span>
+											<else /> 开启
+											</if>
+										</td>
 										<td>
 											<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
 

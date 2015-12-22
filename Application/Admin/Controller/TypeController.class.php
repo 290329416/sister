@@ -8,9 +8,9 @@ class TypeController extends IndexController {
         $this -> assign('result', $result);
         $this->display();
 	}
-	//添加用户页面
+	//添加栏目页面
 	public function add(){
-        if(I('post.name') && I('post.namepath')){
+        if(I('post.name') && I('post.namepath') && I('post.state')){
             $data = I();
             $data['path'] = '0,';
             $type = M('type');
@@ -24,7 +24,7 @@ class TypeController extends IndexController {
         }
 		$this->display();
 	}
-    //修改用户信息
+    //修改栏目信息
     public function update(){
         if(I('post.')){
             $type = M('type');
@@ -47,7 +47,7 @@ class TypeController extends IndexController {
         $this -> assign('res', $res);
         $this->display();
     }
-    //删除
+    //删除栏目
     public function del(){
         $id = I('get.id');
         $type = M('type');

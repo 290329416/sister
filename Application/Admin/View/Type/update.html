@@ -95,10 +95,34 @@
 						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 栏目路径 </label>
 
 						<div class="col-sm-9">
-							<input type="text" class="col-xs-10 col-sm-5" name='namepath' placeholder="栏目路径名称" id="form-field-1" value="{$res.namepath}"/>
+							<input type="text" class="col-xs-10 col-sm-5" name='namepath' placeholder="栏目路径名称(字母)" id="form-field-1" value="{$res.namepath}"/>
 							<span class="help-inline col-xs-12 col-sm-7">
 								<span class="middle" style='color:red;'>&nbsp;&nbsp;(例如 新闻动态->xwdt)</span>
 							</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right"> 权重 </label>
+
+						<div class="col-sm-9">
+							<input type="text" class="col-xs-10 col-sm-5" name='weight' placeholder="数字" id="form-field-1" value="{$res.weight}"/>
+							<span class="help-inline col-xs-12 col-sm-7">
+								<span class="middle" style='color:red;'>&nbsp;&nbsp;(数字越大前端首页显示越靠前)</span>
+							</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="form-field-1" class="col-sm-3 control-label no-padding-right">状态</label>
+
+						<div class="col-sm-9">
+							<label style='width:60px;'>
+								<input type="radio" value="1" class="ace" <if condition="$res.state eq 1">checked</if> name="state">
+								<span class="lbl">关闭</span>
+							</label>
+							<label>
+								<input type="radio" value="2" class="ace" <if condition="$res.state eq 2">checked</if> name="state">
+								<span class="lbl">开启</span>
+							</label>
 						</div>
 					</div>
 					<div class="space-4"></div>

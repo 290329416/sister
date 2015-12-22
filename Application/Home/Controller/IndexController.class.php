@@ -10,7 +10,7 @@ class IndexController extends Controller {
     public function __construct(){
         parent::__construct();
         $type = M('type');
-        $this->type = $type -> select();
+        $this->type = $type ->where('state=2') ->order('weight desc') ->select();
         $links = M('links');
         $this->link =  $links -> where('state=1') ->select();
         $this -> assign('type',$this->type);
