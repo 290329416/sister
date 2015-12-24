@@ -2,7 +2,7 @@
 body{ font-size:12px; line-height:25px; color:#014e5c;background-color:#F5FFFA}
 body,dl,dt,ul,dd,li,ol,span,h2,h3{ margin:0; padding:0; list-style:none;}
 img{ border:none;}
- a{color:#014e5c; text-decoration:none;}
+a{color:#014e5c; text-decoration:none;}
 .header,.main,.bottom{ width:1000px; margin:0 auto; overflow:hidden;}
 .top{ width:100%; background:#eef5ef; height:28px; line-height:28px; border-bottom:solid 1px #d5dfd5;}
 /* .lfmain{ float:left; width:490px;} */
@@ -23,7 +23,7 @@ img{ border:none;}
 .search{ float:left; height:40px; margin-top:25px; background:#dddcdc; line-height:40px; border-radius:5px; width:59%; border:solid 1px #ccc;margin-left: 100px;}
 .ytext{ height:20px; line-height:20px; color:#666; width:80%; display:inline-block; margin-left:10px;}
 .ysubmit{ display:inline-block; width:90px; height:27px; line-height:25px; border-radius:3px; border:none; background:none; color:#fff; font-size:14px; font-weight:bold; background:#fe8226; cursor:pointer; }
- .header{ padding:10px 0px;}
+.header{ padding:10px 0px;}
 .nav{ clear:both; background:#0099cc; height:40px; border:solid 1px #ccfaf4; border-radius:2px; }
 .nav ul{ width:900px; margin:0 auto;} 
 .nav ul li{ float:left; width:180px; display:inline-block; text-align:center; line-height:40px;}
@@ -42,41 +42,42 @@ img{ border:none;}
 .news dl dd img{ float:left; margin:10px; border:solid 1px #f3f3f3;}
 .news dl dd span{ display:block; float:left; width: 48%;}
 .news dl dd span a{   text-decoration:none; display:block;color:#014e5c; background:url(../images/ee.png) no-repeat 0px 10px; padding-left:15px; font-size:14px; height:30px; line-height:30px;overflow: hidden;}
- .news dl dd span a:hover,.hot dl dd a:hover{ text-decoration:underline; color:#F93;}
- .banner1{ margin:10px 0px 5px 0px;}
- .banner1 img{ width:1000px;}
- .hot dl dd{ text-align:left; padding:20px 0px 10px 20px;}
- .hot dl dd a{ display:block; height:25px; line-height:25px; background:url(../images/ee.png) no-repeat 0px 10px; padding-left:12px;}
- .hot{ margin-bottom:15px;margin-left:15px;}
- .banner2{ width:1000px; margin:0 auto;}
- .banner2 img{ width:1000px;}
- 
- .friedlink b{ font-weight:normal; float:left; display:block; width:60px;}
- .friedlink span{ float:left; display:block;} 
- .friedlink span a{ margin-right:10px;}
- 
- .nowthat{ height:32px; line-height:32px; padding:0px 32px; margin-bottom:15px; background: url(../images/bgnav.gif) repeat-x 0px -550px;}
- .nowthat a:hover,.next a:hover{ color:#F93; text-decoration:underline;}
- .listleft{ width:250px; float:left;}
- .listright{ width:750px; float:right;} 
- .listny dl dd a{ display:block; width:200px; height:27px; margin:15px auto; text-align:left; padding-left:15px; border:solid 1px #d5d5d5; line-height:27px;}
- .listny dl dd a.cli{ background:#0099cc; color:#fff;}
- .listny dl dd a:hover{background:#0099cc; color:#fff;}
- .colum dl dt{ height:35px; line-height:35px; width:720px; display:block; margin:0 auto; border-bottom:solid 2px #0099cc;}
- .colum dl dd{ padding:10px 30px;}
- .colum dl dd span{ display:block; height:30px;}
-  .colum dl dd span e{ float:right; display:block; font-size:14px;}
- .colum dl dd a{ display:block; height:30px; line-height:30px; font-size:14px;background: url(../images/bgnav.gif) no-repeat 5px -1146px; padding-left:20px; float:left;}
- .colum dl dd a:hover{ text-decoration:underline;}
- .next{ text-align:center; margin-bottom:20px;}
- .next a{ margin:0px 5px;}
- .article{ text-align:left; border:solid 1px #d5d5d5; padding:15px; color:#666; font-size:14px; border-radius:3px; margin-bottom:20px;}
- .article h2,.article span{ text-align:center; display:block;}
- .article h2{ font-size:16px; color:#014e5c; }
- .article span{ font-size:12px;color:#014e5c; }
+.news dl dd span a:hover,.hot dl dd a:hover{ text-decoration:underline; color:#F93;}
+.banner1{ margin:10px 0px 5px 0px;}
+.banner1 img{ width:1000px;}
+.hot dl dd{ text-align:left; padding:20px 0px 10px 20px;}
+.hot dl dd a{ display:block; height:25px; line-height:25px; background:url(../images/ee.png) no-repeat 0px 10px; padding-left:12px;}
+.hot{ margin-bottom:15px;margin-left:15px;}
+.banner2{ width:1000px; margin:0 auto;}
+.banner2 img{ width:1000px;}
+
+.friedlink b{ font-weight:normal; float:left; display:block; width:60px;}
+.friedlink span{ float:left; display:block;} 
+.friedlink span a{ margin-right:10px;}
+
+.nowthat{ height:32px; line-height:32px; padding:0px 32px; margin-bottom:15px; background: url(../images/bgnav.gif) repeat-x 0px -550px;}
+.nowthat a:hover,.next a:hover{ color:#F93; text-decoration:underline;}
+.listleft{ width:250px; float:left;}
+.listright{ width:750px; float:right;} 
+.listny dl dd a{ display:block; width:200px; height:27px; margin:15px auto; text-align:left; padding-left:15px; border:solid 1px #d5d5d5; line-height:27px;}
+.listny dl dd a.cli{ background:#0099cc; color:#fff;}
+.listny dl dd a:hover{background:#0099cc; color:#fff;}
+.colum dl dt{ height:35px; line-height:35px; width:720px; display:block; margin:0 auto; border-bottom:solid 2px #0099cc;}
+.colum dl dd{ padding:10px 30px;}
+.colum dl dd span{ display:block; height:30px;}
+.colum dl dd span e{ float:right; display:block; font-size:14px;}
+.colum dl dd a{ display:block; height:30px; line-height:30px; font-size:14px;background: url(../images/bgnav.gif) no-repeat 5px -1146px; padding-left:20px; float:left;}
+.colum dl dd a:hover{ text-decoration:underline;}
+.next{ text-align:center; margin-bottom:20px;}
+.next a{ margin:0px 5px;}
+.article{ text-align:left; border:solid 1px #d5d5d5; padding:15px; color:#666; font-size:14px; border-radius:3px; margin-bottom:20px;}
+.article h2,.article span{ text-align:center; display:block;}
+.article h2{ font-size:16px; color:#014e5c; }
+.article span{ font-size:12px;color:#014e5c; }
+.article p{text-indent:2em;}
 .article a{ width:65px; display:block; height:20px; text-align:center; line-height:20px; float:right; border:solid 1px #d5d5d5; color:#999; border-radius:3px;}
 .article a:hover{ color:#014e5c;border:solid 1px #014e5c}
- 
+
 .fr {display: inline;float: right;}
 .r3 {border: 1px solid #d7d7d7;height: auto;overflow: hidden; width: 740px;}
 .r748 {padding: 20px 40px;text-align: left;width: 668px;}
@@ -88,4 +89,3 @@ img{ border:none;}
 .zc td {padding: 8px 0;}
 .red {color: #fd0000;}
 .btn2 { background: rgba(0, 0, 0, 0) url("../images/btn1.png") no-repeat scroll 0 0;border: medium none;cursor: pointer;height: 26px;width: 87px;}
-   

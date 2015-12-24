@@ -54,7 +54,7 @@ class NewsController extends IndexController {
             $data = I();
             $data['inputtime'] = time();
             
-            $data['content'] = mb_convert_encoding(file_get_contents($_FILES['file']['tmp_name']), 'UTF-8','GB2312,UTF-8');
+            $data['content'] = mb_convert_encoding(file_get_contents($_FILES['file']['tmp_name']), 'UTF-8','GB2312,gbk,UTF-8');
             if(empty($data['title'])){
                 $this->error('文章标题不能为空');
             }
@@ -98,7 +98,7 @@ class NewsController extends IndexController {
     public function update(){
         if(I('post.')){
             $data = I();
-            $data['content'] = mb_convert_encoding($data['content'], 'UTF-8','GB2312,UTF-8');
+            $data['content'] = mb_convert_encoding($data['content'], 'UTF-8','GB2312,gbk,UTF-8');
             if(empty($data['title'])){
                 $this->error('文章标题不能为空');
             }
