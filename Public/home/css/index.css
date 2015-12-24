@@ -40,8 +40,8 @@ img{ border:none;}
 .news dl dt span a:hover,.hot dl dt span a:hover{ color:#F00;}
 .news dl dd{ clear:both;}
 .news dl dd img{ float:left; margin:10px; border:solid 1px #f3f3f3;}
-.news dl dd span{ display:block; float:left;  }
-.news dl dd span a{   text-decoration:none; display:block;color:#014e5c; background:url(../images/ee.png) no-repeat 0px 10px; padding-left:15px; font-size:14px; height:30px; line-height:30px;}
+.news dl dd span{ display:block; float:left; width: 48%;}
+.news dl dd span a{   text-decoration:none; display:block;color:#014e5c; background:url(../images/ee.png) no-repeat 0px 10px; padding-left:15px; font-size:14px; height:30px; line-height:30px;overflow: hidden;}
  .news dl dd span a:hover,.hot dl dd a:hover{ text-decoration:underline; color:#F93;}
  .banner1{ margin:10px 0px 5px 0px;}
  .banner1 img{ width:1000px;}
