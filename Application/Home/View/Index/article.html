@@ -17,13 +17,10 @@
             <h2>{$new.title}</h2><br/>
             <span> 日期:{$new.releasetime} 　　<notempty name="new.name">发布人：{$new.name}</notempty> </span>
            　　{$new.content} 
-　         <a href="javascript:window.close()" >关闭窗口</a>
+　         <a href="javascript:window.opener=null;window.close();">关闭窗口</a>
           </div>
           
       </div>
   <include file="Public/foot" />
-  <script>
-    function winClose(){ window.top.opener = null; window.close(); }
-  </script>
 </body>
 </html>
