@@ -4,6 +4,7 @@ use Admin\Controller;
 class NewsController extends IndexController {
     //查看文章首页
     public function index(){
+        include_once(MODULE_PATH.'Common/MyConfig.php');
     	$news = M("news");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
@@ -53,7 +54,9 @@ class NewsController extends IndexController {
 		if(I('post.')){
             $data = I();
             $data['inputtime'] = time();
-            
+            if(strpos($_FILES['file']['type'],'text') === false){
+                $this->error('文章类型上传错误,必须txt文件');
+            }
             $data['content'] = mb_convert_encoding(file_get_contents($_FILES['file']['tmp_name']), 'UTF-8','GB2312,gbk,UTF-8');
             if(empty($data['title'])){
                 $this->error('文章标题不能为空');
