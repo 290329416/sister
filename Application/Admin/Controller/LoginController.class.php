@@ -20,14 +20,9 @@ class LoginController extends Controller {
     			if($userdata && ($userdata['password'] === md5(C('SECURE_CODE').md5($data['password'])))){
     				unset($userdata['password']);
                     $user ->where('id='.$userdata['id'])->save(array('logintime'=>time()));
-                    $user_auth_key = array_keys($userdata);
-                    $user_auth_cookie_key = implode('\t', $user_auth_key);
-                    $user_auth_cookie_key = authcode($user_auth_cookie_key,ENCODE);
-                    cookie('kauth',$user_auth_cookie_key,3600);
-
-    				$user_auth = implode('\t', $userdata);
-    				$user_auth_cookie_val = authcode($user_auth,ENCODE);
-                    cookie('lauth',$user_auth_cookie_val,3600);
+                    $user_auth = json_encode($userdata);
+                    $user_auth_cookie = authcode($user_auth,ENCODE);
+                    cookie('auth',$user_auth_cookie,3600);
     				$this->success('登陆成功',U('index/index'));
     				exit;
     			}else{

@@ -7,21 +7,23 @@ class IndexController extends Controller {
 
 	public function __construct() {
         parent::__construct();
-		$key = I('cookie.kauth');
-		$val = I('cookie.lauth');
-		if(empty($key) || empty($val)){
+		$user_auth = I('cookie.auth');
+		if(empty($user_auth)){
 			$this -> error("请登录",U('login/index'));
 		}
-		$user_key = explode('\t',authcode($key,DECODE));
-		$user_val = explode('\t',authcode($val,DECODE));
-		$user = M('user');
-		$Only_user = $user -> where("id=%d and state=0",$user_val['0']) -> find();
-		unset($Only_user['password']);
-		$Only_user = array_values($Only_user);
-		if (json_encode($user_val) !== json_encode($Only_user)) {
-			$this -> error("请登录",U('login/index'));
+		$login_user = json_decode(authcode($user_auth,DECODE),true);
+		$Only_user = S($login_user['username']);
+		if (empty($Only_user)) {
+			$user = M('user');
+			$Only_user = $user -> where("id=%d and state=0",$login_user['id']) -> find();
+			unset($Only_user['password']);
+			$user_auth = authcode($user_auth,DECODE);
+			$json_user = json_encode($Only_user);
+			if ($user_auth !== $json_user) {
+				$this -> error("请登录",U('login/index'));
+			}
+			S($Only_user['username'],$Only_user,300);
 		}
-		$user_data = array_combine($user_key,$user_val);
 		$typedata = S('admin_type');
 		if (empty($typedata)) {
 			$type = M('type');
@@ -32,7 +34,7 @@ class IndexController extends Controller {
             $this->type_data[$v['id']] = $v;
         }
         $this -> assign('typedata',$this->type_data);
-		$this -> assign('user_data', $user_data);
+		$this -> assign('user_data', $Only_user);
     }
 
     public function index(){
