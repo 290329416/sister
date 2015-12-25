@@ -3,7 +3,7 @@ namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller {
 	//栏目名称与对应ID
-	public $typedata;
+	public $type_data;
 
 	public function __construct() {
         parent::__construct();
@@ -22,12 +22,16 @@ class IndexController extends Controller {
 			$this -> error("请登录",U('login/index'));
 		}
 		$user_data = array_combine($user_key,$user_val);
-		$type = M('type');
-        $typedata = $type -> select();
-        foreach($typedata as $k=>$v){
-            $this->typedata[$v['id']] = $v['name'];
+		$typedata = S('admin_type');
+		if (empty($typedata)) {
+			$type = M('type');
+	        $typedata = $type -> select();
+	        S('admin_type',$typedata,600);
+		}
+		foreach($typedata as $v){
+            $this->type_data[$v['id']] = $v;
         }
-        $this -> assign('typedata',$this->typedata);
+        $this -> assign('typedata',$this->type_data);
 		$this -> assign('user_data', $user_data);
     }
 
