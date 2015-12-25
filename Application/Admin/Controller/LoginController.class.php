@@ -4,13 +4,10 @@ use Think\Controller;
 class LoginController extends Controller {
 	//验证码 
 	public $Verify;
-	//COOKIE信息的加密与解密
-	protected $user_auth;
 
 	public function __construct() {
         parent::__construct();
         $this->Verify = new \Org\Util\Verify();
-		$this->user_auth = D('user');
     }
 
 	//用户登录
@@ -25,11 +22,11 @@ class LoginController extends Controller {
                     $user ->where('id='.$userdata['id'])->save(array('logintime'=>time()));
                     $user_auth_key = array_keys($userdata);
                     $user_auth_cookie_key = implode('\t', $user_auth_key);
-                    $user_auth_cookie_key = $this->user_auth->authcode($user_auth_cookie_key,ENCODE);
+                    $user_auth_cookie_key = authcode($user_auth_cookie_key,ENCODE);
                     cookie('user_keyauth',$user_auth_cookie_key,3600);
 
     				$user_auth = implode('\t', $userdata);
-    				$user_auth_cookie_val = $this->user_auth->authcode($user_auth,ENCODE);
+    				$user_auth_cookie_val = authcode($user_auth,ENCODE);
                     cookie('user_valauth',$user_auth_cookie_val,3600);
     				$this->success('登陆成功',U('index/index'));
     				exit;

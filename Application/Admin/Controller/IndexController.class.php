@@ -9,12 +9,11 @@ class IndexController extends Controller {
         parent::__construct();
 		$key = I('cookie.user_keyauth');
 		$val = I('cookie.user_valauth');
-		if(empty($key) && empty($val)){
+		if(empty($key) || empty($val)){
 			$this -> error("请登录",U('login/index'));
 		}
-		$auth = D('user');
-		$user_key = explode('\t',$auth->authcode($key,DECODE));
-		$user_val = explode('\t',$auth->authcode($val,DECODE));
+		$user_key = explode('\t',authcode($key,DECODE));
+		$user_val = explode('\t',authcode($val,DECODE));
 		$user_data = array_combine($user_key,$user_val);
 		$type = M('type');
         $typedata = $type -> select();
