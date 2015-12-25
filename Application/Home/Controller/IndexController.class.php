@@ -9,10 +9,18 @@ class IndexController extends Controller {
 
     public function __construct(){
         parent::__construct();
-        $type = M('type');
-        $this->type = $type ->where('state=2') ->order('weight desc') ->select();
-        $links = M('links');
-        $this->link =  $links -> where('state=1') ->select();
+        $this->type = S('type');
+        if(empty($this->type)){
+            $type = M('type');
+            $this->type = $type ->where('state=2') ->order('weight desc') ->select();
+            S('type',$this->type,86400);
+        }
+        $this->link = S('link');
+        if(empty($this->link)){
+            $links = M('links');
+            $this->link =  $links -> where('state=1') ->select();
+            S('type',$this->type,1800);
+        }
         $this -> assign('type',$this->type);
         $type = array();
         foreach($this->type as $k=>$v){
@@ -38,12 +46,12 @@ class IndexController extends Controller {
         $this->display();
 	}
 	public function article(){
-
         foreach($this->type as $val){
             if($val['namepath'] == I('get.type')){
                 $data['pid'] = $val['id'];
             }
         }
+        if($data['pid'] == false){$this->error('错误');}
         $news = M('news');
         $data['id'] = I('get.id');
         $data['state'] = 2;

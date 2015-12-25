@@ -19,7 +19,7 @@
 
 /*服务器数据库配置*/
 return array(
-    // '配置项'=>'配置值'
+    //'配置项'=>'配置值'
      /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  'localhost', // 服务器地址
@@ -32,5 +32,5 @@ return array(
     'SECURE_CODE'           =>  'secure_code',  //密码干扰字符,禁止修改
     'URL_DENY_SUFFIX'       =>  'ico|png|gif|jpg', // URL禁止访问的后缀设置
     'URL_HTML_SUFFIX'       =>  'html',  // URL伪静态后缀设置
-    // 'SHOW_PAGE_TRACE' =>true, 
+    //'SHOW_PAGE_TRACE' =>true, 
 );
