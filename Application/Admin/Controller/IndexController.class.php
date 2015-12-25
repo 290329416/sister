@@ -7,8 +7,8 @@ class IndexController extends Controller {
 
 	public function __construct() {
         parent::__construct();
-		$key = I('cookie.user_keyauth');
-		$val = I('cookie.user_valauth');
+		$key = I('cookie.kauth');
+		$val = I('cookie.lauth');
 		if(empty($key) || empty($val)){
 			$this -> error("请登录",U('login/index'));
 		}

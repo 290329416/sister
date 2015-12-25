@@ -23,11 +23,11 @@ class LoginController extends Controller {
                     $user_auth_key = array_keys($userdata);
                     $user_auth_cookie_key = implode('\t', $user_auth_key);
                     $user_auth_cookie_key = authcode($user_auth_cookie_key,ENCODE);
-                    cookie('user_keyauth',$user_auth_cookie_key,3600);
+                    cookie('kauth',$user_auth_cookie_key,3600);
 
     				$user_auth = implode('\t', $userdata);
     				$user_auth_cookie_val = authcode($user_auth,ENCODE);
-                    cookie('user_valauth',$user_auth_cookie_val,3600);
+                    cookie('lauth',$user_auth_cookie_val,3600);
     				$this->success('登陆成功',U('index/index'));
     				exit;
     			}else{
@@ -49,8 +49,8 @@ class LoginController extends Controller {
     	$this->Verify->entry();
 	}
     public function quit(){
-        cookie('user_keyauth',null);
-        cookie('user_valauth',null);
+        cookie('kauth',null);
+        cookie('lauth',null);
         $this->success("退出成功",U('login/index'));
         exit;
     }
