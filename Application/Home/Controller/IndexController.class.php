@@ -19,7 +19,7 @@ class IndexController extends Controller {
         if(empty($this->link)){
             $links = M('links');
             $this->link =  $links -> where('state=1') ->select();
-            S('link',$this->type,1800);
+            S('link',$this->link,1800);
         }
         $this -> assign('type',$this->type);
         $type = array();
