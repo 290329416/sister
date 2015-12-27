@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>查看文章</title>
+		<title>评审人员资格</title>
 
 		<meta name="description" content="Static &amp; Dynamic Tables" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +72,7 @@
 							</li>
 
 							<li>
-								<a href="__CONTROLLER__">查看所有文章</a>
+								<a href="__CONTROLLER__">查看评审人员资格</a>
 							</li>
 						</ul><!-- .breadcrumb -->
 					</div>
@@ -83,7 +83,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="table-header">
-							Results for "Latest Article"
+							Latest Results
 						</div>
 
 						<div class="table-responsive">
@@ -93,21 +93,21 @@
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
 													<form action="__ACTION__">
-													<label>搜索文章标题: <input type="text" aria-controls="sample-table-2" name="title"></label>
-													<label>请选择栏目: 
-														<select name="pid" size="1" aria-controls="sample-table-2" style='width:120px;'>
-															<option value=""></option>
-															<foreach name="type" item="type" >
-																<option value="{$type.id}">{$type.name}</option>
+													<label>机构名称: <input type="text" aria-controls="sample-table-2" name="comname"></label>
+													<label>姓名: <input type="text" aria-controls="sample-table-2" name="name"></label>
+													<label>资质级别: 
+														<select name="level" size="1" aria-controls="sample-table-2" style='width:120px;'>
+															<option value="">　</option>
+															<foreach name="ps_config.level" item="com" key="key">
+																<option value="{$key}">{$com}</option>
 															</foreach>
 														</select>
 													</label>
-													<label>请选择状态: 
+													<label>状态: 
 														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
-															<option value=""></option>
-															<option value="1">未审核</option>
-															<option value="2">已发布</option>
-															<option value="3">禁用</option>
+															<option value="">　</option>
+															<option value="1">正常</option>
+															<option value="2">关闭</option>
 														</select>
 													</label>
 													&nbsp;&nbsp;&nbsp;&nbsp;
@@ -122,52 +122,48 @@
 								<thead>
 									<tr role="row">
 										<th class="center" style="width: 20px;" ><label><input type="checkbox" class="ace" /><span class="lbl"></span></label></th>
-										<th aria-label="Domain: activate to sort column ascending" style="width: 200px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">文章标题</th>
-										<th aria-label="Price: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">栏目名称</th>
-										<th aria-label="Price: activate to sort column ascending" style="width: 120px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">文件发布时间</th>
+										<th aria-label="Domain: activate to sort column ascending" style="width: 40px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">序号</th>
+										<th aria-label="Price: activate to sort column ascending" style="width: 120px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">机构名称</th>
+										<th aria-label="Price: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">姓名</th>
+										<th aria-label="Price: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">资质级别</th>
+										<th aria-label="Price: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">评审领域</th>
 										<th aria-label="Status: activate to sort column ascending" style="width: 40px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="hidden-480 sorting">状态</th>
-										<th aria-label="" style="width: 130px;" colspan="1" rowspan="1" role="columnheader" class="sorting_disabled">操作</th></tr>
+										<th aria-label="" style="width: 80px;" colspan="1" rowspan="1" role="columnheader" class="sorting_disabled">操作</th></tr>
 								</thead>
 
 								
 							<tbody aria-relevant="all" aria-live="polite" role="alert">
-								<form action="{:U('News/delete')}" id='myform' method='post'>
-								<foreach name="new" item="new" >
+								<form action="{:U('Psuser/delete')}" id='myform' method='post'>
+								<foreach name="psuser" item="data" >
 									<tr class="odd">
 										<td class="center">
 											<label>
-												<input type="checkbox" name='id[]' class="ace" value="{$new.id}" />
+												<input type="checkbox" name='id[]' class="ace" value="{$data.id}" />
 												<span class="lbl"></span>
 											</label>
 										</td>
 										<td class="">
-											<a href="__ROOT__/{$typedata[$new['pid']]['namepath']}/{$new.id}.html" target="_blank">{$new.title}</a>
+											{$data.uid}
 										</td>
-										<td class=""><php>echo $typedata[$new['pid']]['name']</php></td>
-										<td class="">{$new.releasetime}</td>
-
+										<td class="">{$data.comname}</td>
+										<td class="">{$data.name}</td>
+										<td class="">{$ps_config['level'][$data['level']]}</td>
+										<td class="">{$ps_config['psfield'][$data['psfield']]}</td>
 										<td class="hidden-480 ">
-											<if condition="$new.state eq 1">
-												<span class="label label-sm label-warning">未审核</span>
-											<elseif condition="$new.state eq 2"/>
-												<span class="label label-sm label-success">已发布</span>
-											<elseif condition="$new.state eq 3"/>
-												<span class="label label-sm label-inverse arrowed-in">已禁用</span>
+											<if condition="$data.state eq 1">
+												<span class="label label-sm label-success">正常</span>
+											<elseif condition="$data.state eq 2"/>
+												<span class="label label-sm label-warning">关闭</span>
 											</if>
 										</td>
-										<td class=" ">
+										<td class="">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a title="查看详情" class="blue" href="__CONTROLLER__/show/id/{$new.id}">
-													<i class="icon-zoom-in bigger-130"></i>
-													查看
-												</a>
-
-												<a title="修改信息" class="green" href="__CONTROLLER__/update/id/{$new.id}">
+												<a title="修改信息" class="green" href="__CONTROLLER__/update/id/{$data.id}">
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
 
-												<a title="删除" class="red" onclick="delfun({$new.id})" href="javascript:;">
+												<a title="删除" class="red" onclick="delfun({$data.id})" href="javascript:;">
 													<i class="icon-trash bigger-130"></i>
 													删除
 												</a>
@@ -189,7 +185,7 @@
 									</div>
 								</div>
 							</div>
-							</form>
+						</form>
 						</div>
 						</div>
 					</div>

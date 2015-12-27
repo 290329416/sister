@@ -153,8 +153,8 @@ class Verify {
                 $codeNX  += mt_rand($this->fontSize*1.2, $this->fontSize*1.6);
                 imagettftext($this->_image, $this->fontSize, mt_rand(-40, 40), $codeNX, $this->fontSize*1.6, $this->_color, $this->fontttf, $code[$i]);
             } */
-			$num1 = rand(8,12);
-			$num2 = rand(1,7);
+			$num1 = rand(5,10);
+			$num2 = rand(1,5);
 			$mark = $this->getRand();
 			$res = $num1.$mark.$num2;
 			$result = eval("return $res;");

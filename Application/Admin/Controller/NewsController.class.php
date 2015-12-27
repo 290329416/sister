@@ -4,7 +4,6 @@ use Admin\Controller;
 class NewsController extends IndexController {
     //查看文章首页
     public function index(){
-        include_once(MODULE_PATH.'Common/MyConfig.php');
     	$news = M("news");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
