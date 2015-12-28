@@ -6,7 +6,7 @@
      <dl>
        <dt><h2>通知公告</h2></dt>
        <dd>
-        <a href="/" class="cli">协会概况</a>  
+        <a href="/">协会概况</a>  
         <a href="/">分会简介</a>  
         <a href="/">组织机构</a>  
         <a href="{:U('Message/index')}">公众留言</a>  
@@ -23,50 +23,51 @@
    <table width="500" border="0" align="center">
      <tr>
        <td width="100" style="text-align:right">资质证书编号</td>
-       <td width="136"><input type="text" value=""></td>
+       <td width="136"><input type="text" name='num'></td>
        <td width="100" style="text-align:right;">企业名称</td>
-       <td width="136"><input type="text" value=""></td>
+       <td width="136"><input type="text" name='name'></td>
      </tr>
      <tr>
        <td style="text-align:right;">资质等级</td>
-       <td><select name="province">
+       <td><select name="grade">
         <option value="0">1</option>
         <option value="1">2</option>
       </select></td>
       <td style="text-align:right;">所属省市</td>
-      <td><input type="text" value=""></td>
+      <td><input type="text" name='area'></td>
     </tr>
     <tr>
      <td style="text-align:right;">发证日期</td>
-     <td><input type="text" id="selectDate" class="aa"></td>
+     <td><input type="text" id="selectDate" class="aa" name='b_time'></td>
      <td style="text-align:right;">至</td>
-     <td><input type="text" id="Date" class="aa"></td>
+     <td><input type="text" id="Date" class="aa" name='c_time'></td>
    </tr>
    <tr>
      <td style="text-align:right;">模糊查询</td>
-     <td colspan="3"><input type="text" value="" style="width:400px;"></td>
+     <td colspan="3"><input type="text" name='lname' style="width:400px;"></td>
    </tr>
    <tr>
      <td colspan="2" style="text-align:right"><input type="submit" value="查询" class="blt"></td>
-     <td colspan="2"><input type="submit" value="重置" class="brt"></td>
+     <td colspan="2"><input type="reset" value="重置" class="brt"></td>
    </tr>
  </table>
 </form>
 </div>
+</div>
 <div class="table">
-
   <table width="100%" border="0">
     <thead>
       <tr>
-        <th width="44">序号</th>
-        <th width="222">企业名称</th>
-        <th width="138">资质证书编号</th>
-        <th width="104">发证日期</th>
-        <th width="154">证书有效期</th>
-        <th width="106">资质等级</th>
-        <th width="186">所属省市</th>
+        <th width="100">序号</th>
+        <th width="230">企业名称</th>
+        <th width="120">资质证书编号</th>
+        <th width="100">发证日期</th>
+        <th width="100">证书有效期</th>
+        <th width="100">资质等级</th>
+        <th width="80">所属省市</th>
       </tr>
     </thead>
+    <notempty name="data">
     <tbody>
       <tr>
         <td>1</td>
@@ -105,9 +106,47 @@
         <td>&nbsp;</td>
       </tr>
     </tbody>
+    <else/>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr class="df">
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr class="df">
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+    </notempty>
   </table>
-
 </div>
+<notempty name="pages">
 <div class="page">
   <ul>
     <li><a href="#" style="width:30px;">首页 </a></li>
@@ -122,7 +161,7 @@
     <li style="margin-right:0;"><a href="#" style="width:30px;">末页</a></li>
   </ul>
 </div>
-</div>
+</notempty>
 </div>
 <include file="Public/foot" />
 <!--查询页js-->

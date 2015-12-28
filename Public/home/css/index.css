@@ -100,7 +100,7 @@ a{color:#014e5c; text-decoration:none;}
 .form form td select{ width:136px; height:25px; outline:none; border:solid 1px #d5d5d5;background-color:#F5FFFA;}
 .form form td input.blt{ width:60px; height:25px; font-size:14px; text-align:right;background:#F5FFFA url(../images/cc.png) no-repeat 8px 5px;  margin-right:5px; cursor:pointer;   }
 .form form td input.brt{ width:60px; height:25px; font-size:14px; text-align:right;background:#F5FFFA url(../images/ff.png) no-repeat 8px 5px; margin-left:5px; cursor:pointer;   }
-.table{ padding: 10px;}
+.table{float:left;margin:20px 0;width:100%;}
 .table table{ border-collapse:collapse; border-width:thin;}
 .table table td{ text-align:center; border-bottom: solid 1px #eef2f7;border-left: solid 1px #eef2f7;  border-right: solid 1px #eef2f7;}
 .table table thead{border-top:solid 1px #9fb7e7;border-bottom:solid 1px #9fb7e7; background:#cde3f9;}
