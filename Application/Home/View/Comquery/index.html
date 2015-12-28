@@ -29,18 +29,29 @@
      </tr>
      <tr>
        <td style="text-align:right;">资质等级</td>
-       <td><select name="grade">
-        <option value="0">1</option>
-        <option value="1">2</option>
-      </select></td>
+       <td>
+        <select name="grade">
+          <option value=''>请选择</option>
+            <foreach name="com_config.comgrade" item="com" key="key">
+            <option value="{$key}">{$com}</option>
+            </foreach>
+        </select>
+      </td>
       <td style="text-align:right;">所属省市</td>
-      <td><input type="text" name='area'></td>
+      <td>
+      <select name="area">
+        <option value=''>请选择</option>
+        <foreach name="com_config.area" item="area" >
+            <option value="{$area}">{$area}</option>
+        </foreach>
+      </select>
+      </td>
     </tr>
     <tr>
      <td style="text-align:right;">发证日期</td>
      <td><input type="text" id="selectDate" class="aa" name='b_time'></td>
      <td style="text-align:right;">至</td>
-     <td><input type="text" id="Date" class="aa" name='c_time'></td>
+     <td><input type="text" id="Date" class="aa" name='l_time'></td>
    </tr>
    <tr>
      <td style="text-align:right;">模糊查询</td>
@@ -67,44 +78,33 @@
         <th width="80">所属省市</th>
       </tr>
     </thead>
-    <notempty name="data">
+    <notempty name="result">
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>*********</td>
-        <td>**********</td>
-        <td>*****</td>
-        <td>******</td>
-        <td>******</td>
-        <td>*******</td>
-      </tr>
-      <tr class="df">
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr class="df">
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+      <foreach name="result" item="val" key='key'>
+      <if condition="($key%2) eq 0 ">
+        <tr>
+        <td>{$val.sid}</td>
+        <td>{$val.comname}</td>
+        <td>{$val.comnum}</td>
+        <td>{$val.b_time}</td>
+        <td>{$val.c_time}</td>
+        <td>{$val.comgrade}</td>
+        <td>{$val.area}</td>
+        </tr>
+      <else /> 
+        <tr class="df">
+          <td>{$val.sid}</td>
+          <td>{$val.comname}</td>
+          <td>{$val.comnum}</td>
+          <td>{$val.b_time}</td>
+          <td>{$val.c_time}</td>
+          <td>{$val.comgrade}</td>
+          <td>{$val.area}</td>
+        </tr>
+    </if>
+      
+      
+      </foreach>
     </tbody>
     <else/>
       <tr>
@@ -146,19 +146,10 @@
     </notempty>
   </table>
 </div>
-<notempty name="pages">
+<notempty name="page">
 <div class="page">
   <ul>
-    <li><a href="#" style="width:30px;">首页 </a></li>
-    <li><a href="#" style="width:50px;">上一页</a></li>
-    <li><a href="#" class="border">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li><a href="#" style="width:50px;">下一页</a></li>
-    <li style="margin-right:0;"><a href="#" style="width:30px;">末页</a></li>
+    {$page}
   </ul>
 </div>
 </notempty>

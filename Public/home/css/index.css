@@ -107,6 +107,7 @@ a{color:#014e5c; text-decoration:none;}
 .table table thead th{ border-right: solid 1px #fff;}
 .table table tbody tr.df{ background:#fff;}
 .page{ height:26px; width:400px; margin:0px auto 30px auto;}
+.page ul{float:left; }
 .page ul li{ float:left; display:block; }
 .page ul li a{ color:#666; font-size:12px; width:22px; height:22px; display:block; line-height:24px; text-align:center; color:#666; margin-right:8px;}
-.page ul li a.border{border:solid 1px #999;}
+.border{font-size: 12px;height: 22px;line-height: 24px;margin-right: 8px;text-align: center; width: 22px;border: 1px solid #014e5c;}

@@ -97,7 +97,7 @@
 													<label>企业名称: <input type="text" aria-controls="sample-table-2" name="comname"></label>
 													<label>资质等级: 
 														<select name="comgrade" size="1" aria-controls="sample-table-2" style='width:120px;'>
-															<option>请选择</option>
+															<option value=''>请选择</option>
 															<foreach name="com_config.comgrade" item="com" key="key">
 																<option value="{$key}">{$com}</option>
 															</foreach>
@@ -105,7 +105,7 @@
 													</label>
 													<label>状态: 
 														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
-															<option>请选择</option>
+															<option value=''>请选择</option>
 															<option value="1">正常</option>
 															<option value="2">关闭</option>
 														</select>

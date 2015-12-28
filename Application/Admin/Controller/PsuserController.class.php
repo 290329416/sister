@@ -4,7 +4,7 @@ use Admin\Controller;
 class PsuserController extends IndexController {
     public function __construct() {
         parent::__construct();
-        include_once(MODULE_PATH.'Common/MyConfig.php');
+        include_once(COMMON_PATH.'Conf/MyConfig.php');
         $this -> assign('ps_config', $ps_config);
     }
     //查看评审人员资格

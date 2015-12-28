@@ -4,7 +4,7 @@ use Admin\Controller;
 class PsinstitutionsController extends IndexController {
     public function __construct() {
         parent::__construct();
-        include_once(MODULE_PATH.'Common/MyConfig.php');
+        include_once(COMMON_PATH.'Conf/MyConfig.php');
         $this -> assign('psins_config', $com_config);
     }
     //查看评审机构信息

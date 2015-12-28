@@ -4,7 +4,7 @@ use Admin\Controller;
 class CompanyController extends IndexController {
     public function __construct() {
         parent::__construct();
-        include_once(MODULE_PATH.'Common/MyConfig.php');
+        include_once(COMMON_PATH.'Conf/MyConfig.php');
         $this -> assign('com_config', $com_config);
     }
     //查看企业资质首页

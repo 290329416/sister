@@ -128,13 +128,9 @@
 										<div class="col-sm-9" style="width:400px;">
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='comgrade'>
-													<option>请选择</option>
+													<option value=''>请选择</option>
 													<foreach name="com_config.comgrade" item="val" key="key">
-														<eq name="key" value="$data.comgrade">
-															<option value="{$key}" selected>{$val}</option>
-														<else /> 
 															<option value="{$key}">{$val}</option>
-														</eq>
 													</foreach>
 												</select>
 											</div>
@@ -145,13 +141,9 @@
 										<div class="col-sm-9" style="width:400px;">
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='area'>
-													<option>请选择</option>
+													<option value=''>请选择</option>
 													<foreach name="com_config.area" item="area" >
-														<eq name="area" value="$data.area">
-															<option value="{$data.area}" selected>{$data.area}</option>
-														<else /> 
 															<option value="{$area}">{$area}</option>
-														</eq>
 													</foreach>
 												</select>
 											</div>
