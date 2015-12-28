@@ -85,7 +85,7 @@
     function fuzhi() {
       $(".ca_info").hide();
       if(GetCookie('message') == 1){
-        $(".ca_info").show().html("禁止重复提交");return;
+        $(".ca_info").show().html("请歇息一会在提交!^_^");return;
       }
       $.ajax({
         "url":"__CONTROLLER__/add",

@@ -37,6 +37,35 @@ class PsinstitutionsController extends IndexController {
         $this -> assign('psuser',$psuser_data);
 		$this->display();
 	}
+    //添加评审机构信息
+    public function add(){
+        if(I('post.')){
+            $data = I();
+            if(empty($data['pname'])){
+                $this->error('评审机构不能为空');
+            }
+            if(empty($data['phone'])){
+                $this->error('联系电话不能为空');
+            }
+            if(empty($data['address'])){
+                $this->error('通讯地址不能为空');
+            }
+            if($data){
+                $com = M('Psinstitutions');
+                $lastid = $com -> add($data);
+                if($lastid){
+                    $data_uid['id'] = $lastid;
+                    $data_uid['pid'] = '1'.str_pad($lastid,6,0,STR_PAD_LEFT);
+                    $com ->save($data_uid);
+                    $this -> success("添加成功",U('Psinstitutions/index'));
+                    exit;
+                }else{
+                    $this->error('添加失败');
+                }
+            }
+        }
+        $this->display();
+    }
     //修改评审机构信息
     public function update(){
         if(I('post.')){
