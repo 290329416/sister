@@ -7,6 +7,8 @@ class ComqueryController extends IndexController {
     }
 
     public function index(){
+    	$data = I();
+    	print_r($data);exit;
         $this->display();
 	}
 }
