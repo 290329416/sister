@@ -44,8 +44,7 @@ class LoginController extends Controller {
     	$this->Verify->entry();
 	}
     public function quit(){
-        cookie('kauth',null);
-        cookie('lauth',null);
+        cookie('auth',null);
         $this->success("退出成功",U('login/index'));
         exit;
     }

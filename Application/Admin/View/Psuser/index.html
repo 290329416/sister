@@ -97,7 +97,7 @@
 													<label>姓名: <input type="text" aria-controls="sample-table-2" name="name"></label>
 													<label>资质级别: 
 														<select name="level" size="1" aria-controls="sample-table-2" style='width:120px;'>
-															<option value="">　</option>
+															<option>请选择</option>
 															<foreach name="ps_config.level" item="com" key="key">
 																<option value="{$key}">{$com}</option>
 															</foreach>
@@ -105,13 +105,14 @@
 													</label>
 													<label>状态: 
 														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
-															<option value="">　</option>
+															<option>请选择</option>
 															<option value="1">正常</option>
 															<option value="2">关闭</option>
 														</select>
 													</label>
 													&nbsp;&nbsp;&nbsp;&nbsp;
 													<button class="btn btn-sm btn-primary">搜索</button>
+													<a class="btn btn-sm btn-primary" href="{:U('Psuser/add')}" style='float: right;'>添加评审人员信息</a>
 													</form>
 												</div>
 												
