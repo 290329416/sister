@@ -35,11 +35,9 @@ class ComqueryController extends IndexController {
                 $page = new \Org\Util\ComPage($count,4);
                 $show  = $page->show();// 分页显示输出
                 $result = $com -> where($data) -> limit($page->firstRow.','.$page->listRows)->select();
-                // print_r($show);
-                // print_r($result);
-                // exit;
                 $this->assign('result',$result);// 赋值数据集
                 $this->assign('page',$show);// 赋值分页输出
+                $this->assign('data',$data);// 赋值数据集
             }
         }
         $this->display();

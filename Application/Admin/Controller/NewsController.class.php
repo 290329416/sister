@@ -7,8 +7,7 @@ class NewsController extends IndexController {
     	$news = M("news");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
-        $type = M('type');
-        $type = $type -> select();
+        $type = S('admin_type');
         $this -> assign('type',$type);
         if(!empty(I('get.title')) || !empty(I('get.pid')) || !empty(I('get.state'))) {
 

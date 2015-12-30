@@ -3,8 +3,7 @@ namespace Admin\Controller;
 use Admin\Controller;
 class TypeController extends IndexController {
     public function index(){
-        $type = M('type');
-        $result = $type ->select();
+        $result = S('admin_type');
         $this -> assign('result', $result);
         $this->display();
 	}
@@ -16,6 +15,8 @@ class TypeController extends IndexController {
             $type = M('type');
             $result = $type -> add($data);
             if($result){
+                $typedata = $type -> select();
+                S('admin_type',$typedata,600);
                 $this->success('添加成功',U('Type/index'));
                 exit;
             }else{
@@ -32,6 +33,8 @@ class TypeController extends IndexController {
             if($type->create()){
                 $num = $type -> save($data);
                 if($num){
+                    $typedata = $type -> select();
+                    S('admin_type',$typedata,600);
                     $this->success('修改成功',U('Type/index'));
                     exit; 
                 }else{
@@ -52,6 +55,8 @@ class TypeController extends IndexController {
         $id = I('get.id');
         $type = M('type');
         if($type -> delete($id)){
+            $typedata = $type -> select();
+            S('admin_type',$typedata,600);
             $this->success('删除成功',U('Type/index'));
             exit; 
         }else{
