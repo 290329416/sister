@@ -12,21 +12,22 @@ class PsuserController extends IndexController {
     	$psuser = M("Psuser");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
-        if(!empty(I('get.name')) || !empty(I('get.comname')) || !empty(I('get.level'))|| !empty(I('get.state'))) {
+        $data = I('get.');
+        if(!empty($data['name']) || !empty($data['comname']) || !empty($data['level'])|| !empty($data['state']) {
             if(!empty(I('get.sid'))){
-                $map['name'] = array('eq',I('get.name'));
+                $map['name'] = array('eq',$data['name']);
             }
 
             if(!empty(I('get.comname'))){
-                $map['comname'] = array('like','%'.I('get.comname').'%');
+                $map['comname'] = array('like','%'.$data['comname'].'%');
             }
 
             if(!empty(I('get.level'))){
-                $map['level'] = array('eq',I('get.level'));
+                $map['level'] = array('eq',$data['level']);
             }
 
             if(!empty(I('get.state'))){
-                $map['state'] = array('eq',I('get.state'));
+                $map['state'] = array('eq',$data['state']);
             }
             $psuser_data = $psuser -> where($map) -> limit($first,'20')->select();
             //获取分页
@@ -53,8 +54,8 @@ class PsuserController extends IndexController {
 	}
     //添加评审人员
     public function add(){
-        if(I('post.')){
-            $data = I();
+        $data = I('post.');
+        if($data){
             if(empty($data['comname'])){
                 $this->error('机构名称不能为空');
             }

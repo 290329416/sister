@@ -9,16 +9,17 @@ class NewsController extends IndexController {
         $first =  $p * 20;
         $type = S('admin_type');
         $this -> assign('type',$type);
-        if(!empty(I('get.title')) || !empty(I('get.pid')) || !empty(I('get.state'))) {
+        $data = I('get.');
+        if(!empty($data['title']) || !empty($data['pid']) || !empty($data['state'])) {
 
-            if(!empty(I('get.title'))){
-                $map['title'] = array('like','%'.I('get.title').'%');
+            if(!empty($data['title'])){
+                $map['title'] = array('like','%'.$data['title'].'%');
             }
-            if(!empty(I('get.pid'))){
-                $map['pid'] = array('eq',I('get.pid'));
+            if(!empty($data['pid'])){
+                $map['pid'] = array('eq',$data['pid']);
             }
-            if(!empty(I('get.state'))){
-                $map['state'] = array('eq',I('get.state'));
+            if(!empty($data['state'])){
+                $map['state'] = array('eq',$data['state']);
             }
             $new = $news -> where($map) -> limit($first,'20')->select();
             //获取分页

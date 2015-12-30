@@ -12,11 +12,15 @@ class IndexController extends Controller {
 			$this -> error("请登录",U('login/index'));
 		}
 		$login_user = json_decode(authcode($user_auth,DECODE),true);
+		if($login_user['ip'] !== get_client_ip()){
+			$this -> error("请登录",U('login/index'));
+		}
 		$Only_user = S($login_user['username']);
 		if (empty($Only_user)) {
 			$user = M('user');
 			$Only_user = $user -> where("id=%d and state=0",$login_user['id']) -> find();
 			unset($Only_user['password']);
+			$Only_user['ip'] = get_client_ip();
 			$user_auth = authcode($user_auth,DECODE);
 			$json_user = json_encode($Only_user);
 			if ($user_auth !== $json_user) {

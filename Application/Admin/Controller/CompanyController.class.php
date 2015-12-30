@@ -12,21 +12,22 @@ class CompanyController extends IndexController {
     	$com = M("Company");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
-        if(!empty(I('get.sid')) || !empty(I('get.comname')) || !empty(I('get.comgrade'))|| !empty(I('get.state'))) {
-            if(!empty(I('get.sid'))){
-                $map['sid'] = array('eq',I('get.sid'));
+        $data = I('get.');
+        if(!empty($data['sid']) || !empty($data['comname']I('get.comname')) || !empty($data['comgrade'])|| !empty($data['state'])) {
+            if(!empty($data['sid'])){
+                $map['sid'] = array('eq',$data['sid']);
             }
 
-            if(!empty(I('get.comname'))){
-                $map['comname'] = array('like','%'.I('get.comname').'%');
+            if(!empty($data['comname'])){
+                $map['comname'] = array('like','%'.$data['comname'].'%');
             }
 
-            if(!empty(I('get.comgrade'))){
-                $map['comgrade'] = array('eq',I('get.comgrade'));
+            if(!empty($data['comgrade'])){
+                $map['comgrade'] = array('eq',$data['comgrade']);
             }
 
-            if(!empty(I('get.state'))){
-                $map['state'] = array('eq',I('get.state'));
+            if(!empty($data['state'])){
+                $map['state'] = array('eq',$data['state']);
             }
             $com_data = $com -> where($map) -> limit($first,'20')->select();
             //获取分页

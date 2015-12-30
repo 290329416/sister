@@ -12,10 +12,9 @@ class PsinstitutionsController extends IndexController {
     	$ps_obj = M("Psinstitutions");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
-        if(!empty(I('get.pname'))) {
-            if(!empty(I('get.pname'))){
-                $map['pname'] = array('like','%'.I('get.pname').'%');
-            }
+        $panme = I('get.pname');
+        if(!empty($panme)) {
+            $map['pname'] = array('like','%'.$pname.'%');
             $psuser_data = $ps_obj -> where($map) -> limit($first,'20')->select();
             //获取分页
             $count = $ps_obj -> where($map) ->count();

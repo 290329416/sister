@@ -9,26 +9,27 @@ class ComqueryController extends IndexController {
     }
 
     public function index(){
-        if(!empty(I('get.'))){
-            if(!empty(I('get.num'))){
-                $data['comnum'] = I('get.num');
+        $get_data = I('get.');
+        if(!empty($get_data)){
+            if(!empty($get_data['num'])){
+                $data['comnum'] = $get_data['num'];
             }
-            if(!empty(I('get.name')) && empty(I('get.lname'))){
-                $data['comname'] = I('get.name');
-            }elseif(!empty(I('get.lname'))){
-                $map['comname'] = array('like','%'.I('get.name').'%');
+            if(!empty($get_data['name']) && empty($get_data['lname'])){
+                $data['comname'] = $get_data['name'];
+            }elseif(!empty($get_data['lname'])){
+                $map['comname'] = array('like','%'.$get_data['lname'].'%');
             }
-            if(!empty(I('get.grade'))){
-                $data['comgrade'] = (int) I('get.grade');
+            if(!empty($get_data['grade'])){
+                $data['comgrade'] = (int) $get_data['grade'];
             }
-            if(!empty(I('get.area'))){
-                $data['area'] = I('get.area');
+            if(!empty($get_data['area'])){
+                $data['area'] = $get_data['area'];
             }
-            if(!empty(I('get.b_time')) && !empty(I('get.l_time'))){
-                $data['ntime'] = I('get.b_time');
-                $data['mtime'] = I('get.l_time');
-                $b_time = (int) strtotime(I('get.b_time'));
-                $l_time = (int) strtotime(I('get.l_time'));
+            if(!empty($get_data['b_time']) && !empty($get_data['l_time'])){
+                $data['ntime'] = $get_data['b_time'];
+                $data['mtime'] = $get_data['l_time'];
+                $b_time = (int) strtotime($get_data['b_time']);
+                $l_time = (int) strtotime($get_data['l_time']);
                 $data['b_time'] = array('between',array($b_time,$l_time));
             }
             if($data){

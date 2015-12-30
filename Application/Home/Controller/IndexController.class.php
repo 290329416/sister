@@ -31,7 +31,8 @@ class IndexController extends Controller {
     }
     public function index(){
         $news = M('news');
-        if(!empty(I('post.title'))){
+        $title = I('post.title');
+        if(!empty($title)){
             $data['title'] = array('like','%'.I('post.title').'%');
             $data['state'] = 2;
             $newdata = $news -> where($data) ->select();
