@@ -23,9 +23,9 @@
    <table width="500" border="0" align="center">
      <tr>
        <td width="100" style="text-align:right">资质证书编号</td>
-       <td width="136"><input type="text" name='num'></td>
+       <td width="136"><input type="text" name='num' value="{$data['comnum']}"></td>
        <td width="100" style="text-align:right;">企业名称</td>
-       <td width="136"><input type="text" name='name'></td>
+       <td width="136"><input type="text" name='name' value="{$data['comname']}"></td>
      </tr>
      <tr>
        <td style="text-align:right;">资质等级</td>
@@ -33,7 +33,12 @@
         <select name="grade">
           <option value=''>请选择</option>
             <foreach name="com_config.comgrade" item="com" key="key">
-            <option value="{$key}">{$com}</option>
+            <if condition="($key eq $data['comgrade'])">
+              <option value="{$key}" selected>{$com}</option>
+            <else />
+              <option value="{$key}">{$com}</option>
+            </if>
+            
             </foreach>
         </select>
       </td>
@@ -49,13 +54,13 @@
     </tr>
     <tr>
      <td style="text-align:right;">发证日期</td>
-     <td><input type="text" id="selectDate" class="aa" name='b_time'></td>
+     <td><input type="text" id="selectDate" class="aa" name='b_time' value="{$data['ntime']}"></td>
      <td style="text-align:right;">至</td>
-     <td><input type="text" id="Date" class="aa" name='l_time'></td>
+     <td><input type="text" id="Date" class="aa" name='l_time' value="{$data['mtime']}"></td>
    </tr>
    <tr>
      <td style="text-align:right;">模糊查询</td>
-     <td colspan="3"><input type="text" name='lname' style="width:400px;"></td>
+     <td colspan="3"><input type="text" name='lname' style="width:400px;" value="{$data['lname']}"></td>
    </tr>
    <tr>
      <td colspan="2" style="text-align:right"><input type="submit" value="查询" class="blt"></td>

@@ -25,6 +25,8 @@ class ComqueryController extends IndexController {
                 $data['area'] = I('get.area');
             }
             if(!empty(I('get.b_time')) && !empty(I('get.l_time'))){
+                $data['ntime'] = I('get.b_time');
+                $data['mtime'] = I('get.l_time');
                 $b_time = (int) strtotime(I('get.b_time'));
                 $l_time = (int) strtotime(I('get.l_time'));
                 $data['b_time'] = array('between',array($b_time,$l_time));
