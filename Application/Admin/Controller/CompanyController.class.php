@@ -13,7 +13,7 @@ class CompanyController extends IndexController {
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
         $data = I('get.');
-        if(!empty($data['sid']) || !empty($data['comname']I('get.comname')) || !empty($data['comgrade'])|| !empty($data['state'])) {
+        if(!empty($data['sid']) || !empty($data['comname']) || !empty($data['comgrade'])|| !empty($data['state'])) {
             if(!empty($data['sid'])){
                 $map['sid'] = array('eq',$data['sid']);
             }

@@ -13,7 +13,7 @@ class PsuserController extends IndexController {
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
         $data = I('get.');
-        if(!empty($data['name']) || !empty($data['comname']) || !empty($data['level'])|| !empty($data['state']) {
+        if(!empty($data['name']) || !empty($data['comname']) || !empty($data['level'])|| !empty($data['state'])) {
             if(!empty(I('get.sid'))){
                 $map['name'] = array('eq',$data['name']);
             }
