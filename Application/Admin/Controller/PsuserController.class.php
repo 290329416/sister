@@ -14,19 +14,19 @@ class PsuserController extends IndexController {
         $first =  $p * 20;
         $data = I('get.');
         if(!empty($data['name']) || !empty($data['comname']) || !empty($data['level'])|| !empty($data['state'])) {
-            if(!empty(I('get.sid'))){
+            if(!empty($data['name'])){
                 $map['name'] = array('eq',$data['name']);
             }
 
-            if(!empty(I('get.comname'))){
+            if(!empty($data['comname'])){
                 $map['comname'] = array('like','%'.$data['comname'].'%');
             }
 
-            if(!empty(I('get.level'))){
+            if(!empty($data['level'])){
                 $map['level'] = array('eq',$data['level']);
             }
 
-            if(!empty(I('get.state'))){
+            if(!empty($data['state'])){
                 $map['state'] = array('eq',$data['state']);
             }
             $psuser_data = $psuser -> where($map) -> limit($first,'20')->select();
