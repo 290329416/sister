@@ -114,10 +114,10 @@
 												<select id="form-field-select-1" class="form-control" name='area'>
 													<option>　</option>
 													<foreach name="psins_config.area" item="area" >
-														<eq name="area" value="$data.area">
-															<option value="{$data.area}" selected>{$data.area}</option>
+														<eq name="key" value="$data.area">
+															<option value="{$key}" selected>{$area}</option>
 														<else /> 
-															<option value="{$area}">{$area}</option>
+															<option value="{$key}">{$area}</option>
 														</eq>
 													</foreach>
 												</select>
