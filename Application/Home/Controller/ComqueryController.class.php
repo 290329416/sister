@@ -34,6 +34,7 @@ class ComqueryController extends IndexController {
             }
             if($data){
                 $com = M('company');
+                $data['state'] = 1;
                 $count = $com -> where($data) -> count();
                 $page = new \Org\Util\ComPage($count,4);
                 $show  = $page->show();// 分页显示输出

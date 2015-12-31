@@ -19,7 +19,7 @@
     <span>集成企业资质查询</span>
   </div>
 <div class="form">
- <form>
+ <form action='__ACTION__'>
    <table width="500" border="0" align="center">
      <tr>
        <td width="100" style="text-align:right">资质证书编号</td>
@@ -93,8 +93,8 @@
         <td>{$val.comnum}</td>
         <td>{$val.b_time}</td>
         <td>{$val.c_time}</td>
-        <td>{$val.comgrade}</td>
-        <td>{$val.area}</td>
+        <td>{$com_config['comgrade'][$val['comgrade']]}</td>
+        <td>{$com_config['area'][$val[area]]}</td>
         </tr>
       <else /> 
         <tr class="df">
@@ -103,8 +103,8 @@
           <td>{$val.comnum}</td>
           <td>{$val.b_time}</td>
           <td>{$val.c_time}</td>
-          <td>{$val.comgrade}</td>
-          <td>{$val.area}</td>
+          <td>{$com_config['comgrade'][$val['comgrade']]}</td>
+          <td>{$com_config['area'][$val[area]]}</td>
         </tr>
     </if>
       
