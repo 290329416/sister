@@ -46,4 +46,12 @@ class ComqueryController extends IndexController {
         }
         $this->display();
 	}
+
+    public function user(){
+        $this->display();
+    }
+
+    public function institutions(){
+        $this->display();
+    }
 }
