@@ -9,8 +9,8 @@ class TypeController extends IndexController {
 	}
 	//添加栏目页面
 	public function add(){
-        if(I('post.name') && I('post.namepath') && I('post.state')){
-            $data = I();
+        $data = I('post');
+        if($data['name'] && $data['namepath'] && $data['state']){
             $data['path'] = '0,';
             $type = M('type');
             $result = $type -> add($data);
@@ -27,9 +27,9 @@ class TypeController extends IndexController {
 	}
     //修改栏目信息
     public function update(){
-        if(I('post.')){
+        $data = I('post.');
+        if($data){
             $type = M('type');
-            $data = I('post.');
             if($type->create()){
                 $num = $type -> save($data);
                 if($num){

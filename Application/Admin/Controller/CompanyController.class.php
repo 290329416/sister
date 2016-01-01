@@ -54,8 +54,8 @@ class CompanyController extends IndexController {
 	}
 	//添加企业资质
 	public function add(){
-		if(I('post.')){
-            $data = I();
+        $data = I('post.');
+		if($data){
             if(empty($data['comname'])){
                 $this->error('企业名称不能为空');
             }
@@ -74,26 +74,26 @@ class CompanyController extends IndexController {
             $data['comnum'] = strtoupper($data['comnum']);
             $data['b_time'] = strtotime($data['b_time']);
             $data['c_time'] = strtotime($data['c_time']);
-            if($data){
-                $com = M('Company');
-                $lastid = $com -> add($data);
-                if($lastid){
-                    $data_sid['id'] = $lastid;
-                    $data_sid['sid'] = '1'.str_pad($lastid,6,0,STR_PAD_LEFT);
-                    $com ->save($data_sid);
-                    $this -> success("添加成功",U('Company/index'));
-                    exit;
-                }else{
-                    $this->error('添加失败');
-                }
+            $com = M('Company');
+            $lastid = $com -> add($data);
+            if($lastid){
+                $data_sid['id'] = $lastid;
+                $data_sid['sid'] = '1'.str_pad($lastid,6,0,STR_PAD_LEFT);
+                $com ->save($data_sid);
+                $comname = $com -> field('id,comname') -> where('state=1')->select();
+                S('company',$comname,3600);
+                $this -> success("添加成功",U('Company/index'));
+                exit;
+            }else{
+                $this->error('添加失败');
             }
 		}
 		$this->display();
 	}
     //修改企业资质
     public function update(){
-        if(I('post.')){
-            $data = I();
+        $data = I('post.');
+        if($data){
             if(empty($data['comname'])){
                 $this->error('企业名称不能为空');
             }
@@ -112,14 +112,14 @@ class CompanyController extends IndexController {
             $data['comnum'] = strtoupper($data['comnum']);
             $data['b_time'] = strtotime($data['b_time']);
             $data['c_time'] = strtotime($data['c_time']);
-            if($data){
-                $com = M('Company');
-                if($com -> save($data)){
-                    $this -> success("修改成功",U('Company/index'));
-                    exit;
-                }else{
-                    $this->error('修改失败');
-                }
+            $com = M('Company');
+            if($com -> save($data)){
+                $comname = $com -> field('id,comname') -> where('state=1')->select();
+                S('company',$comname,3600);
+                $this -> success("修改成功",U('Company/index'));
+                exit;
+            }else{
+                $this->error('修改失败');
             }
         }
         $id = I('id');
@@ -131,17 +131,23 @@ class CompanyController extends IndexController {
     //删除企业资质
     public function delete(){
         $com = M('Company');
-        if(is_array(I('post.id'))){
-            $id_data = implode(',', I('post.id'));
+        $data = I('post.id');
+        if(is_array($data)){
+            $id_data = implode(',', $data);
             $num = $com -> delete($id_data);
             if($num){
+                $comname = $com -> field('id,comname') -> where('state=1')->select();
+                S('company',$comname,3600);
                 $this -> success("删除成功",U('Company/index'));
                 exit;
             }else{
                 $this->error('删除失败');
             }
         }
-        if($com ->delete(I('get.id'))){
+        $id = I('get.id');
+        if($com ->delete($id)){
+            $comname = $com -> field('id,comname') -> where('state=1')->select();
+            S('company',$comname,3600);
             $this -> success("删除成功",U('Company/index'));exit;
         }else{
             $this->error('删除失败');

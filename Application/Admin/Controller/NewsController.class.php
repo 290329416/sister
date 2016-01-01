@@ -51,8 +51,8 @@ class NewsController extends IndexController {
 	}
 	//添加文章页面
 	public function add(){
-		if(I('post.')){
-            $data = I();
+        $data = I('post.');
+		if($data){
             $data['inputtime'] = time();
             if(strpos($_FILES['file']['type'],'text') === false){
                 $this->error('文章类型上传错误,必须txt文件');
@@ -67,17 +67,15 @@ class NewsController extends IndexController {
             if(empty($data['content'])){
                 $this->error('文章内容不能为空');
             }
-            if($data){
-                if(!empty($data['releasetime'])){
-                    $data['releasetime'] = trim($data['releasetime'],'日').'日';
-                }
-                $news = M('news');
-                if($news -> add($data)){
-                    $this -> success("添加成功",U('news/index'));
-                    exit;
-                }else{
-                    $this->error('添加失败');
-                }
+            if(!empty($data['releasetime'])){
+                $data['releasetime'] = trim($data['releasetime'],'日').'日';
+            }
+            $news = M('news');
+            if($news -> add($data)){
+                $this -> success("添加成功",U('news/index'));
+                exit;
+            }else{
+                $this->error('添加失败');
             }
 		}
         $type = M('type');
@@ -99,8 +97,8 @@ class NewsController extends IndexController {
     }
     //修改文章
     public function update(){
-        if(I('post.')){
-            $data = I();
+        $data = I('post.');
+        if($data){
             $data['content'] = mb_convert_encoding($data['content'], 'UTF-8','GB2312,gbk,UTF-8');
             if(empty($data['title'])){
                 $this->error('文章标题不能为空');
@@ -111,17 +109,15 @@ class NewsController extends IndexController {
             if(empty($data['content'])){
                 $this->error('文章内容不能为空');
             }
-            if($data){
-                if(!empty($data['releasetime'])){
-                    $data['releasetime'] = trim($data['releasetime'],'日').'日';
-                }
-                $news = M('news');
-                if($news -> save($data)){
-                    $this -> success("修改成功",U('news/index'));
-                    exit;
-                }else{
-                    $this->error('修改失败');
-                }
+            if(!empty($data['releasetime'])){
+                $data['releasetime'] = trim($data['releasetime'],'日').'日';
+            }
+            $news = M('news');
+            if($news -> save($data)){
+                $this -> success("修改成功",U('news/index'));
+                exit;
+            }else{
+                $this->error('修改失败');
             }
         }
         $id = I('id');
@@ -136,8 +132,9 @@ class NewsController extends IndexController {
     //删除文章
     public function delete(){
         $news = M('news');
-        if(is_array(I('post.id'))){
-            $id_data = implode(',', I('post.id'));
+        $data = I('post.id');
+        if(is_array($data)){
+            $id_data = implode(',', $data);
             $num = $news -> delete($id_data);
             if($num){
                 $this -> success("删除成功",U('news/index'));
@@ -146,7 +143,8 @@ class NewsController extends IndexController {
                 $this->error('删除失败');
             }
         }
-        if($news ->delete(I('get.id'))){
+        $id = I('get.id');
+        if($news ->delete($id)){
             $this -> success("删除成功",U('news/index'));exit;
         }else{
             $this->error('删除失败');

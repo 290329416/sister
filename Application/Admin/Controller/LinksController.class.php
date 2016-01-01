@@ -44,9 +44,9 @@ class LinksController extends IndexController {
 	}
     //修改用户信息
     public function update(){
-        if(I('post.')){
+        $data = I('post.');
+        if($data){
             $links = M('links');
-            $data = I('post.');
             if($links->create()){
                 $num = $links -> save($data);
                 if($num){

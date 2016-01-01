@@ -42,8 +42,8 @@ class PsinstitutionsController extends IndexController {
 	}
     //添加评审机构信息
     public function add(){
-        if(I('post.')){
-            $data = I();
+        $data = I('post.');
+        if($data){
             if(empty($data['pname'])){
                 $this->error('评审机构不能为空');
             }
@@ -53,40 +53,36 @@ class PsinstitutionsController extends IndexController {
             if(empty($data['address'])){
                 $this->error('通讯地址不能为空');
             }
-            if($data){
-                $com = M('Psinstitutions');
-                $lastid = $com -> add($data);
-                if($lastid){
-                    $data_uid['id'] = $lastid;
-                    $data_uid['pid'] = '1'.str_pad($lastid,6,0,STR_PAD_LEFT);
-                    $com ->save($data_uid);
-                    $this -> success("添加成功",U('Psinstitutions/index'));
-                    exit;
-                }else{
-                    $this->error('添加失败');
-                }
+            $com = M('Psinstitutions');
+            $lastid = $com -> add($data);
+            if($lastid){
+                $data_uid['id'] = $lastid;
+                $data_uid['pid'] = '1'.str_pad($lastid,6,0,STR_PAD_LEFT);
+                $com ->save($data_uid);
+                $this -> success("添加成功",U('Psinstitutions/index'));
+                exit;
+            }else{
+                $this->error('添加失败');
             }
         }
         $this->display();
     }
     //修改评审机构信息
     public function update(){
-        if(I('post.')){
-            $data = I();
+        $data = I('post.');
+        if($data){
             if(empty($data['pname'])){
                 $this->error('评审机构不能为空');
             }
             if(empty($data['address'])){
                 $this->error('通讯地址不能为空');
             }
-            if($data){
-                $psuser = M('Psinstitutions');
-                if($psuser -> save($data)){
-                    $this -> success("修改成功",U('Psinstitutions/index'));
-                    exit;
-                }else{
-                    $this->error('修改失败');
-                }
+            $psuser = M('Psinstitutions');
+            if($psuser -> save($data)){
+                $this -> success("修改成功",U('Psinstitutions/index'));
+                exit;
+            }else{
+                $this->error('修改失败');
             }
         }
         $id = I('id');
@@ -98,8 +94,9 @@ class PsinstitutionsController extends IndexController {
     //删除评审机构信息
     public function delete(){
         $psuser = M('Psinstitutions');
-        if(is_array(I('post.id'))){
-            $id_data = implode(',', I('post.id'));
+        $data = I('post.id');
+        if(is_array($data)){
+            $id_data = implode(',', $data);
             $num = $psuser -> delete($id_data);
             if($num){
                 $this -> success("删除成功",U('Psinstitutions/index'));
@@ -108,8 +105,8 @@ class PsinstitutionsController extends IndexController {
                 $this->error('删除失败');
             }
         }
-        if($psuser ->delete(I('get.id'))){
-            exit('11');
+        $id = I('get.id');
+        if($psuser ->delete($id)){
             $this -> success("删除成功",U('Psinstitutions/index'));exit;
         }else{
             $this->error('删除失败');

@@ -93,8 +93,19 @@
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
 													<form action="/admin_china.php/Psuser/index">
-													<label>机构名称: <input type="text" aria-controls="sample-table-2" name="comname" value="{$data['comname']}"></label>
 													<label>姓名: <input type="text" aria-controls="sample-table-2" name="name" value="{$data['name']}"></label>
+													<label>机构名称: 
+														<select name="comname" size="1" aria-controls="sample-table-2" style='width:120px;'>
+															<option value=''>请选择</option>
+															<foreach name="company" item="com">
+																<if condition="($com['id'] eq $data['cid'])">
+													              <option value="{$com['id']}" selected>{$com['comname']}</option>
+													            <else />
+													              <option value="{$com['id']}">{$com['comname']}</option>
+													            </if>
+															</foreach>
+														</select>
+													</label>
 													<label>资质级别: 
 														<select name="level" size="1" aria-controls="sample-table-2" style='width:120px;'>
 															<option value=''>请选择</option>

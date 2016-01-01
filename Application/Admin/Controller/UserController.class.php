@@ -29,7 +29,8 @@ class UserController extends IndexController {
 	}
 	//添加用户页面
 	public function add(){
-		if(I('post.username')){
+        $name = I('post.username');
+		if($name){
             $data = I();
             $data['password'] = md5(C('SECURE_CODE').md5($data['password']));
             $data['password2'] = md5(C('SECURE_CODE').md5($data['password2']));
@@ -60,7 +61,8 @@ class UserController extends IndexController {
     //修改用户信息
     public function update(){
         $user = M('User');
-        if(I('post.id')){
+        $update_id = I('post.id');
+        if($update_id){
             $data = I();
             if (!preg_match('/^[A-Za-z0-9-_.+%]+@[A-Za-z0-9-.]+\.[A-Za-z]{2,4}$/',$data['email'])){
                 $this->error('请填写正确邮箱');
@@ -69,7 +71,6 @@ class UserController extends IndexController {
                 $this -> success("用户修改成功",U('user/index'));
                 exit;
             }
-
         }
         $id = I('id');
         $data = $user ->find($id);
@@ -79,7 +80,8 @@ class UserController extends IndexController {
     //修改用户密码
     public function chpass(){
         $user = M('User');
-        if(I('post.id')){
+        $update_id = I('post.id');
+        if($update_id){
             $data['id'] = I('post.id');
             $data['password'] = md5(C('SECURE_CODE').md5(I('post.password')));
             $data['password2'] = md5(C('SECURE_CODE').md5(I('post.password2')));
@@ -97,7 +99,7 @@ class UserController extends IndexController {
         $this -> assign('data', $data);
         $this->display();
     }
-    //删除用户密码
+    //删除用户
     public function delete(){
         $user = M('User');
         $data['id'] = I('id');

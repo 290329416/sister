@@ -82,15 +82,22 @@
 
 								<form class="form-horizontal" role="form" action="" method='post' enctype="multipart/form-data">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">机构名称</label>
-										<div class="col-sm-9">
-											<input name='comname' type="text" id="form-field-1" placeholder="机构名称"   class="col-xs-10 col-sm-5"/>
-										</div>
-									</div>
-									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">姓名</label>
 										<div class="col-sm-9">
 											<input name='name' type="text" id="form-field-1" placeholder="姓名"   class="col-xs-10 col-sm-5"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">机构名称</label>
+										<div class="col-sm-9" style="width:400px;">
+											<div class="col-sm-4" style='padding-left:0px;width: 200px;'>
+												<select id="form-field-select-1" class="form-control" name='cid'>
+													<option value=''>请选择</option>
+													<foreach name="company" item="com">
+											              <option value="{$com['id']}">{$com['comname']}</option>
+													</foreach>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="form-group">
@@ -99,7 +106,7 @@
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='level'>
 													<option value=''>请选择</option>
-													<foreach name="ps_config.level" item="val" key="key">
+													<foreach name="ps_config.level" item="val">
 															<option value="{$key}">{$val}</option>
 													</foreach>
 												</select>
@@ -112,7 +119,7 @@
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='psfield'>
 													<option value=''>请选择</option>
-													<foreach name="ps_config.psfield" item="val" key="key">
+													<foreach name="ps_config.psfield" item="val">
 															<option value="{$key}">{$val}</option>
 													</foreach>
 												</select>

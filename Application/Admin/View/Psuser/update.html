@@ -90,15 +90,24 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">机构名称</label>
-										<div class="col-sm-9">
-											<input name='comname' type="text" id="form-field-1" placeholder="机构名称"   class="col-xs-10 col-sm-5" value='{$data.comname}'/>
-										</div>
-									</div>
-									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">姓名</label>
 										<div class="col-sm-9">
 											<input name='name' type="text" id="form-field-1" placeholder="姓名"   class="col-xs-10 col-sm-5" value='{$data.name}'/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">机构名称</label>
+										<div class="col-sm-9" style="width:200px;">
+											<select id="form-field-select-1" class="form-control" name='cid'>
+												<option value=''>请选择</option>
+												<foreach name="company" item="com">
+													<if condition="($com['id'] eq $data['cid'])">
+										              <option value="{$com['id']}" selected>{$com['comname']}</option>
+										            <else />
+										              <option value="{$com['id']}">{$com['comname']}</option>
+										            </if>
+												</foreach>
+											</select>
 										</div>
 									</div>
 									<div class="form-group">
