@@ -13,9 +13,9 @@ class CompanyController extends IndexController {
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
         $data = I('get.');
-        if(!empty($data['sid']) || !empty($data['comname']) || !empty($data['comgrade'])|| !empty($data['state'])) {
-            if(!empty($data['sid'])){
-                $map['sid'] = array('eq',$data['sid']);
+        if(!empty($data)) {
+            if(!empty($data['comnum'])){
+                $map['comnum'] = array('eq',$data['comnum']);
             }
 
             if(!empty($data['comname'])){
@@ -44,7 +44,7 @@ class CompanyController extends IndexController {
             $page = new \Think\Page($count,20);
             $pages = $page ->show();
         }
-        
+        $this -> assign('data',$data);
         $this -> assign('pages', $pages);
         $this -> assign('count', $count);
         $this -> assign('num', $num);

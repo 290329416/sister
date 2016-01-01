@@ -92,22 +92,26 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
-													<form action="__ACTION__">
-													<label>搜索文章标题: <input type="text" aria-controls="sample-table-2" name="title"></label>
+													<form action="/admin_china.php/News/index">
+													<label>搜索文章标题: <input type="text" aria-controls="sample-table-2" name="title" value="{$data['title']}"></label>
 													<label>请选择栏目: 
 														<select name="pid" size="1" aria-controls="sample-table-2" style='width:120px;'>
 															<option value=""></option>
-															<foreach name="type" item="type" >
-																<option value="{$type.id}">{$type.name}</option>
+															<foreach name="type" item="type">
+																<if condition="($type['id'] eq $data['pid'])">
+													              <option value="{$type.id}" selected>{$type.name}</option>
+													            <else />
+													              <option value="{$type.id}">{$type.name}</option>
+													            </if>
 															</foreach>
 														</select>
 													</label>
 													<label>请选择状态: 
 														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
 															<option value=""></option>
-															<option value="1">未审核</option>
-															<option value="2">已发布</option>
-															<option value="3">禁用</option>
+															<option value="1" <if condition="$data['state'] eq 1">selected</if>>未审核</option>
+															<option value="2" <if condition="$data['state'] eq 2">selected</if>>已发布</option>
+															<option value="3" <if condition="$data['state'] eq 3">selected</if>>禁用</option>
 														</select>
 													</label>
 													&nbsp;&nbsp;&nbsp;&nbsp;

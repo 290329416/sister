@@ -12,9 +12,12 @@ class PsinstitutionsController extends IndexController {
     	$ps_obj = M("Psinstitutions");
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
-        $panme = I('get.pname');
-        if(!empty($panme)) {
-            $map['pname'] = array('like','%'.$pname.'%');
+        $data = I('get.');
+        if(!empty($data)) {
+            $map['pname'] = array('like','%'.$data['pname'].'%');
+            if(!empty($data['state'])){
+                $map['state'] = $data['state'];
+            }
             $psuser_data = $ps_obj -> where($map) -> limit($first,'20')->select();
             //获取分页
             $count = $ps_obj -> where($map) ->count();
@@ -30,6 +33,7 @@ class PsinstitutionsController extends IndexController {
             $page = new \Think\Page($count,20);
             $pages = $page ->show();
         }
+        $this -> assign('data', $data);
         $this -> assign('pages', $pages);
         $this -> assign('count', $count);
         $this -> assign('num', $num);

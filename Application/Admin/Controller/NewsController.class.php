@@ -10,7 +10,7 @@ class NewsController extends IndexController {
         $type = S('admin_type');
         $this -> assign('type',$type);
         $data = I('get.');
-        if(!empty($data['title']) || !empty($data['pid']) || !empty($data['state'])) {
+        if(!empty($data)) {
 
             if(!empty($data['title'])){
                 $map['title'] = array('like','%'.$data['title'].'%');
@@ -28,6 +28,7 @@ class NewsController extends IndexController {
             $num = ceil($count/20);
             $page = new \Think\Page($count,20);
             $pages = $page ->show();
+            $this -> assign('data',$data);
             $this -> assign('pages', $pages);
             $this -> assign('count', $count);
             $this -> assign('num', $num);

@@ -21,13 +21,16 @@
     <span class='nbgspan'><a href="{:U('Comquery/institutions')}">评审机构信息查询</a></span>
   </div>
 <div class="form">
- <form action='__ACTION__'>
+ <form action='/index.php/Comquery/index'>
    <table width="500" border="0" align="center">
+    <tr>
+       <td colspan='4' style='text-align:center;font-size:15px;'>集成企业资质查询</td>
+     </tr>
      <tr>
        <td width="100" style="text-align:right">资质证书编号</td>
-       <td width="136"><input type="text" name='num' value="{$data['comnum']}"></td>
+       <td width="136"><input type="text" name='num' value="{$data['num']}"></td>
        <td width="100" style="text-align:right;">企业名称</td>
-       <td width="136"><input type="text" name='name' value="{$data['comname']}"></td>
+       <td width="136"><input type="text" name='name' value="{$data['name']}"></td>
      </tr>
      <tr>
        <td style="text-align:right;">资质等级</td>
@@ -35,12 +38,11 @@
         <select name="grade">
           <option value=''>请选择</option>
             <foreach name="com_config.comgrade" item="com" key="key">
-            <if condition="($key eq $data['comgrade'])">
+            <if condition="($key eq $data['grade'])">
               <option value="{$key}" selected>{$com}</option>
             <else />
               <option value="{$key}">{$com}</option>
             </if>
-            
             </foreach>
         </select>
       </td>
@@ -49,16 +51,20 @@
       <select name="area">
         <option value=''>请选择</option>
         <foreach name="com_config.area" item="area">
-            <option value="{$key}">{$area}</option>
-        </foreach>
+              <if condition="($key eq $data['area'])">
+                <option value="{$key}" selected>{$area}</option>
+              <else />
+                <option value="{$key}">{$area}</option>
+              </if>
+          </foreach>
       </select>
       </td>
     </tr>
     <tr>
      <td style="text-align:right;">发证日期</td>
-     <td><input type="text" id="selectDate" class="aa" name='b_time' value="{$data['ntime']}"></td>
+     <td><input type="text" id="selectDate" class="aa" name='b_time' value="{$data['b_time']}"></td>
      <td style="text-align:right;">至</td>
-     <td><input type="text" id="Date" class="aa" name='l_time' value="{$data['mtime']}"></td>
+     <td><input type="text" id="Date" class="aa" name='l_time' value="{$data['l_time']}"></td>
    </tr>
    <tr>
      <td style="text-align:right;">模糊查询</td>

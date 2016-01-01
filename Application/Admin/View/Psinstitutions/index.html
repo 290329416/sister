@@ -92,9 +92,16 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
-													<form action="__ACTION__">
-													<label>机构名称: <input type="text" aria-controls="sample-table-2" name="pname"></label>
+													<form action="/admin_china.php/Psinstitutions/index">
+													<label>机构名称: <input type="text" aria-controls="sample-table-2" name="pname" value="{$data['pname']}"></label>
 													&nbsp;&nbsp;&nbsp;&nbsp;
+													<label>请选择状态: 
+														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
+															<option value="">　</option>
+															<option value="1" <if condition="$data['state'] eq 1">selected</if>>正常</option>
+															<option value="2" <if condition="$data['state'] eq 2">selected</if>>关闭</option>
+														</select>
+													</label>
 													<button class="btn btn-sm btn-primary">搜索</button>
 													<a class="btn btn-sm btn-primary" href="{:U('Psinstitutions/add')}" style='float: right;'>添加评审机构信息</a>
 													</form>

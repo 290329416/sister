@@ -13,7 +13,7 @@ class PsuserController extends IndexController {
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
         $data = I('get.');
-        if(!empty($data['name']) || !empty($data['comname']) || !empty($data['level'])|| !empty($data['state'])) {
+        if(!empty($data)) {
             if(!empty($data['name'])){
                 $map['name'] = array('eq',$data['name']);
             }
@@ -44,7 +44,7 @@ class PsuserController extends IndexController {
             $page = new \Think\Page($count,20);
             $pages = $page ->show();
         }
-        
+        $this -> assign('data',$data);
         $this -> assign('pages', $pages);
         $this -> assign('count', $count);
         $this -> assign('num', $num);

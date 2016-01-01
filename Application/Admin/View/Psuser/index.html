@@ -92,22 +92,26 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
-													<form action="__ACTION__">
-													<label>机构名称: <input type="text" aria-controls="sample-table-2" name="comname"></label>
-													<label>姓名: <input type="text" aria-controls="sample-table-2" name="name"></label>
+													<form action="/admin_china.php/Psuser/index">
+													<label>机构名称: <input type="text" aria-controls="sample-table-2" name="comname" value="{$data['comname']}"></label>
+													<label>姓名: <input type="text" aria-controls="sample-table-2" name="name" value="{$data['name']}"></label>
 													<label>资质级别: 
 														<select name="level" size="1" aria-controls="sample-table-2" style='width:120px;'>
 															<option value=''>请选择</option>
-															<foreach name="ps_config.level" item="com" key="key">
-																<option value="{$key}">{$com}</option>
+															<foreach name="ps_config.level" item="com">
+																<if condition="($key eq $data['level'])">
+													              <option value="{$key}" selected>{$com}</option>
+													            <else />
+													              <option value="{$key}">{$com}</option>
+													            </if>
 															</foreach>
 														</select>
 													</label>
 													<label>状态: 
 														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
 															<option value=''>请选择</option>
-															<option value="1">正常</option>
-															<option value="2">关闭</option>
+															<option value="1" <if condition="$data['state'] eq 1">selected</if>>正常</option>
+															<option value="2" <if condition="$data['state'] eq 2">selected</if>>关闭</option>
 														</select>
 													</label>
 													&nbsp;&nbsp;&nbsp;&nbsp;

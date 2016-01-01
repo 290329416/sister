@@ -21,11 +21,12 @@
     <span class='bgspan nbgspan'><a href="{:U('Comquery/institutions')}">评审机构信息查询</a></span>
   </div>
 <div class="form">
- <form action='__ACTION__'>
+ <form action='/index.php/Comquery/institutions'>
    <table width="500" border="0" align="center">
+    <td colspan='4' style='text-align:center;font-size:15px;'>评审机构信息查询</td>
      <tr height='100px'>
        <td width="100" style="text-align:right">评审机构名称</td>
-       <td width="136"><input type="text" name='num' value="{$data['comnum']}"></td>
+       <td width="136"><input type="text" name='name' value="{$data['name']}"></td>
        <td style="text-align:right;">所属省市</td>
        <td>
         <select name="area">
@@ -53,12 +54,10 @@
     <thead>
       <tr>
         <th width="100">序号</th>
-        <th width="230">企业名称</th>
-        <th width="120">资质证书编号</th>
-        <th width="100">发证日期</th>
-        <th width="100">证书有效期</th>
-        <th width="100">资质等级</th>
-        <th width="80">所属省市</th>
+        <th width="130">评审机构</th>
+        <th width="120">联系电话</th>
+        <th width="200">通讯地址</th>
+        <th width="100">所属省市</th>
       </tr>
     </thead>
     <notempty name="result">
@@ -66,23 +65,19 @@
       <foreach name="result" item="val" key='key'>
       <if condition="($key%2) eq 0 ">
         <tr>
-        <td>{$val.sid}</td>
-        <td>{$val.comname}</td>
-        <td>{$val.comnum}</td>
-        <td>{$val.b_time}</td>
-        <td>{$val.c_time}</td>
-        <td>{$com_config['comgrade'][$val['comgrade']]}</td>
+        <td>{$val.pid}</td>
+        <td>{$val.pname}</td>
+        <td>{$val.phone}</td>
+        <td>{$val.address}</td>
         <td>{$com_config['area'][$val[area]]}</td>
         </tr>
       <else /> 
         <tr class="df">
-          <td>{$val.sid}</td>
-          <td>{$val.comname}</td>
-          <td>{$val.comnum}</td>
-          <td>{$val.b_time}</td>
-          <td>{$val.c_time}</td>
-          <td>{$com_config['comgrade'][$val['comgrade']]}</td>
-          <td>{$com_config['area'][$val[area]]}</td>
+        <td>{$val.pid}</td>
+        <td>{$val.pname}</td>
+        <td>{$val.phone}</td>
+        <td>{$val.address}</td>
+        <td>{$com_config['area'][$val[area]]}</td>
         </tr>
     </if>
       
@@ -96,12 +91,8 @@
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
       </tr>
       <tr class="df">
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
@@ -114,12 +105,8 @@
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
         </tr>
         <tr class="df">
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
