@@ -94,6 +94,16 @@
 					<div class="space-4"></div>
 
 					<div class="form-group">
+						<label for="form-field-2" class="col-sm-3 control-label no-padding-right" style='color:red'> 原始密码 </label>
+						<div class="col-sm-9">
+							<input type="password" class="col-xs-10 col-sm-5" name='oldpass' placeholder="原始密码" id="form-field-2">
+							<span class="help-inline col-xs-12 col-sm-7">
+								<span class="middle">*</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="form-group">
 						<label for="form-field-2" class="col-sm-3 control-label no-padding-right" style='color:red'> 密码 </label>
 						<div class="col-sm-9">
 							<input type="password" class="col-xs-10 col-sm-5" name='password' placeholder="密码" id="form-field-2">
@@ -167,6 +177,11 @@
             function checkpassword2(){
                 var pass = $("input[name='password']").val();
                 var pass2 = $("input[name='password2']").val();
+                var old = $("input[name='oldpass']").val();
+                if(old.length<1){
+                	$("input[name='oldpass']").next().children().html("请输入原始密码");
+                	return false;
+                }
                 if(pass2.length<6){
                 	$("input[name='password2']").next().children().html("确认密码要大于6位！");
                 	return false;

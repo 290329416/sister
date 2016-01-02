@@ -80,18 +80,24 @@ class UserController extends IndexController {
     //修改用户密码
     public function chpass(){
         $user = M('User');
-        $update_id = I('post.id');
+        $update_id = I('post.');
         if($update_id){
             $data['id'] = I('post.id');
-            $data['password'] = md5(C('SECURE_CODE').md5(I('post.password')));
-            $data['password2'] = md5(C('SECURE_CODE').md5(I('post.password2')));
-            if($data['password'] === $data['password2']){
-                if($user -> save($data)){
-                    $this -> success("用户修改成功",U('user/index'));
-                    exit;
-                }else{
-                    $this->error('修改失败');
+            $oneuser = $user -> field('password') -> where($data) -> find();
+            $oldpass = md5(C('SECURE_CODE').md5(I('post.oldpass')));
+            if($oneuser['password'] == $oldpass){
+                $data['password'] = md5(C('SECURE_CODE').md5(I('post.password')));
+                $data['password2'] = md5(C('SECURE_CODE').md5(I('post.password2')));
+                if($data['password'] === $data['password2']){
+                    if($user -> save($data)){
+                        $this -> success("用户修改成功",U('user/index'));
+                        exit;
+                    }else{
+                        $this->error('修改失败');
+                    }
                 }
+            }else{
+                $this->error('原始密码不正确');
             }
         }
         $id = I('id');
