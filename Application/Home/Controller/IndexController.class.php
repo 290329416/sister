@@ -43,6 +43,8 @@ class IndexController extends Controller {
     	foreach($this->type as $v){
     		$new[$v['namepath']] = $news -> where("pid =" . $v['id'] .' and state=2') -> order('id desc') -> limit(8) -> select();
     	}
+        $us = json_decode($_COOKIE['us'],true);
+        $this -> assign('user',$us);
     	$this -> assign('new',$new);
         $this->display();
 	}
@@ -79,4 +81,32 @@ class IndexController extends Controller {
         $this->display();
     }
 
+    public function login(){
+        $data = I('post.');
+        if(!empty($data['name']) && !empty($data['pass'])){
+            $user = M('user');
+            $ufield = $user -> where("username='%s' and state!=2",$data['name']) ->find();
+            if($ufield){
+                $pass = md5(C('SECURE_CODE').md5($data['pass']));
+                if($pass === $ufield['password']){
+                    $user ->where('id='.$ufield['id'])->save(array('logintime'=>time()));
+                    $return['name'] = $ufield['name'];
+                    $return['time'] = date('Y-m-d H:i',$ufield['logintime']);
+                    cookie('us',json_encode($return),86400);
+                    echo  json_encode($return);exit;
+                }else{
+                    exit('false');
+                }
+            }else{
+                exit('false');
+            }
+        }else{
+            exit('false');
+        }
+    }
+
+    public function quit(){
+        cookie('us',null);
+        exit('1');
+    }
 }

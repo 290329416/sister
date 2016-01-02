@@ -18,15 +18,20 @@
 				<li style='margin-top:0px;'><a href=''>协会概况</a></li>
 				<li><a href=''>分会简介</a></li>
 				<li><a href=''>组织机构</a></li>
-				<div>会员登陆入口
-					<form action="" method='post' onsubmit = "return false">
+				<div id='ulogin' <notempty name="user"> style='display:none;' </notempty>>会员登陆入口
+					<form id='myform' onsubmit="return false;">
 						<span>用户名<input type="text" name='name' size='11'></span>
 						<span>密　码<input type="password" name='pass' size='11'></span>
 						<span>
-							<input type="submit" class='button' value='登录'/>&nbsp;&nbsp;&nbsp;
+							<button class='button' onclick='doCheck()'>登录</button>&nbsp;&nbsp;&nbsp;
 							<input type="reset" class='button' value='重置'>
 						</span>
 					</form>
+				</div>
+				<div id='user' <empty name="user"> style='display:none;' </empty>>
+					<span style='text-align:left;padding:0 5px;'>您好：<a id='name'>{$user.name}</a></span>
+					<span style='text-align:left;padding:0 5px;'>上次登录时间:<br/><a id='time'>{$user.time|date="Y-m-d H:i",###}</a></span>
+					<button class='button' onclick='doQuit()' >退出</button>
 				</div>
 			</ul>
 		</div>
@@ -75,4 +80,47 @@
     <div class="banner2"><img src="__PUBLIC__/home/images/img3.png"></div>
    <include file="Public/foot" />
 </body>
+	<script>
+	  	function doCheck() {
+	  		var name = $("input[name='name']").val();
+	        var pass = $("input[name='pass']").val();
+	        if(name.length<5){
+	        	alert("请输入同户名");
+	        }
+	        if(pass.length<6){
+	        	alert("密码填写不正确");
+	        }
+	      	$.ajax({
+		        "url":"index.php/Index/login",
+		        "type":"post",
+		        "data":$("#myform").serialize(),
+		        "success":function(data){
+		        if(data !== false){
+		        	$('#name').html(data.name);
+		        	$('#time').html(data.time);
+		        	$('#ulogin').hide();
+		        	$('#user').show();
+		        }else{
+		        	alert('登录失败，账号或密码错误!');
+		        }
+	        },
+	        "async":false,
+	        'dataType':"json"
+	      	});
+    	}
+    	function doQuit(){
+    		$.ajax({
+		        "url":"index.php/Index/quit",
+		        "type":"post",
+		        "data":"1",
+		        "success":function(data){
+		        	if(data == 1){
+		        		window.location.reload();
+		        	}
+		        },
+		        "async":false,
+		        'dataType':"json"
+		      	});
+    	}
+	</script>
 </html>

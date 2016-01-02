@@ -99,8 +99,8 @@
         <td>{$val.sid}</td>
         <td>{$val.comname}</td>
         <td>{$val.comnum}</td>
-        <td>{$val.b_time}</td>
-        <td>{$val.c_time}</td>
+        <td>{$val.b_time|date="Y-m-d",###}</td>
+        <td>{$val.c_time|date="Y-m-d",###}</td>
         <td>{$com_config['comgrade'][$val['comgrade']]}</td>
         <td>{$com_config['area'][$val[area]]}</td>
         </tr>
@@ -109,8 +109,8 @@
           <td>{$val.sid}</td>
           <td>{$val.comname}</td>
           <td>{$val.comnum}</td>
-          <td>{$val.b_time}</td>
-          <td>{$val.c_time}</td>
+          <td>{$val.b_time|date="Y-m-d",###}</td>
+          <td>{$val.c_time|date="Y-m-d",###}</td>
           <td>{$com_config['comgrade'][$val['comgrade']]}</td>
           <td>{$com_config['area'][$val[area]]}</td>
         </tr>

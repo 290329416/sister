@@ -44,7 +44,6 @@ class UserController extends IndexController {
                     $this -> success("用户添加成功",U('user/index'));
                     exit;
                 }
-               
             }
 		}
 		$this->display();
