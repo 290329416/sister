@@ -109,7 +109,7 @@
     }
     function reloadVerifyCode(objId) {
     var obj = document.getElementById(objId);
-    obj.src = "__CONTROLLER__/verify?d=" + new Date();
+    obj.src = "__CONTROLLER__/verify&d=" + new Date();
     } 
     function setCookie(name, value, expires, path, domain, secure){
       var liveDate = new Date();

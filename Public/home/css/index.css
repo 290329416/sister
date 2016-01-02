@@ -24,7 +24,7 @@ a{color:#014e5c; text-decoration:none;}
 .ytext{ height:20px; line-height:20px; color:#666; width:80%; display:inline-block; margin-left:10px;}
 .ysubmit{ display:inline-block; width:90px; height:27px; line-height:25px; border-radius:3px; border:none; background:none; color:#fff; font-size:14px; font-weight:bold; background:#fe8226; cursor:pointer; }
 .header{ padding:10px 0px;}
-.nav{ clear:both; background:#0099cc; height:40px; border:solid 1px #ccfaf4; border-radius:2px; }
+.nav{ clear:both; background:#0099cc; height:40px; border:solid 1px #ccfaf4; border-radius:2px;border-radius: 5px;}
 .nav ul{ width:900px; margin:0 auto;} 
 .nav ul li{ float:left; width:180px; display:inline-block; text-align:center; line-height:40px;}
 .nav ul li a{ text-decoration:none; color:#fff; font-size:14px; font-weight:bold;}

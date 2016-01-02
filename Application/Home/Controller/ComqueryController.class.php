@@ -2,7 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class ComqueryController extends IndexController {
-    private $data_limit = 1;
+    private $data_limit = 10;
     public function __construct() {
         parent::__construct();
         include_once(COMMON_PATH.'Conf/MyConfig.php');
