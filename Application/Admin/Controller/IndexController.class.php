@@ -19,15 +19,21 @@ class IndexController extends Controller {
 		if (empty($Only_user)) {
 			$user = M('user');
 			$Only_user = $user -> where("id=%d and state=0",$login_user['id']) -> find();
-			unset($Only_user['password']);
-			unset($Only_user['logintime']);
-			$Only_user['ip'] = get_client_ip();
-			$user_auth = authcode($user_auth,DECODE);
-			$json_user = json_encode($Only_user);
-			if ($user_auth !== $json_user) {
+			if(empty($Only_user)){
 				$this -> error("请登录",U('login/index'));
+			}else{
+				unset($Only_user['password']);
+				$logintime = $Only_user['logintime'];
+				unset($Only_user['logintime']);
+				$Only_user['ip'] = get_client_ip();
+				$user_auth = authcode($user_auth,DECODE);
+				$json_user = json_encode($Only_user);
+				if ($user_auth !== $json_user) {
+					$this -> error("请登录",U('login/index'));
+				}
+				$Only_user['logintime'] = $logintime;
+				S($Only_user['username'],$Only_user,300);
 			}
-			S($Only_user['username'],$Only_user,300);
 		}
 		$typedata = S('admin_type');
 		if (empty($typedata)) {
