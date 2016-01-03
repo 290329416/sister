@@ -46,6 +46,8 @@ class ComqueryController extends IndexController {
                 $this->assign('data',$get_data);// 赋值数据集
             }
         }
+        $s = CONTROLLER_NAME.'/'.ACTION_NAME;
+        $this->assign('s',$s);// 模板输出
         $this->display();
 	}
 
@@ -76,6 +78,8 @@ class ComqueryController extends IndexController {
                 $this->assign('data',$get_data);// 赋值数据集
             }
         }
+        $s = CONTROLLER_NAME.'/'.ACTION_NAME;
+        $this->assign('s',$s);// 模板输出
         $this->display();
     }
 
@@ -100,6 +104,8 @@ class ComqueryController extends IndexController {
                 $this->assign('data',$get_data);// 赋值数据集
             }
         }
+        $s = CONTROLLER_NAME.'/'.ACTION_NAME;
+        $this->assign('s',$s);// 模板输出
         $this->display();
     }
 }

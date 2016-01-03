@@ -20,6 +20,7 @@ class IndexController extends Controller {
 			$user = M('user');
 			$Only_user = $user -> where("id=%d and state=0",$login_user['id']) -> find();
 			unset($Only_user['password']);
+			unset($Only_user['logintime']);
 			$Only_user['ip'] = get_client_ip();
 			$user_auth = authcode($user_auth,DECODE);
 			$json_user = json_encode($Only_user);

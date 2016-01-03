@@ -92,7 +92,8 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
-													<form action="/admin_china.php/Company/index">
+													<form>
+													<input type="hidden" name='s' value='{$s}'/>
 													<label>证书编号: <input type="text" aria-controls="sample-table-2" name="comnum" value="{$data['comnum']}"></label>
 													<label>企业名称: <input type="text" aria-controls="sample-table-2" name="comname" value="{$data['comname']}"></label>
 													<label>资质等级: 

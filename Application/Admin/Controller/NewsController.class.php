@@ -10,6 +10,8 @@ class NewsController extends IndexController {
         $type = S('admin_type');
         $this -> assign('type',$type);
         $data = I('get.');
+        $s = CONTROLLER_NAME.'/'.ACTION_NAME;
+        $this->assign('s',$s);// 模板输出
         if(!empty($data)) {
 
             if(!empty($data['title'])){
@@ -46,7 +48,6 @@ class NewsController extends IndexController {
         $this -> assign('count', $count);
         $this -> assign('num', $num);
         $this -> assign('new',$new);
-        
 		$this->display();
 	}
 	//添加文章页面

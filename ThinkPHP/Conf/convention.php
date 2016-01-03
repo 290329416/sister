@@ -157,7 +157,7 @@ return  array(
     'VAR_ACTION'            =>  'a',    // 默认操作获取变量
     'VAR_AJAX_SUBMIT'       =>  'ajax',  // 默认的AJAX提交变量
     'VAR_JSONP_HANDLER'     =>  'callback',
-    'VAR_PATHINFO'          =>  'pa',    // 兼容模式PATHINFO获取变量例如 ?s=/module/action/id/1 后面的参数取决于URL_PATHINFO_DEPR
+    'VAR_PATHINFO'          =>  's',    // 兼容模式PATHINFO获取变量例如 ?s=/module/action/id/1 后面的参数取决于URL_PATHINFO_DEPR
     'VAR_TEMPLATE'          =>  't',    // 默认模板切换变量
     'VAR_AUTO_STRING'		=>	false,	// 输入变量是否自动强制转换为字符串 如果开启则数组变量需要手动传入变量修饰符获取变量
 

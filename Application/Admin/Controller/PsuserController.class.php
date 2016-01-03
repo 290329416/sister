@@ -21,6 +21,8 @@ class PsuserController extends IndexController {
         $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
         $first =  $p * 20;
         $data = I('get.');
+        $s = CONTROLLER_NAME.'/'.ACTION_NAME;
+        $this->assign('s',$s);// 模板输出
         if(!empty($data)) {
             if(!empty($data['name'])){
                 $map['name'] = array('eq',$data['name']);

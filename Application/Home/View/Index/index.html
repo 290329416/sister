@@ -93,7 +93,7 @@
 	        	return false;
 	        }
 	      	$.ajax({
-		        "url":"index.php/Index/login",
+		        "url":"/index.php?s=/index/login.html",
 		        "type":"post",
 		        "data":$("#myform").serialize(),
 		        "success":function(data){
@@ -112,7 +112,7 @@
     	}
     	function doQuit(){
     		$.ajax({
-		        "url":"index.php/Index/quit",
+		        "url":"/index.php?s=/index/quit.html",
 		        "type":"post",
 		        "data":"1",
 		        "success":function(data){

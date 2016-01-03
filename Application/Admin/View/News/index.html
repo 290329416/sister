@@ -92,7 +92,8 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
-													<form action="/admin_china.php/News/index">
+													<form>
+													<input type="hidden" name='s' value='{$s}'/>
 													<label>搜索文章标题: <input type="text" aria-controls="sample-table-2" name="title" value="{$data['title']}"></label>
 													<label>请选择栏目: 
 														<select name="pid" size="1" aria-controls="sample-table-2" style='width:120px;'>
