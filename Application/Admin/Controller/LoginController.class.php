@@ -19,7 +19,6 @@ class LoginController extends Controller {
     			$userdata = $user -> where("username='%s' and state=0",$data['username'])-> find();
     			if($userdata && ($userdata['password'] === md5(C('SECURE_CODE').md5($data['password'])))){
     				unset($userdata['password']);
-                    unset($userdata['logintime']);
                     $userdata['ip'] = get_client_ip();
                     $user ->where('id='.$userdata['id'])->save(array('logintime'=>time()));
                     $user_auth = json_encode($userdata);

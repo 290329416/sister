@@ -15,6 +15,7 @@ class IndexController extends Controller {
 		if($login_user['ip'] !== get_client_ip()){
 			$this -> error("请登录",U('login/index'));
 		}
+		$this -> assign('user_data', $login_user);
 		$Only_user = S($login_user['username']);
 		if (empty($Only_user)) {
 			$user = M('user');
@@ -25,8 +26,9 @@ class IndexController extends Controller {
 				unset($Only_user['password']);
 				$logintime = $Only_user['logintime'];
 				unset($Only_user['logintime']);
+				unset($login_user['logintime']);
 				$Only_user['ip'] = get_client_ip();
-				$user_auth = authcode($user_auth,DECODE);
+				$user_auth = json_encode($login_user);
 				$json_user = json_encode($Only_user);
 				if ($user_auth !== $json_user) {
 					$this -> error("请登录",U('login/index'));
@@ -45,7 +47,6 @@ class IndexController extends Controller {
             $this->type_data[$v['id']] = $v;
         }
         $this -> assign('typedata',$this->type_data);
-		$this -> assign('user_data', $Only_user);
     }
 
     public function index(){
