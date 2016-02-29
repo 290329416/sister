@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>评审人员资格</title>
+		<title>资质等级</title>
 
 		<meta name="description" content="Static &amp; Dynamic Tables" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +72,7 @@
 							</li>
 
 							<li>
-								<a href="__CONTROLLER__">查看评审人员资格</a>
+								<a href="__ACTION__">查看资质等级</a>
 							</li>
 						</ul><!-- .breadcrumb -->
 					</div>
@@ -92,58 +92,11 @@
 										<div class="col-sm-6" style='width:100%'>
 											<div class="dataTables_length" id="sample-table-2_length">
 												<div id="sample-table-2_filter" class="dataTables_filter">
-													<form>
-													<input type="hidden" name='s' value='{$s}'/>
-													<label>姓名: <input type="text" aria-controls="sample-table-2" name="name" value="{$data['name']}"></label>
-													<label>机构名称: 
-														<select name="comname" size="1" aria-controls="sample-table-2" style='width:120px;'>
-															<option value=''>请选择</option>
-															<foreach name="company" item="com">
-																<if condition="($com['id'] eq $data['cid'])">
-													              <option value="{$com['id']}" selected>{$com['comname']}</option>
-													            <else />
-													              <option value="{$com['id']}">{$com['comname']}</option>
-													            </if>
-															</foreach>
-														</select>
-													</label>
-													<label>资质级别: 
-														<select name="level" size="1" aria-controls="sample-table-2" style='width:120px;'>
-															<option value=''>请选择</option>
-															<foreach name="pslevel" item="com">
-																<if condition="($key eq $data['level'])">
-													              <option value="{$key}" selected>{$com}</option>
-													            <else />
-													              <option value="{$key}">{$com}</option>
-													            </if>
-															</foreach>
-														</select>
-													</label>
-													<label>评审领域: 
-														<select name="psfield" size="1" aria-controls="sample-table-2" style='width:120px;'>
-															<option value=''>请选择</option>
-															<foreach name="psfield" item="v" key='k'>
-																<if condition="($k eq $data['psfield'])">
-													              <option value="{$k}" selected>{$v}</option>
-													            <else />
-													              <option value="{$k}">{$v}</option>
-													            </if>
-															</foreach>
-														</select>
-													</label>
-													<label>状态: 
-														<select name="state" size="1" aria-controls="sample-table-2" style='width:80px;'>
-															<option value=''>请选择</option>
-															<option value="1" <if condition="$data['state'] eq 1">selected</if>>正常</option>
-															<option value="2" <if condition="$data['state'] eq 2">selected</if>>关闭</option>
-														</select>
-													</label>
-													&nbsp;&nbsp;&nbsp;&nbsp;
-													<button class="btn btn-sm btn-primary">搜索</button>
-													<a class="btn btn-sm btn-primary" href="{:U('Psuser/add')}" style='float: right;'>添加评审人员信息</a>
-													</form>
+												<form action="__CONTROLLER__/comup" method="post">
+													<input type="hidden" name='type' value='add'>
+													<button class="btn btn-sm btn-primary">添加资质等级</button>
+												</form>
 												</div>
-												
 											</div>
 										</div>
 								</div>
@@ -152,18 +105,17 @@
 									<tr role="row">
 										<th class="center" style="width: 20px;" ><label><input type="checkbox" class="ace" /><span class="lbl"></span></label></th>
 										<th aria-label="Domain: activate to sort column ascending" style="width: 40px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">序号</th>
-										<th aria-label="Price: activate to sort column ascending" style="width: 120px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">机构名称</th>
-										<th aria-label="Price: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">姓名</th>
-										<th aria-label="Price: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">资质级别</th>
-										<th aria-label="Price: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">评审领域</th>
-										<th aria-label="Status: activate to sort column ascending" style="width: 40px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="hidden-480 sorting">状态</th>
-										<th aria-label="" style="width: 80px;" colspan="1" rowspan="1" role="columnheader" class="sorting_disabled">操作</th></tr>
+										<th aria-label="Price: activate to sort column ascending" style="width: 120px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">资质等级名称</th>
+										<th aria-label="Price: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">创建时间</th>
+										<th aria-label="Price: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="sample-table-2" tabindex="0" role="columnheader" class="sorting">最后修改时间</th>
+										<th aria-label="" style="width: 130px;" colspan="1" rowspan="1" role="columnheader" class="sorting_disabled">操作</th></tr>
 								</thead>
 
 								
 							<tbody aria-relevant="all" aria-live="polite" role="alert">
-								<form action="{:U('Psuser/delete')}" id='myform' method='post'>
-								<foreach name="psuser" item="data" >
+								<form action="{:U('Company/delgrade')}" id='myform' method='post'>
+								<input type="hidden" name='type' value='delete'>
+								<foreach name="comgrade" item="data" >
 									<tr class="odd">
 										<td class="center">
 											<label>
@@ -171,23 +123,13 @@
 												<span class="lbl"></span>
 											</label>
 										</td>
-										<td class="">
-											{$data.uid}
-										</td>
-										<td class="">{$data.comname}</td>
-										<td class="">{$data.name}</td>
-										<td class="">{$pslevel[$data['level']]}</td>
-										<td class="">{$psfield[$data['psfield']]}</td>
-										<td class="hidden-480 ">
-											<if condition="$data.state eq 1">
-												<span class="label label-sm label-success">正常</span>
-											<elseif condition="$data.state eq 2"/>
-												<span class="label label-sm label-warning">关闭</span>
-											</if>
-										</td>
+										<td class="">{$data.id}</td>
+										<td class="">{$data.comgrade}</td>
+										<td class="">{$data.create_time|date="Y-m-d H:i:s",###}</td>
+										<td class="">{$data.last_time|date="Y-m-d H:i:s",###}</td>
 										<td class="">
 											<div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-												<a title="修改信息" class="green" href="__CONTROLLER__/update/id/{$data.id}">
+												<a title="修改信息" class="green" href="__CONTROLLER__/comup/id/{$data.id}">
 													<i class="icon-pencil bigger-130"></i>
 													修改
 												</a>
@@ -286,7 +228,7 @@
 			window.jQuery || document.write("<script src='__PUBLIC__/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 			function delfun(id){
 				if(confirm("确认删除本数据?删除后将无法恢复")){
-					window.location.href='__CONTROLLER__/delete/id/'+id;
+					window.location.href='__CONTROLLER__/delgrade/id/'+id;
 				}
 			}
 		</script>

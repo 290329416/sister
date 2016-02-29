@@ -16,7 +16,7 @@
 </div>
 <div class="listright">
   <div class="column">
-    <span class='bgspan nbgspan'><a href="{:U('Comquery/index')}">集成企业资质查询</a></span>
+    <span class='bgspan nbgspan'><a href="{:U('Comquery/index')}">获证企业资质查询</a></span>
     <span class='nbgspan'><a href="{:U('Comquery/user')}">评审人员资格查询</a></span>
     <span class='nbgspan'><a href="{:U('Comquery/institutions')}">评审机构信息查询</a></span>
   </div>
@@ -25,7 +25,7 @@
    <table width="500" border="0" align="center">
     <input type="hidden" name='s' value='{$s}'/>
     <tr>
-       <td colspan='4' style='text-align:center;font-size:15px;'>集成企业资质查询</td>
+       <td colspan='4' style='text-align:center;font-size:15px;'>获证企业资质查询</td>
      </tr>
      <tr>
        <td width="100" style="text-align:right">资质证书编号</td>
@@ -38,7 +38,7 @@
        <td>
         <select name="grade">
           <option value=''>请选择</option>
-            <foreach name="com_config.comgrade" item="com" key="key">
+            <foreach name="comgrade" item="com" key="key">
             <if condition="($key eq $data['grade'])">
               <option value="{$key}" selected>{$com}</option>
             <else />
@@ -78,7 +78,6 @@
  </table>
 </form>
 </div>
-</div>
 <div class="table">
   <table width="100%" border="0">
     <thead>
@@ -102,7 +101,7 @@
         <td>{$val.comnum}</td>
         <td>{$val.b_time|date="Y-m-d",###}</td>
         <td>{$val.c_time|date="Y-m-d",###}</td>
-        <td>{$com_config['comgrade'][$val['comgrade']]}</td>
+        <td>{$comgrade[$val['cid']]}</td>
         <td>{$com_config['area'][$val[area]]}</td>
         </tr>
       <else /> 
@@ -112,7 +111,7 @@
           <td>{$val.comnum}</td>
           <td>{$val.b_time|date="Y-m-d",###}</td>
           <td>{$val.c_time|date="Y-m-d",###}</td>
-          <td>{$com_config['comgrade'][$val['comgrade']]}</td>
+          <td>{$comgrade[$val['cid']]}</td>
           <td>{$com_config['area'][$val[area]]}</td>
         </tr>
     </if>
@@ -159,14 +158,15 @@
         </tr>
     </notempty>
   </table>
+  <notempty name="page">
+  <div class="page">
+    <ul>
+      {$page}
+    </ul>
+  </div>
+  </notempty>
 </div>
-<notempty name="page">
-<div class="page">
-  <ul>
-    {$page}
-  </ul>
 </div>
-</notempty>
 </div>
 <include file="Public/foot" />
 <!--查询页js-->

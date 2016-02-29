@@ -34,16 +34,23 @@ class IndexController extends Controller {
 				$Only_user['logintime'] = $logintime;
 				S($Only_user['username'],$Only_user,300);
 			}
+		}else{
+			$logintime = $Only_user['logintime'];
+			unset($Only_user['logintime']);
+			$json_user = json_encode($login_user);
+			$user_auth = json_encode($Only_user);
+			if ($user_auth !== $json_user) {
+				$this -> error("请登录",U('login/index'));
+			}
+			$Only_user['logintime'] = $logintime;
+			S($Only_user['username'],$Only_user,300);
 		}
-		$typedata = S('admin_type');
-		if (empty($typedata)) {
+		$this->type_data = S('admin_type');
+		if (empty($this->type_data)) {
 			$type = M('type');
-	        $typedata = $type -> select();
-	        S('admin_type',$typedata,600);
+	        $this->type_data = $type -> getField('id,id,name,namepath,pid,path,weight,state');
+	        S('admin_type',$this->type_data,600);
 		}
-		foreach($typedata as $v){
-            $this->type_data[$v['id']] = $v;
-        }
         $this -> assign('typedata',$this->type_data);
 		$this -> assign('user_data', $Only_user);
     }

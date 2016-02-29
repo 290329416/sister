@@ -25,8 +25,8 @@ a{color:#014e5c; text-decoration:none;}
 .ysubmit{ display:inline-block; width:90px; height:27px; line-height:25px; border-radius:3px; border:none; background:none; color:#fff; font-size:14px; font-weight:bold; background:#fe8226; cursor:pointer; }
 .header{ padding:10px 0px;}
 .nav{ clear:both; background:#0099cc; height:40px; border:solid 1px #ccfaf4; border-radius:2px;border-radius: 5px;}
-.nav ul{ width:900px; margin:0 auto;} 
-.nav ul li{ float:left; width:180px; display:inline-block; text-align:center; line-height:40px;}
+.nav ul{ margin:0 auto;} 
+.nav ul li{ float:left; width:16%; display:inline-block; text-align:center; line-height:40px;}
 .nav ul li a{ text-decoration:none; color:#fff; font-size:14px; font-weight:bold;}
 .nav ul li a:hover{ text-decoration:underline;}
 
@@ -82,8 +82,8 @@ a{color:#014e5c; text-decoration:none;}
 .r3 {border: 1px solid #d7d7d7;height: auto;overflow: hidden; width: 740px;}
 .r748 {padding: 20px 40px;text-align: left;width: 668px;}
 .r748 h3, .r748 p {margin-bottom: 10px;}
-.msg {background: #f9f9f9 none repeat scroll 0 0; border: 1px solid #f1f1f1;margin-bottom: 30px;padding: 9px 18px;}
-.zc {margin-bottom: 80px;margin-left: 60px; width: 600px;}
+.msg {background: #f9f9f9 none repeat scroll 0 0; border: 1px solid #f1f1f1;margin-bottom: 30px;padding: 9px 18px;width: 490px;margin-left: 50px;}
+.zc {margin-bottom: 30px;margin-left: 60px; width: 600px;}
 .zc th, .zc td {vertical-align: top;}
 .zc th {font-weight: normal;padding-top: 7px;text-align: right;}
 .zc td {padding: 8px 0;}
@@ -104,13 +104,13 @@ a{color:#014e5c; text-decoration:none;}
 .form form td input.blt{ width:60px; height:25px; font-size:14px; text-align:right;background:#F5FFFA url(../images/cc.png) no-repeat 8px 5px;  margin-right:5px; cursor:pointer;   }
 .form form td input.brt{ width:60px; height:25px; font-size:14px; text-align:right;background:#F5FFFA url(../images/ff.png) no-repeat 8px 5px; margin-left:5px; cursor:pointer;   }
 .table{float:left;margin:20px 0;width:100%;}
-.table table{ border-collapse:collapse; border-width:thin;}
+.table table{ border-collapse:collapse; border-width:thin;margin: 0 10px;}
 .table table td{ text-align:center; border-bottom: solid 1px #eef2f7;border-left: solid 1px #eef2f7;  border-right: solid 1px #eef2f7;}
 .table table thead{border-top:solid 1px #9fb7e7;border-bottom:solid 1px #9fb7e7; background:#cde3f9;}
 .table table thead th{ border-right: solid 1px #fff;}
 .table table tbody tr.df{ background:#fff;}
-.page{ height:26px; width:400px; margin:0px auto 30px auto;}
-.page ul{float:left; }
+.page{ height:26px;position: relative;}
+.page ul{display: block;width: 400px;margin: 0 auto;position: relative;}
 .page ul li{ float:left; display:block; }
 .page ul li a{ color:#666; font-size:12px; width:22px; height:22px; display:block; line-height:24px; text-align:center; color:#666; margin-right:8px;}
 .border{font-size: 12px;height: 22px;line-height: 24px;margin-right: 8px;text-align: center; width: 22px;border: 1px solid #014e5c;}

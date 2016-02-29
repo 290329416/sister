@@ -7,7 +7,6 @@ class ComqueryController extends IndexController {
         parent::__construct();
         include_once(COMMON_PATH.'Conf/MyConfig.php');
         $this -> assign('com_config', $com_config);
-        $this -> assign('ps_config', $ps_config);
     }
 
     public function index(){
@@ -22,16 +21,16 @@ class ComqueryController extends IndexController {
                 $map['comname'] = array('like','%'.$get_data['lname'].'%');
             }
             if(!empty($get_data['grade'])){
-                $data['comgrade'] = (int) $get_data['grade'];
+                $data['cid'] = intval($get_data['grade']);
             }
             if(!empty($get_data['area'])){
-                $data['area'] = $get_data['area'];
+                $data['area'] = intval($get_data['area']);
             }
             if(!empty($get_data['b_time']) && !empty($get_data['l_time'])){
                 $data['ntime'] = $get_data['b_time'];
                 $data['mtime'] = $get_data['l_time'];
-                $b_time = (int) strtotime($get_data['b_time']);
-                $l_time = (int) strtotime($get_data['l_time']);
+                $b_time = intval(strtotime($get_data['b_time']));
+                $l_time = intval(strtotime($get_data['l_time']));
                 $data['b_time'] = array('between',array($b_time,$l_time));
             }
             if($data){
@@ -46,6 +45,13 @@ class ComqueryController extends IndexController {
                 $this->assign('data',$get_data);// 赋值数据集
             }
         }
+        $comgrade = S('comgrade');
+        if(!$comgrade){
+            $comgrade_mod = M('comgrade');
+            $comgrade = $comgrade_mod -> getField('id,comgrade');
+            S('comgrade',$comgrade,3600);
+        }
+        $this -> assign('comgrade',$comgrade);
         $s = CONTROLLER_NAME.'/'.ACTION_NAME;
         $this->assign('s',$s);// 模板输出
         $this->display();
@@ -61,10 +67,10 @@ class ComqueryController extends IndexController {
                 $data['name'] = $get_data['name'];
             }
             if(!empty($get_data['level'])){
-                $data['level'] = (int) $get_data['level'];
+                $data['level'] = intval($get_data['level']);
             }
             if(!empty($get_data['field'])){
-                $data['psfield'] = $get_data['field'];
+                $data['psfield'] = intval($get_data['field']);
             }
             if($data){
                 $com = M('psuser');
@@ -78,6 +84,22 @@ class ComqueryController extends IndexController {
                 $this->assign('data',$get_data);// 赋值数据集
             }
         }
+        //评审领域
+        $psfield = S('psfield');
+        if(empty($psfield)){
+            $psfield = M('psfield');
+            $psfield = $psfield ->getfield('id,psfield');
+            S('psfield',$psfield,3600);
+        }
+        $this -> assign('psfield', $psfield);
+        //资质级别
+        $pslevel = S('pslevel');
+        if(empty($pslevel)){
+            $pslevel = M('pslevel');
+            $pslevel = $pslevel ->getfield('id,pslevel');
+            S('pslevel',$pslevel,3600);
+        }
+        $this -> assign('pslevel', $pslevel);
         $s = CONTROLLER_NAME.'/'.ACTION_NAME;
         $this->assign('s',$s);// 模板输出
         $this->display();
@@ -90,7 +112,7 @@ class ComqueryController extends IndexController {
                 $data['pname'] = array('like','%'.$get_data['name'].'%');
             }
             if(!empty($get_data['area'])){
-                $data['area'] = $get_data['area'];
+                $data['area'] = intval($get_data['area']);
             }
             if($data){
                 $com = M('psinstitutions');

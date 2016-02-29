@@ -106,7 +106,7 @@
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='level'>
 													<option value=''>请选择</option>
-													<foreach name="ps_config.level" item="val">
+													<foreach name="pslevel" item="val">
 															<option value="{$key}">{$val}</option>
 													</foreach>
 												</select>
@@ -119,7 +119,7 @@
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='psfield'>
 													<option value=''>请选择</option>
-													<foreach name="ps_config.psfield" item="val">
+													<foreach name="psfield" item="val">
 															<option value="{$key}">{$val}</option>
 													</foreach>
 												</select>

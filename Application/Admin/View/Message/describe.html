@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>公众留言管理</title>
+		<title>公众留言描述</title>
 		<meta name="description" content="Common form elements and layouts" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -80,48 +80,11 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 
-								<form class="form-horizontal" role="form" action="" method='post' enctype="multipart/form-data">
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">企业名称</label>
-
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" placeholder="文章标题" readonly  class="col-xs-10 col-sm-5" value='{$data.prisename}'/>
-										</div>
-									</div>
-
-									<div class="space-4"></div>
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系人</label>
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='{$data.name}'/>
-										</div>
-									</div>
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">邮箱</label>
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='{$data.email}'/>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系电话</label>
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='{$data.phone}'/>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">留言时间</label>
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1" placeholder="文章发布人" readonly  class="col-xs-10 col-sm-5" value='{$data.inputtime|date="Y-m-d H:i",###}'/>
-										</div>
-									</div>
-
+								<form class="form-horizontal" role="form" action="" method='post'>
 
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">文章内容</label>
+										<input type="hidden" name='disting' value="up">
 										<div class="col-sm-9">
 											<div class="col-sm-4" style='padding-left:0px;width:100%'>
 												<div class="widget-body" style="border-style:none;">
@@ -132,7 +95,7 @@
 																<div class="widget-body">
 																	<div class="widget-main no-padding">
 																		<div class="md-editor" id="1448289198440">
-																			<textarea rows="10" data-provide="markdown" readonly  name="content" class="span12 md-input" style="resize: none;">{$data.message}</textarea>
+																			<textarea rows="10" data-provide="markdown" name="content" class="span12 md-input" style="resize: none;">{$describe}</textarea>
 																		</div>
 																	</div>
 																</div>
@@ -146,10 +109,10 @@
 
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
-											<a href="javascript:;" onclick="delfun({$data.id})" class="btn btn-info">
+											<button href="javascript:;"  class="btn btn-info">
 												<i class="icon-ok bigger-110"></i>
-												删除
-											</a>
+												确认修改
+											</button>
 
 											&nbsp; &nbsp; &nbsp;
 											<a href="__CONTROLLER__" class="btn">
@@ -221,11 +184,6 @@
 		<!-- inline scripts related to this page -->
 
 		<script type="text/javascript">
-		function delfun(userid){
-			if(confirm("确认删除本数据?")){
-				window.location.href='__CONTROLLER__/delete/id/'+userid;
-			}
-		}
 			jQuery(function($) {
 				$('#id-disable-check').on('click', function() {
 					var inp = $('#form-input-readonly').get(0);

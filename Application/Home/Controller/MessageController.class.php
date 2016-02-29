@@ -11,6 +11,11 @@ class MessageController extends IndexController {
     }
 
     public function index(){
+        $res = F('describe');
+        if (empty($res)) {
+            $res = '您好，欢迎来到中国电子商务协会质量促进工作委员会，请在此详细填写您所遇到的问题，并留下准确的Email地址和其他联系方式，我们的工作人员会尽快给您回复。';
+        }
+        $this -> assign('res', $res);
         $this->display();
 	}
 

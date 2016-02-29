@@ -116,7 +116,7 @@
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='level'>
 													<option>　</option>
-													<foreach name="ps_config.level" item="val" key="key">
+													<foreach name="pslevel" item="val" key="key">
 														<eq name="key" value="$data.level">
 															<option value="{$key}" selected>{$val}</option>
 														<else /> 
@@ -133,7 +133,7 @@
 											<div class="col-sm-4" style='padding-left:0px;'>
 												<select id="form-field-select-1" class="form-control" name='psfield'>
 													<option>　</option>
-													<foreach name="ps_config.psfield" item="val" key="key">
+													<foreach name="psfield" item="val" key="key">
 														<eq name="key" value="$data.psfield">
 															<option value="{$key}" selected>{$val}</option>
 														<else /> 

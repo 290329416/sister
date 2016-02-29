@@ -38,4 +38,16 @@ class MessageController extends IndexController {
             $this->error('删除失败');
         }
     }
+    public function describe(){
+        $describe = F('describe');
+        $type = I('post.disting');
+        $content = I('post.content');
+        if(!empty($type)){
+            $res = F('describe',$content);
+            $this -> assign('describe', $content);
+            $this -> success("修改成功");exit;
+        }
+        $this -> assign('describe', $describe);
+        $this->display();
+    }
 }

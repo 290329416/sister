@@ -46,7 +46,14 @@ class CompanyController extends IndexController {
             $page = new \Think\Page($count,20);
             $pages = $page ->show();
         }
+        $comgrade = S('comgrade');
+        if(!$comgrade){
+            $comgrade_mod = M('comgrade');
+            $comgrade = $comgrade_mod -> getField('id,comgrade');
+            S('comgrade',$comgrade,3600);
+        }
         $this -> assign('data',$data);
+        $this -> assign('comgrade',$comgrade);
         $this -> assign('pages', $pages);
         $this -> assign('count', $count);
         $this -> assign('num', $num);
@@ -70,7 +77,7 @@ class CompanyController extends IndexController {
             if(empty($data['c_time'])){
                 $this->error('证书有效期不能为空');
             }
-            if(empty($data['comgrade'])){
+            if(empty($data['cid'])){
                 $this->error('资质等级不能为空');
             }
             $data['comnum'] = strtoupper($data['comnum']);
@@ -90,6 +97,13 @@ class CompanyController extends IndexController {
                 $this->error('添加失败');
             }
 		}
+        $comgrade = S('comgrade');
+        if(!$comgrade){
+            $comgrade_mod = M('comgrade');
+            $comgrade = $comgrade_mod -> getField('id,comgrade');
+            S('comgrade',$comgrade,3600);
+        }
+        $this -> assign('comgrade',$comgrade);
 		$this->display();
 	}
     //修改企业资质
@@ -108,7 +122,7 @@ class CompanyController extends IndexController {
             if(empty($data['c_time'])){
                 $this->error('证书有效期不能为空');
             }
-            if(empty($data['comgrade'])){
+            if(empty($data['cid'])){
                 $this->error('资质等级不能为空');
             }
             $data['comnum'] = strtoupper($data['comnum']);
@@ -127,6 +141,13 @@ class CompanyController extends IndexController {
         $id = I('id');
         $com = M('Company');
         $data = $com ->find($id);
+        $comgrade = S('comgrade');
+        if(!$comgrade){
+            $comgrade_mod = M('comgrade');
+            $comgrade = $comgrade_mod -> getField('id,comgrade');
+            S('comgrade',$comgrade,3600);
+        }
+        $this -> assign('comgrade',$comgrade);
         $this -> assign('data', $data);
         $this->display();
     }
@@ -155,4 +176,81 @@ class CompanyController extends IndexController {
             $this->error('删除失败');
         }
     }
+
+    //企业等级
+    public function comgrade(){
+        $p = I('get.p') - 1 < 0 ? 0 :I('get.p') - 1;
+        $first =  $p * 20;
+        $comgrade = M('comgrade');
+        $data = $comgrade -> limit($first,'20')->select();
+        $count = $comgrade ->count();
+        $num = ceil($count/20);
+        $page = new \Think\Page($count,20);
+        $pages = $page ->show();
+        $this -> assign('comgrade', $data);
+        $this -> assign('count', $count);
+        $this -> assign('num', $num);
+        $this -> assign('pages', $pages);
+        $this -> display();
+    }
+    //企业等级添加与修改
+    public function comup(){
+        $id = I('request.id');
+        if(!$id){
+            $adate = I('post.comgrade');
+            if(empty($adate)){
+                $this -> display();exit;
+            }
+            $comgrade = M('comgrade');
+            $data['comgrade'] = $adate;
+            $data['create_time'] = time();
+            $data['last_time'] = $data['create_time'];
+            $res = $comgrade -> add($data);
+            if($res){
+                $this -> success("添加成功",U('Company/comgrade'));
+            }else{
+                $this -> error("添加失败",U('Company/comup'));
+            }
+        }else{
+            $savedata = I('post.');
+            $comgrade = M('comgrade');
+            if(!empty($savedata['comgrade'])){
+                $savedata['last_time'] = time();
+                $res = $comgrade -> save($savedata);
+                if($res){
+                    $this -> success("修改成功",U('Company/comgrade'));exit;
+                }else{
+                    $this -> error("修改失败",U('Company/comgrade'));
+                }
+            }
+            $data = $comgrade ->find($id);
+            $this -> assign('data',$data);
+            $this -> display();
+        }
+    }
+    //企业等级的删除
+    public function delgrade(){
+        $comgrade = M('comgrade');
+        $data = I('request.id');
+        if(is_array($data)){
+            $id_data = implode(',', $data);
+            $num = $comgrade ->delete($id_data);
+            if($num){
+                $comname = $comgrade ->getField('id,comgrade');
+                S('comgrade',$comname,3600);
+                $this -> success("删除成功",U('Company/comgrade'));
+                exit;
+            }else{
+                $this->error('删除失败');
+            }
+        }
+        if($comgrade ->delete($data)){
+            $comname = $comgrade ->getField('id,comgrade');
+            S('comgrade',$comname,3600);
+            $this -> success("删除成功",U('Company/comgrade'));exit;
+        }else{
+            $this->error('删除失败');
+        }
+    }
+
 }

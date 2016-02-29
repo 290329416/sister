@@ -36,7 +36,7 @@
        <td>
         <select name="level">
           <option value=''>请选择</option>
-            <foreach name="ps_config.level" item="com" key="key">
+            <foreach name="pslevel" item="com" key="key">
             <if condition="($key eq $data['level'])">
               <option value="{$key}" selected>{$com}</option>
             <else />
@@ -50,7 +50,7 @@
       <td>
       <select name="field">
         <option value=''>请选择</option>
-        <foreach name="ps_config.psfield" item="field">
+        <foreach name="psfield" item="field">
             <if condition="($key eq $data['field'])">
               <option value="{$key}" selected>{$field}</option>
             <else />
@@ -66,7 +66,6 @@
    </tr>
  </table>
 </form>
-</div>
 </div>
 <div class="table">
   <table width="100%" border="0">
@@ -87,16 +86,16 @@
         <td>{$val.uid}</td>
         <td>{$val.comname}</td>
         <td>{$val.name}</td>
-        <td>{$ps_config['level'][$val['level']]}</td>
-        <td>{$ps_config['psfield'][$val['psfield']]}</td>
+        <td>{$pslevel[$val['level']]}</td>
+        <td>{$psfield[$val['psfield']]}</td>
         </tr>
       <else /> 
         <tr class="df">
         <td>{$val.uid}</td>
         <td>{$val.comname}</td>
         <td>{$val.name}</td>
-        <td>{$ps_config['level'][$val['level']]}</td>
-        <td>{$ps_config['psfield'][$val['psfield']]}</td>
+        <td>{$pslevel[$val['level']]}</td>
+        <td>{$psfield[$val['psfield']]}</td>
         </tr>
     </if>
       
@@ -142,6 +141,7 @@
   </ul>
 </div>
 </notempty>
+</div>
 </div>
 <include file="Public/foot" />
 <!--查询页js-->

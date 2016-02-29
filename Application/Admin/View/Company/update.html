@@ -135,11 +135,11 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">资质等级</label>
 										<div class="col-sm-9" style="width:400px;">
 											<div class="col-sm-4" style='padding-left:0px;'>
-												<select id="form-field-select-1" class="form-control" name='comgrade'>
+												<select id="form-field-select-1" class="form-control" name='cid'>
 													<option>　</option>
-													<foreach name="com_config.comgrade" item="val" key="key">
-														<eq name="key" value="$data.comgrade">
-															<option value="{$key}" selected>{$val}</option>
+													<foreach name="comgrade" key="key" item="val" >
+														<eq name="key" value="$data.cid">
+															<option value="{$key}" selected >{$val}</option>
 														<else /> 
 															<option value="{$key}">{$val}</option>
 														</eq>
