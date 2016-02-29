@@ -27,7 +27,9 @@ class IndexController extends Controller {
 				$logintime = $Only_user['logintime'];
 				unset($Only_user['logintime']);
 				unset($login_user['logintime']);
-				$Only_user['ip'] = get_client_ip();
+				unset($login_user['ip']);
+				unset($Only_user['ip']);
+				// $Only_user['ip'] = get_client_ip();
 				$user_auth = json_encode($login_user);
 				$json_user = json_encode($Only_user);
 				if ($user_auth !== $json_user) {
@@ -40,6 +42,8 @@ class IndexController extends Controller {
 			$logintime = $Only_user['logintime'];
 			unset($Only_user['logintime']);
 			unset($login_user['logintime']);
+			unset($login_user['ip']);
+			unset($Only_user['ip']);
 			$json_user = json_encode($login_user);
 			$user_auth = json_encode($Only_user);
 			if ($user_auth !== $json_user) {
