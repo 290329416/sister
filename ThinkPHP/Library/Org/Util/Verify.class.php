@@ -153,15 +153,37 @@ class Verify {
                 $codeNX  += mt_rand($this->fontSize*1.2, $this->fontSize*1.6);
                 imagettftext($this->_image, $this->fontSize, mt_rand(-40, 40), $codeNX, $this->fontSize*1.6, $this->_color, $this->fontttf, $code[$i]);
             } */
-			$num1 = rand(5,10);
-			$num2 = rand(1,5);
+			
 			$mark = $this->getRand();
-			$res = $num1.$mark.$num2;
+			
+            if($mark == '+'){
+                $num1 = rand(1,10);
+                $num2 = rand(1,10);
+                $res = $num1.$mark.$num2;
+            }elseif($mark == '-'){
+                $num1 = rand(6,15);
+                $num2 = rand(1,5);
+                $res = $num1.$mark.$num2;
+            }elseif($mark == 'x'){
+                $num1 = rand(0,9);
+                $num2 = rand(0,9);
+                $res = $num1.'*'.$num2;
+            }elseif ($mark == '÷') {
+                $Divide = true;
+                while ($Divide) {
+                    $num1 = rand(0,27);
+                    $num2 = rand(1,9);
+                    $res = $num1.'/'.$num2;
+                    if(!fmod($num1,$num2)){
+                        $Divide = false;
+                    }
+                }
+            }
 			$result = eval("return $res;");
 			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 10, $this->fontSize*1.6, $this->_color, $this->fontttf, $num1);
 			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 45, $this->fontSize*1.6, $this->_color, $this->fontttf, $mark);
-			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 60, $this->fontSize*1.6, $this->_color, $this->fontttf, $num2);
-			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 80, $this->fontSize*1.6, $this->_color, $this->fontttf, '=');
+			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 70, $this->fontSize*1.6, $this->_color, $this->fontttf, $num2);
+			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 90, $this->fontSize*1.6, $this->_color, $this->fontttf, '=');
 			imagettftext($this->_image, $this->fontSize, mt_rand(-10, 10), 110, $this->fontSize*1.6, $this->_color, $this->fontttf, '?');
         }
 		
@@ -294,7 +316,7 @@ class Verify {
 	
 	/*验证码算法*/
 	private function getRand(){
-		$code = rand(0,1);
+		$code = rand(0,3);
 		switch ($code) {
 		case 0:
 		  return "+";
@@ -302,6 +324,12 @@ class Verify {
 		case 1:
 		  return "-";
 		  break;
+        case 2:
+          return "x";
+          break;
+        case 3:
+          return "÷";
+          break;
 		default:
 		  # code...
 		  break;

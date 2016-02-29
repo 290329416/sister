@@ -39,6 +39,7 @@ class IndexController extends Controller {
 		}else{
 			$logintime = $Only_user['logintime'];
 			unset($Only_user['logintime']);
+			unset($login_user['logintime']);
 			$json_user = json_encode($login_user);
 			$user_auth = json_encode($Only_user);
 			if ($user_auth !== $json_user) {
