@@ -37,12 +37,12 @@
 		</div>
 		<div class="news">
 			<dl>
-			<dt><h2>{$type.0.name}</h2><span><a href="{:U('/t_'.$type[0]['namepath'])}">更多>></a></span></dt>
+			<dt><h2>{$type.0.name}</h2><span><a href="{:U('index/tlist',array('type'=>$type[0]['namepath']))}">更多>></a></span></dt>
 			<dd>
 			  <img src="__PUBLIC__/home/images/img1.png" width="304" height="216">
 			  <span>
           <foreach name="new[$type[0][namepath]]" item="content" >
-            <a href="{:U('/'.$type[0]['namepath'].'/'.$content['id'])}" title='{$content.title}'>{$content.title}</a>
+            <a href="{:U('index/article',array('type'=>$type[0]['namepath'],'by'=>$content['id']))}" title='{$content.title}'>{$content.title}</a>
           </foreach >
 			  </span> 
 			</dd>
@@ -66,10 +66,10 @@
         <volist name="type" id="t" offset="1">
         <div class="hot">
            <dl>
-              <dt><h2>{$t.name}</h2><span><a href="{:U('/t_'.$t['namepath'])}">更多>></a></span></dt>
+              <dt><h2>{$t.name}</h2><span><a href="{:U('index/tlist',array('type'=>$t['namepath']))}">更多>></a></span></dt>
               <dd>
                 <volist name="new[$t['namepath']]" id="content" offset="0" length='3'>
-                 <a href="{:U('/'.$t['namepath'].'/'.$content['id'])}" title='{$content.title}'>{$content.title}</a>
+                 <a href="{:U('index/article',array('type'=>$t['namepath'],'by'=>$content['id']))}" title='{$content.title}'>{$content.title}</a>
                  </volist>
               </dd>
            </dl>

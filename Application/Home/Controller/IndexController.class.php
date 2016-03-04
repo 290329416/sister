@@ -56,7 +56,8 @@ class IndexController extends Controller {
         }
         if($data['pid'] == false){$this->error('错误');}
         $news = M('news');
-        $data['id'] = I('get.id');
+        $data['id'] = I('get.by');
+        if(empty($data['id'])){$this->error('错误');}
         $data['state'] = 2;
         $new = $news -> where($data) ->find();
         $new['content'] = htmlspecialchars_decode($new['content']);
