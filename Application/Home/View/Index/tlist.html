@@ -12,7 +12,7 @@
            <a href="/">首页</a>
            <notempty name="type_find">
              &gt;&gt; 
-           <a href="{:U('/t_'.$type_find['namepath'])}">{$type_find.name}</a>
+           <a href="{:U('index/tlist',array('type'=>$type_find['namepath']))}">{$type_find.name}</a>
            </notempty>
          </div>
          <div class="listleft">
@@ -34,7 +34,7 @@
               <dt><h2>{$type_find.name}</h2></dt>
               <dd>
                 <foreach name="newdata" item="new" >
-                <span><a href="{:U('/'.$new_type[$new['pid']]['namepath'].'/'.$new['id'])}">{$new.title}</a> <e>({$new.releasetime})</e></span>
+                <span><a href="{:U('index/article',array('type'=>$new_type[$new['pid']]['namepath'],'by'=>$new['id']))}">{$new.title}</a> <e>({$new.releasetime})</e></span>
                 </foreach>     
               </dd>
            </dl>

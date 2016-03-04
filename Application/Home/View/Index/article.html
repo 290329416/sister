@@ -6,7 +6,7 @@
              &gt;&gt; 
             <foreach name="type" item="t">
               <if condition="$t['id'] eq $new['pid']"> 
-                <a href="__APP__/t_{$t.namepath}/">{$t.name}</a>
+                <a href="{:U('index/tlist',array('type'=>$t['namepath']))}">{$t.name}</a>
               </if>
             </foreach>
             &gt;&gt;
